@@ -16,15 +16,28 @@
               placeholder="password">
           </div>
           <div class="login-button-group">
-            <button type="submit" class="btn btn-large p-x-2" ng-if="!loggingIn" ng-click="submit();" ng-class="{'btn-inverse': !loginForm.$valid, 'btn-primary': loginForm.$valid}">
+            <!--<button type="submit" class="btn btn-large p-x-2" ng-if="!loggingIn" ng-click="submit();" ng-class="{'btn-inverse': !loginForm.$valid, 'btn-primary': loginForm.$valid}">
               Log In
             </button>
-            <button type="submit" class="btn btn-large p-x-2 btn-inverse btn-loading" ng-if="loggingIn">
+            -->
+            <button type="submit" class="btn btn-large p-x-2" ng-if="!loggingIn" ng-click="submit();" ng-class="{'btn-inverse': !loginForm.$valid, 'btn-primary': loginForm.$valid}">
+              登录
+            </button>
+            
+            <!--<button type="submit" class="btn btn-large p-x-2 btn-inverse btn-loading" ng-if="loggingIn">
               Logging In<span>.</span><span>.</span><span>.</span>
+            </button>-->
+            
+            <button type="submit" class="btn btn-large p-x-2 btn-inverse btn-loading" ng-if="loggingIn">
+              请稍后<span>.</span><span>.</span><span>.</span>
             </button>
             <div class="small login-button-forgot-password">
-              <a href="user/password/send-reset-email">
+              <!--<a href="user/password/send-reset-email">
                 Forgot your password?
+              </a>-->
+              
+              <a href="user/password/send-reset-email">
+                忘记密码
               </a>
             </div>
           </div>
@@ -70,37 +83,60 @@
           </a>
         </div>
         <div class="login-signup-box" ng-show="!disableUserSignUp">
-          <div class="login-signup-title p-r-1">
+          <!--<div class="login-signup-title p-r-1">
             New to Grafana?
           </div>
           <a href="signup" class="btn btn-medium btn-signup btn-p-x-2">
             Sign Up
+          </a>-->
+          
+          <div class="login-signup-title p-r-1">
+            首次使用？
+          </div>
+          <a href="signup" class="btn btn-medium btn-signup btn-p-x-2">
+            注册
           </a>
         </div>
       </div>
       <div class="login-inner-box remove hidden" id="change-password-view">
         <div class="text-left login-change-password-info">
-          <h5>Change Password</h5>
+          <!--<h5>Change Password</h5>
           Before you can get started with awesome dashboards we need you to make your account more secure by changing your password.
-          <br />You can change your password again later.
+          <br />You can change your password again later.-->
+          
+          
+          <h5>修改密码</h5>
+          建议使用前修改密码。
+          <br />后续也可修改。
         </div>
         <form class="login-form-group gf-form-group">
           <div class="login-form">
             <input type="password" id="newPassword" name="newPassword" class="gf-form-input login-form-input" required ng-model='command.newPassword'
-              placeholder="New password">
+              placeholder="新密码">
           </div>
           <div class="login-form">
-            <input type="password" name="confirmNew" class="gf-form-input login-form-input" required ng-model="command.confirmNew" placeholder="Confirm new password">
+            <input type="password" name="confirmNew" class="gf-form-input login-form-input" required ng-model="command.confirmNew" placeholder="确认新密码">
           </div>
           <div class="login-button-group login-button-group--right text-right">
-            <a class="btn btn-link" ng-click="skip();">
+            <!--<a class="btn btn-link" ng-click="skip();">
               Skip
               <info-popover mode="no-padding">
                 If you skip you will be prompted to change password next time you login.
               </info-popover>
+            </a>-->
+            <a class="btn btn-link" ng-click="skip();">
+              跳过
+              <info-popover mode="no-padding">
+                如果跳过，下次登录时仍将提示
+              </info-popover>
             </a>
-            <button type="submit" class="btn btn-large p-x-2" ng-click="changePassword();" ng-class="{'btn-inverse': !loginForm.$valid, 'btn-success': loginForm.$valid}">
+            
+            <!--<button type="submit" class="btn btn-large p-x-2" ng-click="changePassword();" ng-class="{'btn-inverse': !loginForm.$valid, 'btn-success': loginForm.$valid}">
               Save
+            </button>-->
+            
+            <button type="submit" class="btn btn-large p-x-2" ng-click="changePassword();" ng-class="{'btn-inverse': !loginForm.$valid, 'btn-success': loginForm.$valid}">
+              保存
             </button>
           </div>
         </form>
