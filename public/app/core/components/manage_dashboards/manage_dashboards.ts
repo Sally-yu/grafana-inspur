@@ -29,7 +29,10 @@ export class ManageDashboardsCtrl {
   hasFilters = false;
   tagFilterOptions: any[];
   selectedTagFilter: any;
-  starredFilterOptions = [{ text: 'Filter by Starred', disabled: true }, { text: 'Yes' }, { text: 'No' }];
+  // starredFilterOptions = [{ text: 'Filter by Starred', disabled: true }, { text: 'Yes' }, { text: 'No' }];
+
+  starredFilterOptions = [{ text: '按收藏过滤', disabled: true }, { text: '是' }, { text: '否' }];
+
   selectedStarredFilter: any;
 
   // used when managing dashboards for a specific folder

@@ -38,9 +38,10 @@ export class Settings {
       datasources: {},
       windowTitlePrefix: 'Grafana - ',
       panels: {},
-      newPanelTitle: 'Panel Title',
+      //newPanelTitle: 'Panel Title',  //新建图表的默认标题
+      newPanelTitle: '新图表',
       playlist_timespan: '1m',
-      unsaved_changes_warning: true,
+      unsaved_changes_warning: true, //未保存提示
       appSubUrl: '',
       buildInfo: {
         version: 'v1.0',

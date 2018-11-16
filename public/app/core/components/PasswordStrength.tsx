@@ -4,6 +4,8 @@ export interface Props {
   password: string;
 }
 
+//密码强度，长度校验等
+
 export class PasswordStrength extends React.Component<Props, any> {
   constructor(props) {
     super(props);
