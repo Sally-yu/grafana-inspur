@@ -5,15 +5,22 @@
 				<a ng-click="ctrl.changeTabIndex(0)">Alert Config</a>
 			</li>
 			<li ng-class="{active: ctrl.subTabIndex === 1}">
-				<a ng-click="ctrl.changeTabIndex(1)">
+				<!-- <a ng-click="ctrl.changeTabIndex(1)">
 					Notifications <span class="muted">({{ctrl.alertNotifications.length}})</span>
-				</a>
+				</a> -->
+				<a ng-click="ctrl.changeTabIndex(1)">
+						提示 <span class="muted">({{ctrl.alertNotifications.length}})</span>
+					</a>
 			</li>
 			<li ng-class="{active: ctrl.subTabIndex === 2}">
-				<a ng-click="ctrl.changeTabIndex(2)">State history</a>
+				<!-- <a ng-click="ctrl.changeTabIndex(2)">State history</a> -->
+				<a ng-click="ctrl.changeTabIndex(2)">状态历史记录</a>
+
 			</li>
       <li>
-				<a ng-click="ctrl.delete()">Delete</a>
+				<!-- <a ng-click="ctrl.delete()">Delete</a> -->
+				<a ng-click="ctrl.delete()">删除</a>
+
 			</li>
 		</ul>
 	</aside>
@@ -25,17 +32,26 @@
 			</div>
 
 			<div class="gf-form-group">
-				<h5 class="section-heading">Alert Config</h5>
+				<!-- <h5 class="section-heading">Alert Config</h5> -->
+				<h5 class="section-heading">预警配置</h5>
+
 				<div class="gf-form">
-					<span class="gf-form-label width-6">Name</span>
+					<!-- <span class="gf-form-label width-6">Name</span>
 					<input type="text" class="gf-form-input width-20" ng-model="ctrl.alert.name">
 					<span class="gf-form-label">Evaluate every</span>
+					<input class="gf-form-input max-width-5" type="text" ng-model="ctrl.alert.frequency"></input> -->
+
+					<span class="gf-form-label width-6">名称</span>
+					<input type="text" class="gf-form-input width-20" ng-model="ctrl.alert.name">
+					<span class="gf-form-label">监控所有</span>
 					<input class="gf-form-input max-width-5" type="text" ng-model="ctrl.alert.frequency"></input>
 				</div>
 			</div>
 
 			<div class="gf-form-group">
-				<h5 class="section-heading">Conditions</h5>
+				<!-- <h5 class="section-heading">Conditions</h5> -->
+				<h5 class="section-heading">条件</h5>
+
 				<div class="gf-form-inline" ng-repeat="conditionModel in ctrl.conditionModels">
 					<div class="gf-form">
 						<metric-segment-model css-class="query-keyword width-5" ng-if="$index" property="conditionModel.operator.type" options="ctrl.evalOperators" custom="false"></metric-segment-model>

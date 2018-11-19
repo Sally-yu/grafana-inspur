@@ -5,7 +5,9 @@ const template = `
   <div class="modal-header">
     <h2 class="modal-header-title">
       <i class="fa fa-exclamation"></i>
-      <span class="p-l-1">Unsaved changes</span>
+      // <span class="p-l-1">Unsaved changes</span>
+      <span class="p-l-1">未保存的变更</span>
+
     </h2>
 
     <a class="modal-header-close" ng-click="ctrl.dismiss();">
@@ -15,14 +17,21 @@ const template = `
 
   <div class="modal-content text-center">
 
+    // <div class="confirm-modal-text">
+    //   Do you want to save your changes?
+    // </div>
     <div class="confirm-modal-text">
-      Do you want to save your changes?
-    </div>
+    确认保存变更?
+  </div>
 
     <div class="confirm-modal-buttons">
-      <button type="button" class="btn btn-success" ng-click="ctrl.save()">Save</button>
-      <button type="button" class="btn btn-danger" ng-click="ctrl.discard()">Discard</button>
-      <button type="button" class="btn btn-inverse" ng-click="ctrl.dismiss()">Cancel</button>
+      // <button type="button" class="btn btn-success" ng-click="ctrl.save()">Save</button>
+      // <button type="button" class="btn btn-danger" ng-click="ctrl.discard()">Discard</button>
+      // <button type="button" class="btn btn-inverse" ng-click="ctrl.dismiss()">Cancel</button>
+
+      <button type="button" class="btn btn-success" ng-click="ctrl.save()">保存</button>
+      <button type="button" class="btn btn-danger" ng-click="ctrl.discard()">不保存</button>
+      <button type="button" class="btn btn-inverse" ng-click="ctrl.dismiss()">取消</button>
     </div>
   </div>
 </div>

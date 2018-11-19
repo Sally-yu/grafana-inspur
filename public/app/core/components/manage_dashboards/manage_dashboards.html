@@ -1,7 +1,10 @@
 <div class="dashboard-list">
   <div class="page-action-bar page-action-bar--narrow" ng-hide="ctrl.folderId && !ctrl.hasFilters && ctrl.sections.length === 0">
     <label class="gf-form gf-form--grow gf-form--has-input-icon">
-      <input type="text" class="gf-form-input max-width-30" placeholder="Find Dashboard by name" tabindex="1" give-focus="true" ng-model="ctrl.query.query" ng-model-options="{ debounce: 500 }" spellcheck='false' ng-change="ctrl.onQueryChange()" />
+      <!-- <input type="text" class="gf-form-input max-width-30" placeholder="Find Dashboard by name" tabindex="1" give-focus="true" ng-model="ctrl.query.query" ng-model-options="{ debounce: 500 }" spellcheck='false' ng-change="ctrl.onQueryChange()" /> -->
+
+      <input type="text" class="gf-form-input max-width-30" placeholder="按名称查找" tabindex="1" give-focus="true" ng-model="ctrl.query.query" ng-model-options="{ debounce: 500 }" spellcheck='false' ng-change="ctrl.onQueryChange()" />
+
       <i class="gf-form-input-icon fa fa-search"></i>
     </label>
     <div class="page-action-bar__spacer"></div>
@@ -168,13 +171,20 @@
 
 <div ng-if="ctrl.canSave && ctrl.folderId && !ctrl.hasFilters && ctrl.sections.length === 0">
   <empty-list-cta model="{
-    title: 'This folder doesn\'t have any dashboards yet',
+    title: '该文件夹没有仪表盘',
     buttonIcon: 'gicon gicon-dashboard-new',
     buttonLink: 'dashboard/new?folderId={{ctrl.folderId}}',
-    buttonTitle: 'Create Dashboard',
-    proTip: 'Add/move dashboards to your folder at ->',
+    buttonTitle: '新增仪表盘',
+    proTip: '添加/移动仪表盘到 ->',
     proTipLink: 'dashboards',
-    proTipLinkTitle: 'Manage dashboards',
+    proTipLinkTitle: '管理仪表盘',
     proTipTarget: ''
   }" />
+
+  <!-- title: 'This folder doesn\'t have any dashboards yet', -->
+  <!-- buttonTitle: 'Create Dashboard',
+  proTipLinkTitle: 'Manage dashboards',
+  proTip: 'Add/move dashboards to your folder at ->', -->
+
+
 </div>

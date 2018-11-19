@@ -11,8 +11,10 @@ export class InvitedCtrl {
       main: {
         icon: 'gicon gicon-branding',
         text: 'Invite',
-        subTitle: 'Register your Grafana account',
-        breadcrumbs: [{ title: 'Login', url: 'login' }],
+        // subTitle: 'Register your Grafana account',
+        subTitle: '用户注册',
+        // breadcrumbs: [{ title: 'Login', url: 'login' }],
+        breadcrumbs: [{ title: '登录', url: 'login' }],
       },
     };
 

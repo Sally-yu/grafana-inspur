@@ -2,7 +2,9 @@ import config from 'app/core/config';
 
 export default class StyleGuideCtrl {
   theme: string;
-  buttonNames = ['primary', 'secondary', 'inverse', 'success', 'warning', 'danger'];
+  // buttonNames = ['primary', 'secondary', 'inverse', 'success', 'warning', 'danger'];
+  buttonNames = ['主要', '次要', '反向', '成功', '警告', '危险'];
+
   buttonSizes = ['btn-small', '', 'btn-large'];
   buttonVariants = ['-'];
   navModel: any;
@@ -14,7 +16,8 @@ export default class StyleGuideCtrl {
   }
 
   switchTheme() {
-    this.$routeParams.theme = this.theme === 'dark' ? 'light' : 'dark';
+    // this.$routeParams.theme = this.theme === 'dark' ? 'light' : 'dark';
+    this.$routeParams.theme = this.theme === 'light' ? 'light' : 'dark';
 
     const cmd = {
       theme: this.$routeParams.theme,
@@ -25,4 +28,3 @@ export default class StyleGuideCtrl {
     });
   }
 }
-

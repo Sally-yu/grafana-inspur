@@ -101,7 +101,8 @@ export class FolderPickerCtrl {
     }
 
     return this.backendSrv.createFolder({ title: this.newFolderName }).then(result => {
-      appEvents.emit('alert-success', ['Folder Created', 'OK']);
+      // appEvents.emit('alert-success', ['Folder Created', 'OK']);
+      appEvents.emit('alert-success', ['文件夹', '确认']);
 
       this.closeCreateFolder();
       this.folder = { text: result.title, value: result.id };

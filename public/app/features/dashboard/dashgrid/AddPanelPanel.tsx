@@ -98,12 +98,16 @@ export class AddPanelPanel extends React.Component<AddPanelPanelProps, AddPanelP
 
     const newPanel: any = {
       type: panelPluginInfo.id,
-      title: 'Panel Title',
+      // title: 'Panel Title',
+      title: '面板标题',
+
       gridPos: { x: gridPos.x, y: gridPos.y, w: gridPos.w, h: gridPos.h },
     };
 
     if (panelPluginInfo.id === 'row') {
-      newPanel.title = 'Row title';
+      // newPanel.title = 'Row title';
+      newPanel.title = '行标题';
+
       newPanel.gridPos = { x: 0, y: 0 };
     }
 
@@ -140,7 +144,8 @@ export class AddPanelPanel extends React.Component<AddPanelPanelProps, AddPanelP
   }
 
   noCopiedPanelPlugins() {
-    return <div className="add-panel__no-panels">No copied panels yet.</div>;
+    // return <div className="add-panel__no-panels">No copied panels yet.</div>;
+    return <div className="add-panel__no-panels">未复制任何面板</div>;
   }
 
   filterChange(evt) {
@@ -216,13 +221,19 @@ export class AddPanelPanel extends React.Component<AddPanelPanelProps, AddPanelP
             <span className="add-panel__title">New Panel</span>
             <ul className="gf-tabs">
               <li className="gf-tabs-item">
-                <div className={'gf-tabs-link pointer ' + addClass} onClick={this.openAdd.bind(this)}>
+                {/* <div className={'gf-tabs-link pointer ' + addClass} onClick={this.openAdd.bind(this)}>
                   Add
+                </div> */}
+                <div className={'gf-tabs-link pointer ' + addClass} onClick={this.openAdd.bind(this)}>
+                  增加
                 </div>
               </li>
               <li className="gf-tabs-item">
-                <div className={'gf-tabs-link pointer ' + copyClass} onClick={this.openCopy.bind(this)}>
+                {/* <div className={'gf-tabs-link pointer ' + copyClass} onClick={this.openCopy.bind(this)}>
                   Paste
+                </div> */}
+                <div className={'gf-tabs-link pointer ' + copyClass} onClick={this.openCopy.bind(this)}>
+                  粘贴
                 </div>
               </li>
             </ul>

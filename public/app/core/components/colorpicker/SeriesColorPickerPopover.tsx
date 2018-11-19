@@ -52,11 +52,17 @@ export class AxisSelector extends React.PureComponent<AxisSelectorProps, AxisSel
     return (
       <div className="p-b-1">
         <label className="small p-r-1">Y Axis:</label>
-        <button onClick={this.onToggleAxis} className={'btn btn-small ' + leftButtonClass}>
+        {/* <button onClick={this.onToggleAxis} className={'btn btn-small ' + leftButtonClass}>
           Left
+        </button> */}
+        <button onClick={this.onToggleAxis} className={'btn btn-small ' + leftButtonClass}>
+          左
         </button>
-        <button onClick={this.onToggleAxis} className={'btn btn-small ' + rightButtonClass}>
+        {/* <button onClick={this.onToggleAxis} className={'btn btn-small ' + rightButtonClass}>
           Right
+        </button> */}
+        <button onClick={this.onToggleAxis} className={'btn btn-small ' + rightButtonClass}>
+          右
         </button>
       </div>
     );

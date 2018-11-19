@@ -50,12 +50,14 @@ export class DashboardLoaderSrv {
         .then(result => {
           if (result.meta.isFolder) {
             this.$rootScope.appEvent('alert-error', ['Dashboard not found']);
-            throw new Error('Dashboard not found');
+            // throw new Error('Dashboard not found');
+            throw new Error('未找到仪表盘');
           }
           return result;
         })
         .catch(() => {
-          return this._dashboardLoadFailed('Not found', true);
+          // return this._dashboardLoadFailed('Not found', true);
+          return this._dashboardLoadFailed('未找到', true);
         });
     }
 
@@ -89,10 +91,11 @@ export class DashboardLoaderSrv {
         },
         err => {
           console.log('Script dashboard error ' + err);
-          this.$rootScope.appEvent('alert-error', [
-            'Script Error',
-            'Please make sure it exists and returns a valid dashboard',
-          ]);
+          // this.$rootScope.appEvent('alert-error', [
+          //   'Script Error',
+          //   'Please make sure it exists and returns a valid dashboard',
+          // ]);
+          this.$rootScope.appEvent('alert-error', ['脚本错误', '请确保url存在并返回有效的仪表盘。']);
           return this._dashboardLoadFailed('Scripted dashboard');
         }
       );

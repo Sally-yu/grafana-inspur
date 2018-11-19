@@ -223,7 +223,10 @@ export class ManageDashboardsCtrl {
 
   initTagFilter() {
     return this.searchSrv.getDashboardTags().then(results => {
-      this.tagFilterOptions = [{ term: 'Filter By Tag', disabled: true }].concat(results);
+      // this.tagFilterOptions = [{ term: 'Filter By Tag', disabled: true }].concat(results);
+
+      this.tagFilterOptions = [{ term: '按标签过滤', disabled: true }].concat(results);
+
       this.selectedTagFilter = this.tagFilterOptions[0];
     });
   }

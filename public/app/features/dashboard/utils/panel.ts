@@ -7,16 +7,26 @@ import { LS_PANEL_COPY_KEY } from 'app/core/constants';
 export const removePanel = (dashboard: DashboardModel, panel: PanelModel, ask: boolean) => {
   // confirm deletion
   if (ask !== false) {
-    const text2 = panel.alert ? 'Panel includes an alert rule, removing panel will also remove alert rule' : null;
-    const confirmText = panel.alert ? 'YES' : null;
+    // const text2 = panel.alert ? 'Panel includes an alert rule, removing panel will also remove alert rule' : null;
+    const text2 = panel.alert ? '该面板包含预警规则,将同时删除' : null;
+
+    // const confirmText = panel.alert ? 'YES' : null;
+    const confirmText = panel.alert ? '是' : null;
 
     appEvents.emit('confirm-modal', {
-      title: 'Remove Panel',
-      text: 'Are you sure you want to remove this panel?',
+      // title: 'Remove Panel',
+      // text: 'Are you sure you want to remove this panel?',
+      // text2: text2,
+      // icon: 'fa-trash',
+      // confirmText: confirmText,
+      // yesText: 'Remove',
+
+      title: '移除面板',
+      text: '确定移除改面板?',
       text2: text2,
       icon: 'fa-trash',
       confirmText: confirmText,
-      yesText: 'Remove',
+      yesText: '移除',
       onConfirm: () => removePanel(dashboard, panel, false),
     });
     return;
@@ -30,7 +40,8 @@ export const duplicatePanel = (dashboard: DashboardModel, panel: PanelModel) => 
 
 export const copyPanel = (panel: PanelModel) => {
   store.set(LS_PANEL_COPY_KEY, JSON.stringify(panel.getSaveModel()));
-  appEvents.emit('alert-success', ['Panel copied. Open Add Panel to paste']);
+  // appEvents.emit('alert-success', ['Panel copied. Open Add Panel to paste']);
+  appEvents.emit('alert-success', ['面板已复制。打开添加面板可粘贴']);
 };
 
 const replacePanel = (dashboard: DashboardModel, newPanel: PanelModel, oldPanel: PanelModel) => {
