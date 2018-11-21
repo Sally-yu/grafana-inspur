@@ -30,6 +30,7 @@ export class AddPanelPanel extends React.Component<AddPanelPanelProps, AddPanelP
     this.renderPanelItem = this.renderPanelItem.bind(this);
     this.panelSizeChanged = this.panelSizeChanged.bind(this);
 
+    //打开时默认的tab页，插件过滤条件等
     this.state = {
       panelPlugins: this.getPanelPlugins(''),
       copiedPanelPlugins: this.getCopiedPanelPlugins(''),
@@ -67,6 +68,7 @@ export class AddPanelPanel extends React.Component<AddPanelPanelProps, AddPanelP
     return _.sortBy(panels, 'sort');
   }
 
+  //粘贴面板函数，已无用
   getCopiedPanelPlugins(filter) {
     const panels = _.chain(config.panels)
       .filter({ hideFromList: false })
@@ -172,68 +174,106 @@ export class AddPanelPanel extends React.Component<AddPanelPanelProps, AddPanelP
     });
   }
 
-  openCopy() {
-    this.setState({
-      tab: 'Copy',
-      filter: '',
-      panelPlugins: this.getPanelPlugins(''),
-      copiedPanelPlugins: this.getCopiedPanelPlugins(''),
-    });
-  }
+  // openCopy() {
+  //   this.setState({
+  //     tab: 'Copy',
+  //     filter: '',
+  //     panelPlugins: this.getPanelPlugins(''),
+  //     copiedPanelPlugins: this.getCopiedPanelPlugins(''),
+  //   });
+  // }
 
   openAdd() {
     this.setState({
       tab: 'Add',
       filter: '',
       panelPlugins: this.getPanelPlugins(''),
-      copiedPanelPlugins: this.getCopiedPanelPlugins(''),
+      //copiedPanelPlugins: this.getCopiedPanelPlugins(''),
+    });
+  }
+
+  // 添加百度Ecahrt图表，自带过滤
+  openEchart() {
+    this.setState({
+      tab: 'Echart',
+      filter: '',
+      panelPlugins: this.getPanelPlugins('Echart'),
+    });
+  }
+
+  //饼图tab 测试
+  openPie() {
+    this.setState({
+      tab: 'Pie',
+      filter: '',
+      panelPlugins: this.getPanelPlugins('Pie'),
     });
   }
 
   render() {
     const addClass = classNames({
-      'active active--panel': this.state.tab === 'Add',
-      '': this.state.tab === 'Copy',
+      'active active--panel': this.state.tab === 'Add', //激活的类，选中效果
+      '': this.state.tab in ['Echart', 'Pie'], //取消激活的类，无选中效果
     });
 
-    const copyClass = classNames({
-      '': this.state.tab === 'Add',
-      'active active--panel': this.state.tab === 'Copy',
+    // const copyClass = classNames({
+    //   '': this.state.tab === 'Add',
+    //   'active active--panel': this.state.tab === 'Copy',
+    // });
+
+    const ecahrtClass = classNames({
+      'active active--panel': this.state.tab === 'Echart',
+      '': this.state.tab in ['Add', 'Pie'],
+    });
+
+    const PieClass = classNames({
+      'active active--panel': this.state.tab === 'Pie',
+      '': this.state.tab in ['Echart', 'Pie'],
     });
 
     let panelTab;
 
-    if (this.state.tab === 'Add') {
-      panelTab = this.state.panelPlugins.map(this.renderPanelItem);
-    } else if (this.state.tab === 'Copy') {
-      if (this.state.copiedPanelPlugins.length > 0) {
-        panelTab = this.state.copiedPanelPlugins.map(this.renderPanelItem);
-      } else {
-        panelTab = this.noCopiedPanelPlugins();
-      }
-    }
+    panelTab = this.state.panelPlugins.map(this.renderPanelItem);
+
+    // if (this.state.tab === 'Add') {
+    //   panelTab = this.state.panelPlugins.map(this.renderPanelItem);
+    // } else if (this.state.tab === 'Copy') {
+    //   if (this.state.copiedPanelPlugins.length > 0) {
+    //     panelTab = this.state.copiedPanelPlugins.map(this.renderPanelItem);
+    //   } else {
+    //     panelTab = this.noCopiedPanelPlugins();
+    //   }
+    // }
 
     return (
       <div className="panel-container add-panel-container">
         <div className="add-panel">
           <div className="add-panel__header">
-            <i className="gicon gicon-add-panel" />
-            <span className="add-panel__title">New Panel</span>
+            {/* <i className="gicon gicon-add-panel" /> */}
+            <span className="add-panel__title">新增面板</span>
             <ul className="gf-tabs">
               <li className="gf-tabs-item">
                 {/* <div className={'gf-tabs-link pointer ' + addClass} onClick={this.openAdd.bind(this)}>
                   Add
                 </div> */}
                 <div className={'gf-tabs-link pointer ' + addClass} onClick={this.openAdd.bind(this)}>
-                  增加
+                  系统预置
                 </div>
               </li>
               <li className="gf-tabs-item">
                 {/* <div className={'gf-tabs-link pointer ' + copyClass} onClick={this.openCopy.bind(this)}>
                   Paste
                 </div> */}
-                <div className={'gf-tabs-link pointer ' + copyClass} onClick={this.openCopy.bind(this)}>
-                  粘贴
+                <div className={'gf-tabs-link pointer ' + ecahrtClass} onClick={this.openEchart.bind(this)}>
+                  Echart
+                </div>
+              </li>
+              <li className="gf-tabs-item">
+                {/* <div className={'gf-tabs-link pointer ' + copyClass} onClick={this.openCopy.bind(this)}>
+                  Paste
+                </div> */}
+                <div className={'gf-tabs-link pointer ' + PieClass} onClick={this.openPie.bind(this)}>
+                  饼图
                 </div>
               </li>
             </ul>

@@ -29,9 +29,7 @@ export class ManageDashboardsCtrl {
   hasFilters = false;
   tagFilterOptions: any[];
   selectedTagFilter: any;
-  // starredFilterOptions = [{ text: 'Filter by Starred', disabled: true }, { text: 'Yes' }, { text: 'No' }];
-
-  starredFilterOptions = [{ text: '按收藏过滤', disabled: true }, { text: '是' }, { text: '否' }];
+  starredFilterOptions = [{ text: 'Filter by Starred', disabled: true }, { text: 'Yes' }, { text: 'No' }];
 
   selectedStarredFilter: any;
 
@@ -223,9 +221,7 @@ export class ManageDashboardsCtrl {
 
   initTagFilter() {
     return this.searchSrv.getDashboardTags().then(results => {
-      // this.tagFilterOptions = [{ term: 'Filter By Tag', disabled: true }].concat(results);
-
-      this.tagFilterOptions = [{ term: '按标签过滤', disabled: true }].concat(results);
+      this.tagFilterOptions = [{ term: 'Filter By Tag', disabled: true }].concat(results);
 
       this.selectedTagFilter = this.tagFilterOptions[0];
     });
