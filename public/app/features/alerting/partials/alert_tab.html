@@ -1,8 +1,13 @@
+<!-- 定制界面alert tab页 -->
+
 <div class="edit-tab-with-sidemenu" ng-if="ctrl.alert">
 	<aside class="edit-sidemenu-aside">
 		<ul class="edit-sidemenu">
 			<li ng-class="{active: ctrl.subTabIndex === 0}">
-				<a ng-click="ctrl.changeTabIndex(0)">Alert Config</a>
+				<!-- <a ng-click="ctrl.changeTabIndex(0)">Alert Config</a> -->
+
+				<a ng-click="ctrl.changeTabIndex(0)">预警配置</a>
+
 			</li>
 			<li ng-class="{active: ctrl.subTabIndex === 1}">
 				<!-- <a ng-click="ctrl.changeTabIndex(1)">
@@ -97,8 +102,12 @@
 
 			<div class="gf-form-group">
 				<div class="gf-form">
-          			<span class="gf-form-label width-18">If no data or all values are null</span>
-          			<span class="gf-form-label query-keyword">SET STATE TO</span>
+								<!-- <span class="gf-form-label width-18">If no data or all values are null</span> -->
+								<span class="gf-form-label width-18">无数据或数据为空</span>
+
+								<!-- <span class="gf-form-label query-keyword">SET STATE TO</span> -->
+								<span class="gf-form-label query-keyword">设置状态为</span>
+
 					<div class="gf-form-select-wrapper">
 						<select class="gf-form-input" ng-model="ctrl.alert.noDataState" ng-options="f.value as f.text for f in ctrl.noDataModes">
 						</select>
@@ -106,8 +115,12 @@
 				</div>
 
 				<div class="gf-form">
-          			<span class="gf-form-label width-18">If execution error or timeout</span>
-          			<span class="gf-form-label query-keyword">SET STATE TO</span>
+								<!-- <span class="gf-form-label width-18">If execution error or timeout</span> -->
+								<span class="gf-form-label width-18">执行错误或超时</span>
+
+								<!-- <span class="gf-form-label query-keyword">SET STATE TO</span> -->
+								<span class="gf-form-label query-keyword">设置状态为</span>
+
 					<div class="gf-form-select-wrapper">
 						<select class="gf-form-input" ng-model="ctrl.alert.executionErrorState" ng-options="f.value as f.text for f in ctrl.executionErrorModes">
 						</select>
@@ -116,7 +129,8 @@
 
 				<div class="gf-form-button-row">
 					<button class="btn btn-inverse" ng-click="ctrl.test()">
-						Test Rule
+						<!-- Test Rule -->
+						测试预警
 					</button>
 				</div>
 			</div>
@@ -131,10 +145,16 @@
 		</div>
 
 		<div class="gf-form-group" ng-if="ctrl.subTabIndex === 1">
-			<h5 class="section-heading">Notifications</h5>
+			<h5 class="section-heading">
+				<!-- Notifications -->
+				提示
+			</h5>
 			<div class="gf-form-inline">
 				<div class="gf-form max-width-30">
-					<span class="gf-form-label width-8">Send to</span>
+					<span class="gf-form-label width-8">
+						<!-- Send to -->
+						收件人
+					</span>
 					<span class="gf-form-label" ng-repeat="nc in ctrl.alertNotifications" ng-style="{'background-color': nc.bgColor }">
 						<i class="{{nc.iconClass}}"></i>&nbsp;{{nc.name}}&nbsp;
 						<i class="fa fa-remove pointer muted" ng-click="ctrl.removeNotification($index)" ng-if="nc.isDefault === false"></i>
@@ -143,20 +163,29 @@
 				</div>
 			</div>
 			<div class="gf-form gf-form--v-stretch">
-				<span class="gf-form-label width-8">Message</span>
+				<span class="gf-form-label width-8">
+					<!-- Message -->
+					消息内容
+				</span>
 				<textarea class="gf-form-input" rows="10" ng-model="ctrl.alert.message"  placeholder="Notification message details..."></textarea>
 			</div>
 		</div>
 
 		<div class="gf-form-group" style="max-width: 720px;" ng-if="ctrl.subTabIndex === 2">
-			<button class="btn btn-mini btn-danger pull-right" ng-click="ctrl.clearHistory()"><i class="fa fa-trash"></i>&nbsp;Clear history</button>
-      		<h5 class="section-heading" style="whitespace: nowrap">
-				State history <span class="muted small">(last 50 state changes)</span>
+			<!-- <button class="btn btn-mini btn-danger pull-right" ng-click="ctrl.clearHistory()"><i class="fa fa-trash"></i>&nbsp;Clear history</button> -->
+			<button class="btn btn-mini btn-danger pull-right" ng-click="ctrl.clearHistory()"><i class="fa fa-trash"></i>&nbsp;清空历史记录</button>
+		
+			<h5 class="section-heading" style="whitespace: nowrap">
+				<!-- State history <span class="muted small">(last 50 state changes)</span> -->
+				状态历史 <span class="muted small">(最后50次状态变化)</span>
+
 			</h5>
 
 			<div ng-show="ctrl.alertHistory.length === 0">
 				<br>
-				<i>No state changes recorded</i>
+				<!-- <i>No state changes recorded</i> -->
+				<i>没有状态变化记录</i>
+
 			</div>
 
       <ol class="alert-rule-list" >
@@ -185,7 +214,8 @@
   <div class="gf-form-button-row">
     <button class="btn btn-inverse" ng-click="ctrl.enable()">
       <i class="icon-gf icon-gf-alert"></i>
-      Create Alert
+			<!-- Create Alert -->
+			创建预警
     </button>
   </div>
 </div>

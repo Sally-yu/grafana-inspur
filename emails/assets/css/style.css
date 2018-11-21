@@ -21,20 +21,20 @@ h6 {font-size: 16px;}
 }
 
 a {
-  color: #E67612;
+  color: #1276e6;
   text-decoration: none;
 }
 
 a:hover {
-  color: #ff8f2b !important;
+  color: #2b8fff !important;
 }
 
 a:active {
-  color: #F2821E !important;
+  color: #1e82f2 !important;
 }
 
 a:visited {
-  color: #E67612 !important;
+  color: #1276e6 !important;
 }
 
 table.facebook td {
@@ -56,12 +56,12 @@ table.twitter:hover td {
 }
 
 table.google-plus td {
-  background-color: #DB4A39;
-  border-color: #CC0000;
+  background-color: #394Adb;
+  border-color: #0000cc;
 }
 
 table.google-plus:hover td {
-  background: #CC0000 !important;
+  background: #0000cc !important;
 }
 
 .template-label {
@@ -127,15 +127,15 @@ table.columns td.better-button {
   border-radius: 2px;
 
   padding: 12px 25px;
-  border: 1px solid #ff8f2b;
+  border: 1px solid #2b8fff;
   display: inline-block;
   color: #FFF;
 }
 
 .better-button:hover a {
   color: #FFFFFF !important;
-  background-color: #F2821E;
-  border: 1px solid #F2821E;
+  background-color: #1e82f2;
+  border: 1px solid #1e82f2;
 }
 
 .better-button:visited a {
@@ -165,24 +165,24 @@ table.columns td.better-button-alt {
   border-radius: 2px;
 
   padding: 12px 25px;
-  border: 1px solid #ff8f2b;
+  border: 1px solid #2b8fff;
   background-color: #EFEFEF;
   display: inline-block;
-  color: #ff8f2b;
+  color: #2b8fff;
 }
 
 .better-button-alt:hover a {
-  color: #ff8f2b !important;
+  color: #2b8fff !important;
   background-color: #DDDDDD;
-  border: 1px solid #F2821E;
+  border: 1px solid #1e82f2;
 }
 
 .better-button-alt:visited a {
-  color: #ff8f2b !important;
+  color: #2b8fff !important;
 }
 
 .better-button-alt:active a {
-  color: #ff8f2b !important;
+  color: #2b8fff !important;
 }
 
 .verification-code {

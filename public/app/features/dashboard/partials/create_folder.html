@@ -9,7 +9,7 @@
   <form name="ctrl.saveForm" ng-submit="ctrl.create()" novalidate>
 		<div class="gf-form-inline">
 			<div class="gf-form gf-form--grow">
-				<label class="gf-form-label width-10">Name</label>
+				<!-- <label class="gf-form-label width-10">Name</label> -->
 				<label class="gf-form-label width-10">名称</label>
 
 				<input type="text" class="gf-form-input" ng-model="ctrl.title" give-focus="true" ng-change="ctrl.titleChanged()" ng-model-options="{ debounce: 400 }" ng-class="{'validation-error': ctrl.nameExists || !ctrl.dash.title}">
