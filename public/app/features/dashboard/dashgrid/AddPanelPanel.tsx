@@ -100,16 +100,12 @@ export class AddPanelPanel extends React.Component<AddPanelPanelProps, AddPanelP
 
     const newPanel: any = {
       type: panelPluginInfo.id,
-      // title: 'Panel Title',
-      title: '面板标题',
-
+      title: 'Panel Title',
       gridPos: { x: gridPos.x, y: gridPos.y, w: gridPos.w, h: gridPos.h },
     };
 
     if (panelPluginInfo.id === 'row') {
-      // newPanel.title = 'Row title';
-      newPanel.title = '行标题';
-
+      newPanel.title = 'Row title';
       newPanel.gridPos = { x: 0, y: 0 };
     }
 
@@ -146,8 +142,7 @@ export class AddPanelPanel extends React.Component<AddPanelPanelProps, AddPanelP
   }
 
   noCopiedPanelPlugins() {
-    // return <div className="add-panel__no-panels">No copied panels yet.</div>;
-    return <div className="add-panel__no-panels">未复制任何面板</div>;
+    return <div className="add-panel__no-panels">No copied panels yet.</div>;
   }
 
   filterChange(evt) {
@@ -253,9 +248,6 @@ export class AddPanelPanel extends React.Component<AddPanelPanelProps, AddPanelP
             <span className="add-panel__title">新增面板</span>
             <ul className="gf-tabs">
               <li className="gf-tabs-item">
-                {/* <div className={'gf-tabs-link pointer ' + addClass} onClick={this.openAdd.bind(this)}>
-                  Add
-                </div> */}
                 <div className={'gf-tabs-link pointer ' + addClass} onClick={this.openAdd.bind(this)}>
                   系统预置
                 </div>

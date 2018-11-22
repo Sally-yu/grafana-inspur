@@ -43,8 +43,7 @@ export function uiSegmentSrv(this: any, $sce, templateSrv) {
   };
 
   this.newSelectMeasurement = () => {
-    // return new MetricSegment({ value: 'select measurement', fake: true });
-    return new MetricSegment({ value: '选择量度', fake: true });
+    return new MetricSegment({ value: 'select measurement', fake: true });
   };
 
   this.newFake = (text, type, cssClass) => {
@@ -96,8 +95,7 @@ export function uiSegmentSrv(this: any, $sce, templateSrv) {
   };
 
   this.newSelectMetric = () => {
-    // return new MetricSegment({ value: 'select metric', fake: true });
-    return new MetricSegment({ value: '选择度量标准', fake: true });
+    return new MetricSegment({ value: 'select metric', fake: true });
   };
 
   this.newPlusButton = () => {

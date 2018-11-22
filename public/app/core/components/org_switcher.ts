@@ -7,9 +7,7 @@ const template = `
 	<div class="modal-header">
 		<h2 class="modal-header-title">
 			<i class="fa fa-random"></i>
-			// <span class="p-l-1">Switch Organization</span>
-			<span class="p-l-1">切换组织</span>
-
+			<span class="p-l-1">Switch Organization</span>
 		</h2>
 
 		<a class="modal-header-close" ng-click="ctrl.dismiss();">
@@ -21,11 +19,8 @@ const template = `
     <table class="filter-table form-inline">
 			<thead>
 				<tr>
-					// <th>Name</th>
-					// <th>Role</th>
-
-					<th>名称</th>
-					<th>角色</th>
+					<th>Name</th>
+					<th>Role</th>
 					<th></th>
 				</tr>
 			</thead>
@@ -34,18 +29,11 @@ const template = `
 					<td>{{org.name}}</td>
 					<td>{{org.role}}</td>
 					<td class="text-right">
-						// <span class="btn btn-primary btn-mini" ng-show="org.orgId === ctrl.currentOrgId">
-						// 	Current
-						// </span>
-						// <a ng-click="ctrl.setUsingOrg(org)" class="btn btn-inverse btn-mini" ng-show="org.orgId !== ctrl.currentOrgId">
-						// 	Switch to
-						// </a>
-
 						<span class="btn btn-primary btn-mini" ng-show="org.orgId === ctrl.currentOrgId">
-							当前
+							Current
 						</span>
 						<a ng-click="ctrl.setUsingOrg(org)" class="btn btn-inverse btn-mini" ng-show="org.orgId !== ctrl.currentOrgId">
-							切换至
+							Switch to
 						</a>
 					</td>
 				</tr>

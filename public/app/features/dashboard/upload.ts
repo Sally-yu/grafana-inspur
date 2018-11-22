@@ -20,8 +20,7 @@ function uploadDashboardDirective(timer, $location) {
       btnText: '@?',
     },
     link: (scope, elem) => {
-      // scope.btnText = angular.isDefined(scope.btnText) ? scope.btnText : 'Upload .json File';
-      scope.btnText = angular.isDefined(scope.btnText) ? scope.btnText : '上传 .json 文件';
+      scope.btnText = angular.isDefined(scope.btnText) ? scope.btnText : 'Upload .json File';
 
       function file_selected(evt) {
         const files = evt.target.files; // FileList object
@@ -32,9 +31,7 @@ function uploadDashboardDirective(timer, $location) {
               dash = JSON.parse(e.target.result);
             } catch (err) {
               console.log(err);
-              // appEvents.emit('alert-error', ['Import failed', 'JSON -> JS Serialization failed: ' + err.message]);
-              appEvents.emit('alert-error', ['保存失败', 'JSON -> JS Serialization failed: ' + err.message]);
-
+              appEvents.emit('alert-error', ['Import failed', 'JSON -> JS Serialization failed: ' + err.message]);
               return;
             }
 
@@ -62,8 +59,7 @@ function uploadDashboardDirective(timer, $location) {
         // Something
         elem[0].addEventListener('change', file_selected, false);
       } else {
-        // appEvents.emit('alert-error', ['Oops', 'The HTML5 File APIs are not fully supported in this browser']);
-        appEvents.emit('alert-error', ['错误', '当前浏览器不完全支持HTML5的API']);
+        appEvents.emit('alert-error', ['Oops', 'The HTML5 File APIs are not fully supported in this browser']);
       }
     },
   };

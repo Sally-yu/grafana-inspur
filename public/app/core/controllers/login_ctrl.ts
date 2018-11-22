@@ -27,15 +27,13 @@ export class LoginCtrl {
     $scope.loginHint = config.loginHint;
 
     $scope.loginMode = true;
-    // $scope.submitBtnText = 'Log in';
-    $scope.submitBtnText = '登录';
+    $scope.submitBtnText = 'Log in';
 
     $scope.init = () => {
       $scope.$watch('loginMode', $scope.loginModeChanged);
 
       if (config.loginError) {
-        // $scope.appEvent('alert-warning', ['Login Failed', config.loginError]);
-        $scope.appEvent('alert-warning', ['登录失败', config.loginError]);
+        $scope.appEvent('alert-warning', ['Login Failed', config.loginError]);
       }
     };
 
@@ -85,8 +83,7 @@ export class LoginCtrl {
     };
 
     $scope.loginModeChanged = newValue => {
-      // $scope.submitBtnText = newValue ? 'Log in' : 'Sign up';
-      $scope.submitBtnText = newValue ? '登录' : '注册';
+      $scope.submitBtnText = newValue ? 'Log in' : 'Sign up';
     };
 
     $scope.signUp = () => {

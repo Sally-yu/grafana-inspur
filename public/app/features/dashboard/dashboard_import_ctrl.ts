@@ -36,8 +36,7 @@ export class DashboardImportCtrl {
     this.autoGenerateUid = true;
     this.autoGenerateUidValue = 'auto-generated';
     this.folderId = $routeParams.folderId ? Number($routeParams.folderId) || 0 : null;
-    // this.initialFolderTitle = 'Select a folder';
-    this.initialFolderTitle = '选择文件夹';
+    this.initialFolderTitle = 'Select a folder';
 
     // check gnetId in url
     if ($routeParams.gnetId) {
@@ -67,8 +66,7 @@ export class DashboardImportCtrl {
         if (input.type === 'datasource') {
           this.setDatasourceOptions(input, inputModel);
         } else if (!inputModel.info) {
-          // inputModel.info = 'Specify a string constant';
-          inputModel.info = '指定字符串常量';
+          inputModel.info = 'Specify a string constant';
         }
 
         this.inputs.push(inputModel);
@@ -85,16 +83,10 @@ export class DashboardImportCtrl {
       return val.type === input.pluginId;
     });
 
-    // if (sources.length === 0) {
-    //   inputModel.info = 'No data sources of type ' + input.pluginName + ' found';
-    // } else if (!inputModel.info) {
-    //   inputModel.info = 'Select a ' + input.pluginName + ' data source';
-    // }
-
     if (sources.length === 0) {
-      inputModel.info = '未找到 ' + input.pluginName + ' 类型的数据源';
+      inputModel.info = 'No data sources of type ' + input.pluginName + ' found';
     } else if (!inputModel.info) {
-      inputModel.info = '请选择 ' + input.pluginName + ' 数据源';
+      inputModel.info = 'Select a ' + input.pluginName + ' data source';
     }
 
     inputModel.options = sources.map(val => {
@@ -144,11 +136,9 @@ export class DashboardImportCtrl {
       .then(res => {
         this.uidExists = true;
         this.hasUidValidationError = true;
-        // this.uidValidationError = `Dashboard named '${res.dashboard.title}' in folder '${
-        //   res.meta.folderTitle
-        // }' has the same uid`;
-
-        this.uidValidationError = `文件夹 '${res.meta.folderTitle}' 下的仪表盘 '${res.dashboard.title}' 有相同的uid`;
+        this.uidValidationError = `Dashboard named '${res.dashboard.title}' in folder '${
+          res.meta.folderTitle
+        }' has the same uid`;
       })
       .catch(err => {
         err.isHandled = true;
@@ -218,8 +208,7 @@ export class DashboardImportCtrl {
     } else if (match && match[2]) {
       dashboardId = match[2];
     } else {
-      // this.gnetError = 'Could not find dashboard';
-      this.gnetError = '未能找到仪表盘';
+      this.gnetError = 'Could not find dashboard';
     }
 
     return this.backendSrv

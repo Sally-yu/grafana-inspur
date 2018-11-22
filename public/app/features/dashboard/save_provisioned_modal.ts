@@ -6,9 +6,7 @@ const template = `
 <div class="modal-body">
   <div class="modal-header">
     <h2 class="modal-header-title">
-      // <i class="fa fa-save"></i><span class="p-l-1">Cannot save provisioned dashboard</span>
-      <i class="fa fa-save"></i><span class="p-l-1">无法保存提供的仪表盘</span>
-
+      <i class="fa fa-save"></i><span class="p-l-1">Cannot save provisioned dashboard</span>
     </h2>
 
     <a class="modal-header-close" ng-click="ctrl.dismiss();">
@@ -17,30 +15,24 @@ const template = `
   </div>
 
   <div class="modal-content">
-    // <small>
-    //   This dashboard cannot be saved from Grafana's UI since it has been provisioned from another source.
-    //   Copy the JSON or save it to a file below. Then you can update your dashboard in corresponding provisioning source.<br/>
-    //   <i>See <a class="external-link" href="http://docs.grafana.org/administration/provisioning/#dashboards" target="_blank">
-    //   documentation</a> for more information about provisioning.</i>
-    // </small>
+    <small>
+      This dashboard cannot be saved from Grafana's UI since it has been provisioned from another source.
+      Copy the JSON or save it to a file below. Then you can update your dashboard in corresponding provisioning source.<br/>
+      <i>See <a class="external-link" href="http://docs.grafana.org/administration/provisioning/#dashboards" target="_blank">
+      documentation</a> for more information about provisioning.</i>
+    </small>
     <div class="p-t-2">
       <div class="gf-form">
         <code-editor content="ctrl.dashboardJson" data-mode="json" data-max-lines=15></code-editor>
       </div>
       <div class="gf-form-button-row">
         <button class="btn btn-success" clipboard-button="ctrl.getJsonForClipboard()">
-          // <i class="fa fa-clipboard"></i>&nbsp;Copy JSON to Clipboard
-          <i class="fa fa-clipboard"></i>&nbsp;复制JSON到剪贴板
-
+          <i class="fa fa-clipboard"></i>&nbsp;Copy JSON to Clipboard
         </button>
         <button class="btn btn-secondary" clipboard-button="ctrl.save()">
-          // <i class="fa fa-save"></i>&nbsp;Save JSON to file
-          <i class="fa fa-save"></i>&nbsp;保存JSON到文件
-
+          <i class="fa fa-save"></i>&nbsp;Save JSON to file
         </button>
-        // <a class="btn btn-link" ng-click="ctrl.dismiss();">Cancel</a>
-        <a class="btn btn-link" ng-click="ctrl.dismiss();">取消</a>
-
+        <a class="btn btn-link" ng-click="ctrl.dismiss();">Cancel</a>
       </div>
     </div>
   </div>

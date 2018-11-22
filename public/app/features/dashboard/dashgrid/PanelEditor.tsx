@@ -31,13 +31,9 @@ export class PanelEditor extends PureComponent<PanelEditorProps> {
   constructor(props) {
     super(props);
 
-    // this.tabs = [
-    //   { id: 'queries', text: 'Queries', icon: 'fa fa-database' },
-    //   { id: 'visualization', text: 'Visualization', icon: 'fa fa-line-chart' },
-    // ];
     this.tabs = [
-      { id: 'queries', text: '查询', icon: 'fa fa-database' },
-      { id: 'visualization', text: '可视化', icon: 'fa fa-line-chart' },
+      { id: 'queries', text: 'Queries', icon: 'fa fa-database' },
+      { id: 'visualization', text: 'Visualization', icon: 'fa fa-line-chart' },
     ];
   }
 

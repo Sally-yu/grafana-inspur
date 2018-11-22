@@ -2,9 +2,7 @@
 	<div class="modal-header">
 		<h2 class="modal-header-title">
 			<i class="fa fa-info-circle"></i>
-			<!-- <span class="p-l-1">Inspector</span> -->
-			<span class="p-l-1">检查</span>
-
+			<span class="p-l-1">Inspector</span>
 		</h2>
 
 		<ul class="gf-tabs">
@@ -25,18 +23,14 @@
 		</div>
 
 		<div ng-if="editor.index == 1">
-			<!-- <h5 class="section-heading">Request details</h5> -->
-			<h5 class="section-heading">需求详情</h5>
-
+			<h5 class="section-heading">Request details</h5>
 			<table class="filter-table gf-form-group">
 				<tr>
 					<td>Url</td>
 					<td>{{inspector.error.config.url}}</td>
 				</tr>
 				<tr>
-					<!-- <td>Method</td> -->
-					<td>方法</td>
-
+					<td>Method</td>
 					<td>{{inspector.error.config.method}}</td>
 				</tr>
 				<tr ng-repeat="(key, value) in inspector.error.config.headers">
@@ -49,9 +43,7 @@
 				</tr>
 			</table>
 
-			<!-- <h5 class="section-heading">Request parameters</h5> -->
-			<h5 class="section-heading">需求参数</h5>
-
+			<h5 class="section-heading">Request parameters</h5>
 			<table class="filter-table">
 				<tr ng-repeat="param in request_parameters">
 					<td>
@@ -73,17 +65,12 @@
 
 		<div ng-if="editor.index == 3">
 
-			<!-- <label>Message:</label> -->
-			<label>消息:</label>
-
-
+			<label>Message:</label>
 <pre>
 {{message}}
 </pre>
 
-			<!-- <label>Stack trace:</label> -->
-			<label>堆栈跟踪:</label>
-
+			<label>Stack trace:</label>
 <pre>
 {{stack_trace}}
 </pre>

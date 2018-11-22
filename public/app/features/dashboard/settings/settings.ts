@@ -55,30 +55,22 @@ export class SettingsCtrl {
 
     if (this.dashboard.meta.canEdit) {
       this.sections.push({
-        // title: 'General',
-        title: '通用',
-
+        title: 'General',
         id: 'settings',
         icon: 'gicon gicon-preferences',
       });
       this.sections.push({
-        // title: 'Annotations',
-        title: '注释',
-
+        title: 'Annotations',
         id: 'annotations',
         icon: 'gicon gicon-annotation',
       });
       this.sections.push({
-        // title: 'Variables',
-        title: '变量',
-
+        title: 'Variables',
         id: 'templating',
         icon: 'gicon gicon-variable',
       });
       this.sections.push({
-        // title: 'Links',
-        title: '链接',
-
+        title: 'Links',
         id: 'links',
         icon: 'gicon gicon-link',
       });
@@ -86,9 +78,7 @@ export class SettingsCtrl {
 
     if (this.dashboard.id && this.dashboard.meta.canSave) {
       this.sections.push({
-        // title: 'Versions',
-        title: '版本',
-
+        title: 'Versions',
         id: 'versions',
         icon: 'fa fa-fw fa-history',
       });
@@ -96,9 +86,7 @@ export class SettingsCtrl {
 
     if (this.dashboard.id && this.dashboard.meta.canAdmin) {
       this.sections.push({
-        // title: 'Permissions',
-        title: '权限',
-
+        title: 'Permissions',
         id: 'permissions',
         icon: 'fa fa-fw fa-lock',
       });
@@ -106,18 +94,14 @@ export class SettingsCtrl {
 
     if (this.dashboard.meta.canMakeEditable) {
       this.sections.push({
-        // title: 'General',
-        title: '通用',
-
+        title: 'General',
         icon: 'gicon gicon-preferences',
         id: 'make_editable',
       });
     }
 
     this.sections.push({
-      // title: 'JSON Model',
-      title: 'JSON模式',
-
+      title: 'JSON Model',
       id: 'dashboard_json',
       icon: 'gicon gicon-json',
     });
@@ -203,25 +187,17 @@ export class SettingsCtrl {
     });
 
     if (alerts > 0) {
-      // confirmText = 'DELETE';
-      // text2 = `This dashboard contains ${alerts} alerts. Deleting this dashboard will also delete those alerts`;
-      confirmText = '删除';
-      text2 = `该仪表盘包含预警:${alerts}  删除仪表盘会同时删除预警`;
+      confirmText = 'DELETE';
+      text2 = `This dashboard contains ${alerts} alerts. Deleting this dashboard will also delete those alerts`;
     }
 
     appEvents.emit('confirm-modal', {
-      // title: 'Delete',
-      // text: 'Do you want to delete this dashboard?',
-      // text2: text2,
-
-      title: '删除',
-      text: '确定删除该仪表盘?',
+      title: 'Delete',
+      text: 'Do you want to delete this dashboard?',
       text2: text2,
       icon: 'fa-trash',
       confirmText: confirmText,
-      // yesText: 'Delete',
-      yesText: '删除',
-
+      yesText: 'Delete',
       onConfirm: () => {
         this.dashboard.meta.canSave = false;
         this.deleteDashboardConfirmed();
@@ -231,9 +207,7 @@ export class SettingsCtrl {
 
   deleteDashboardConfirmed() {
     this.backendSrv.deleteDashboard(this.dashboard.uid).then(() => {
-      // appEvents.emit('alert-success', ['Dashboard Deleted', this.dashboard.title + ' has been deleted']);
-      appEvents.emit('alert-success', ['已删除仪表盘', this.dashboard.title + ' 已删除']);
-
+      appEvents.emit('alert-success', ['Dashboard Deleted', this.dashboard.title + ' has been deleted']);
       this.$location.url('/');
     });
   }

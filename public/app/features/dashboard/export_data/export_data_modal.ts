@@ -6,9 +6,7 @@ export class ExportDataModalCtrl {
   private data: any[];
   private panel: string;
   asRows = true;
-  // dateTimeFormat = 'YYYY-MM-DDTHH:mm:ssZ';
-  dateTimeFormat = 'YYYY-MM-DD HH:mm:ss';
-
+  dateTimeFormat = 'YYYY-MM-DDTHH:mm:ssZ';
   excel = false;
 
   export() {

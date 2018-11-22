@@ -27,21 +27,11 @@ export class DashboardSrv {
     if (err.data && err.data.status === 'version-mismatch') {
       err.isHandled = true;
 
-      // this.$rootScope.appEvent('confirm-modal', {
-      //   title: 'Conflict',
-      //   text: 'Someone else has updated this dashboard.',
-      //   text2: 'Would you still like to save this dashboard?',
-      //   yesText: 'Save & Overwrite',
-      //   icon: 'fa-warning',
-      //   onConfirm: () => {
-      //     this.save(clone, options);
-      //   },
-
       this.$rootScope.appEvent('confirm-modal', {
-        title: '冲突',
-        text: '其他用户已更新当前仪表盘',
-        text2: '仍要保存？',
-        yesText: '保存并覆盖',
+        title: 'Conflict',
+        text: 'Someone else has updated this dashboard.',
+        text2: 'Would you still like to save this dashboard?',
+        yesText: 'Save & Overwrite',
         icon: 'fa-warning',
         onConfirm: () => {
           this.save(clone, options);
@@ -53,16 +43,10 @@ export class DashboardSrv {
       err.isHandled = true;
 
       this.$rootScope.appEvent('confirm-modal', {
-        // title: 'Conflict',
-        // text: 'A dashboard with the same name in selected folder already exists.',
-        // text2: 'Would you still like to save this dashboard?',
-        // yesText: 'Save & Overwrite',
-        // icon: 'fa-warning',
-
-        title: '冲突',
-        text: '同一文件夹中已存在相同名称的仪表盘',
-        text2: '仍要保存？',
-        yesText: '保存并覆盖',
+        title: 'Conflict',
+        text: 'A dashboard with the same name in selected folder already exists.',
+        text2: 'Would you still like to save this dashboard?',
+        yesText: 'Save & Overwrite',
         icon: 'fa-warning',
         onConfirm: () => {
           this.save(clone, options);
@@ -74,19 +58,12 @@ export class DashboardSrv {
       err.isHandled = true;
 
       this.$rootScope.appEvent('confirm-modal', {
-        // title: 'Plugin Dashboard',
-        // text: err.data.message,
-        // text2: 'Your changes will be lost when you update the plugin. Use Save As to create custom version.',
-        // yesText: 'Overwrite',
-        // icon: 'fa-warning',
-        // altActionText: 'Save As',
-
-        title: '仪表盘插件',
+        title: 'Plugin Dashboard',
         text: err.data.message,
-        text2: '更新插件会失去你做的变更。使用保存为创建自定义版本',
-        yesText: '覆盖',
+        text2: 'Your changes will be lost when you update the plugin. Use Save As to create custom version.',
+        yesText: 'Overwrite',
         icon: 'fa-warning',
-        altActionText: '保存为',
+        altActionText: 'Save As',
         onAltAction: () => {
           this.showSaveAsModal();
         },
@@ -108,8 +85,7 @@ export class DashboardSrv {
     }
 
     this.$rootScope.appEvent('dashboard-saved', this.dash);
-    // this.$rootScope.appEvent('alert-success', ['Dashboard saved']);
-    this.$rootScope.appEvent('alert-success', ['仪表盘已保存']);
+    this.$rootScope.appEvent('alert-success', ['Dashboard saved']);
 
     return this.dash;
   }

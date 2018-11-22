@@ -124,9 +124,7 @@ export function addDashboardPermission(dashboardId: number, newItem: NewDashboar
 export function importDashboard(data, dashboardTitle: string): ThunkResult<void> {
   return async dispatch => {
     await getBackendSrv().post('/api/dashboards/import', data);
-    // appEvents.emit('alert-success', ['Dashboard Imported', dashboardTitle]);
-    appEvents.emit('alert-success', ['已导出仪表盘', dashboardTitle]);
-
+    appEvents.emit('alert-success', ['Dashboard Imported', dashboardTitle]);
     dispatch(loadPluginDashboards());
   };
 }

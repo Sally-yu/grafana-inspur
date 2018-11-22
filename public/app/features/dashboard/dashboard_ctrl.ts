@@ -44,8 +44,7 @@ export class DashboardCtrl {
     try {
       this.setupDashboardInternal(data);
     } catch (err) {
-      // this.onInitFailed(err, 'Dashboard init failed', true);
-      this.onInitFailed(err, '初始化仪表盘失败', true);
+      this.onInitFailed(err, 'Dashboard init failed', true);
     }
   }
 
@@ -63,9 +62,7 @@ export class DashboardCtrl {
     this.variableSrv
       .init(dashboard)
       // template values failes are non fatal
-      // .catch(this.onInitFailed.bind(this, 'Templating init failed', false))
-      .catch(this.onInitFailed.bind(this, '初始化模板失败', false))
-
+      .catch(this.onInitFailed.bind(this, 'Templating init failed', false))
       // continue
       .finally(() => {
         this.dashboard = dashboard;
@@ -84,8 +81,7 @@ export class DashboardCtrl {
 
         appEvents.emit('dashboard-initialized', dashboard);
       })
-      // .catch(this.onInitFailed.bind(this, 'Dashboard init failed', true));
-      .catch(this.onInitFailed.bind(this, '初始化仪表盘失败', true));
+      .catch(this.onInitFailed.bind(this, 'Dashboard init failed', true));
   }
 
   onInitFailed(msg, fatal, err) {
@@ -102,8 +98,7 @@ export class DashboardCtrl {
     // protect against  recursive fallbacks
     if (fatal && !this.loadedFallbackDashboard) {
       this.loadedFallbackDashboard = true;
-      // this.setupDashboard({ dashboard: { title: 'Dashboard Init failed' } });
-      this.setupDashboard({ dashboard: { title: '初始化仪表盘失败' } });
+      this.setupDashboard({ dashboard: { title: 'Dashboard Init failed' } });
     }
   }
 

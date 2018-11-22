@@ -56,9 +56,7 @@ export const getPanelMenu = (dashboard: DashboardModel, panel: PanelModel) => {
   const menu: PanelMenuItem[] = [];
 
   menu.push({
-    // text: 'View',
-    text: '查看',
-
+    text: 'View',
     iconClassName: 'fa fa-fw fa-eye',
     onClick: onViewPanel,
     shortcut: 'v',
@@ -66,9 +64,7 @@ export const getPanelMenu = (dashboard: DashboardModel, panel: PanelModel) => {
 
   if (dashboard.meta.canEdit) {
     menu.push({
-      // text: 'Edit',
-      text: '编辑',
-
+      text: 'Edit',
       iconClassName: 'fa fa-fw fa-edit',
       onClick: onEditPanel,
       shortcut: 'e',
@@ -76,9 +72,7 @@ export const getPanelMenu = (dashboard: DashboardModel, panel: PanelModel) => {
   }
 
   menu.push({
-    // text: 'Share',
-    text: '共享',
-
+    text: 'Share',
     iconClassName: 'fa fa-fw fa-share',
     onClick: onSharePanel,
     shortcut: 'p s',
@@ -88,32 +82,25 @@ export const getPanelMenu = (dashboard: DashboardModel, panel: PanelModel) => {
 
   if (!panel.fullscreen && dashboard.meta.canEdit) {
     subMenu.push({
-      // text: 'Duplicate',
-      text: '复制品',
-
+      text: 'Duplicate',
       onClick: onDuplicatePanel,
       shortcut: 'p d',
     });
 
     subMenu.push({
-      // text: 'Copy',
-      text: '复制',
-
+      text: 'Copy',
       onClick: onCopyPanel,
     });
   }
 
   subMenu.push({
-    // text: 'Panel JSON',
-    text: 'JSON面板',
+    text: 'Panel JSON',
     onClick: onEditPanelJson,
   });
 
   menu.push({
     type: 'submenu',
-    // text: 'More...',
-    text: '更多...',
-
+    text: 'More...',
     iconClassName: 'fa fa-fw fa-cube',
     subMenu: subMenu,
   });
@@ -122,9 +109,7 @@ export const getPanelMenu = (dashboard: DashboardModel, panel: PanelModel) => {
     menu.push({ type: 'divider' });
 
     menu.push({
-      // text: 'Remove',
-      text: '移除',
-
+      text: 'Remove',
       iconClassName: 'fa fa-fw fa-trash',
       onClick: onRemovePanel,
       shortcut: 'p r',

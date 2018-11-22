@@ -6,40 +6,30 @@ export class FolderPageLoader {
       main: {
         icon: 'fa fa-folder-open',
         id: 'manage-folder',
-        // subTitle: 'Manage folder dashboards & permissions',
-        subTitle: '管理文件夹，仪表盘和权限',
-
+        subTitle: 'Manage folder dashboards & permissions',
         url: '',
         text: '',
-        // breadcrumbs: [{ title: 'Dashboards', url: 'dashboards' }],
-        breadcrumbs: [{ title: '仪表盘', url: 'dashboards' }],
-
+        breadcrumbs: [{ title: 'Dashboards', url: 'dashboards' }],
         children: [
           {
             active: activeChildId === 'manage-folder-dashboards',
             icon: 'fa fa-fw fa-th-large',
             id: 'manage-folder-dashboards',
-            // text: 'Dashboards',
-            text: '仪表盘',
-
+            text: 'Dashboards',
             url: 'dashboards',
           },
           {
             active: activeChildId === 'manage-folder-permissions',
             icon: 'fa fa-fw fa-lock',
             id: 'manage-folder-permissions',
-            // text: 'Permissions',
-            text: '权限',
-
+            text: 'Permissions',
             url: 'dashboards/permissions',
           },
           {
             active: activeChildId === 'manage-folder-settings',
             icon: 'fa fa-fw fa-cog',
             id: 'manage-folder-settings',
-            // text: 'Settings',
-            text: '设置',
-
+            text: 'Settings',
             url: 'dashboards/settings',
           },
         ],

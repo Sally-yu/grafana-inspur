@@ -66,48 +66,42 @@ function getStateDisplayModel(state) {
   switch (state) {
     case 'ok': {
       return {
-        // text:'OK',
-        text: '确认',
+        text: 'OK',
         iconClass: 'icon-gf icon-gf-online',
         stateClass: 'alert-state-ok',
       };
     }
     case 'alerting': {
       return {
-        // text: 'ALERTING',
-        text: '警告',
+        text: 'ALERTING',
         iconClass: 'icon-gf icon-gf-critical',
         stateClass: 'alert-state-critical',
       };
     }
     case 'no_data': {
       return {
-        // text: 'NO DATA',
-        text: '无数据',
+        text: 'NO DATA',
         iconClass: 'fa fa-question',
         stateClass: 'alert-state-warning',
       };
     }
     case 'paused': {
       return {
-        // text: 'PAUSED',
-        text: '暂停',
+        text: 'PAUSED',
         iconClass: 'fa fa-pause',
         stateClass: 'alert-state-paused',
       };
     }
     case 'pending': {
       return {
-        // text: 'PENDING',
-        text: '待定',
+        text: 'PENDING',
         iconClass: 'fa fa-exclamation',
         stateClass: 'alert-state-warning',
       };
     }
   }
 
-  // throw { message: 'Unknown alert state' };
-  throw { message: '位置的警报状态' };
+  throw { message: 'Unknown alert state' };
 }
 
 function joinEvalMatches(matches, separator: string) {

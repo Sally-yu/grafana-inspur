@@ -5,9 +5,7 @@ const template = `
 	<div class="modal-header">
 		<h2 class="modal-header-title">
 			<i class="fa fa-copy"></i>
-      // <span class="p-l-1">Save As...</span>
-      <span class="p-l-1">另存为...</span>
-
+			<span class="p-l-1">Save As...</span>
 		</h2>
 
 		<a class="modal-header-close" ng-click="ctrl.dismiss();">
