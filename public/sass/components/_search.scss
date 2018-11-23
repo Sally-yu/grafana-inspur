@@ -25,7 +25,8 @@
   background-color: $navbarBackground;
   box-shadow: $navbarShadow;
   position: relative;
-
+  //修改
+  margin-left: 11px;
   & > input {
     max-width: 653px;
     //padding: 0.5rem 1.5rem 0.5rem 0;
@@ -60,6 +61,8 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  //修改
+  margin-left: 11px;
 
   .search-item--indent {
     margin-left: 14px;

@@ -218,7 +218,8 @@ $input-color-select-arrow: $white;
 
 // Search
 $search-shadow: 0 0 30px 0 $black;
-$search-filter-box-bg: $gray-blue;
+// $search-filter-box-bg: $gray-blue;
+$search-filter-box-bg: $body-bg;
 
 // Typeahead
 $typeahead-shadow: 0 5px 10px 0 $black;

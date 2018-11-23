@@ -3,7 +3,8 @@
   display: flex;
   flex-flow: column;
   flex-direction: column;
-  width: $side-menu-width;
+  // width: $side-menu-width;
+  width: 160px;
   z-index: $zindex-sidemenu;
   a:focus {
     text-decoration: none;
@@ -60,7 +61,8 @@
   @include media-breakpoint-up(sm) {
     &.active,
     &:hover {
-      background-color: $side-menu-item-hover-bg;
+      // background-color: $side-menu-item-hover-bg;
+      background-color: $navbarButtonBackgroundHighlight;
       @include left-brand-border-gradient();
 
       .dropdown-menu {
@@ -144,7 +146,9 @@
 .side-menu-header {
   padding: 10px 10px 10px 20px;
   white-space: nowrap;
-  background-color: $side-menu-item-hover-bg;
+  // background-color: $side-menu-item-hover-bg;
+  background-color: $navbarButtonBackgroundHighlight;
+
   font-size: 17px;
   color: #ebedf2;
 }
@@ -190,16 +194,28 @@ li.sidemenu-org-switcher {
   min-height: $navbarHeight;
   position: relative;
   height: $navbarHeight - 1px;
+  //修改
+  width: 160px;
 
   &:hover {
-    background: $navbarButtonBackgroundHighlight;
+    background-color: #2e3138;
+
+    img {
+      stroke: #67c1eb;
+      stroke-width: 3;
+      fill: #67c1eb;
+      transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
   }
 
   img {
-    width: 30px;
+    // width: 30px;
     position: relative;
-    top: 5px;
-    left: 4px;
+    // top: 5px;
+    //修改
+    left: -4px;
+    // width: 100%;
+    top: -5px;
   }
 }
 
