@@ -3,7 +3,7 @@
   display: flex;
   flex-flow: column;
   flex-direction: column;
-  // width: $side-menu-width;
+  width: $side-menu-width;
   width: 160px;
   z-index: $zindex-sidemenu;
   a:focus {
@@ -29,7 +29,7 @@
 @include media-breakpoint-up(sm) {
   .sidemenu-open {
     .sidemenu {
-      background: $side-menu-bg;
+      background: $side-menu-bg; //####
       position: initial;
       height: auto;
       box-shadow: $side-menu-shadow;
@@ -39,6 +39,12 @@
     .sidemenu__top,
     .sidemenu__bottom {
       display: block;
+      // background: $side-menu-bg;
+      // position: initial;
+      // height: auto;
+      // box-shadow: $side-menu-shadow;
+      // position: relative;
+      // z-index: $zindex-sidemenu;
     }
   }
 }

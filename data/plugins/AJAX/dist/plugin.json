@@ -1,0 +1,21 @@
+{
+  "type": "panel",
+  "name": "Iframe",
+  "id": "grafana-Iframe",
+
+  "info": {
+    "description": "Iframe for grafana",
+    "author": {
+      "name": "xxx Inc.",
+      "url": "http://xxx.cn"
+    },
+    "keywords": ["iframe", "Echart","Demo"],
+    "version": "1.0.0",
+    "updated": "2018-11-27"
+  },
+
+  "dependencies": {
+    "grafanaVersion": "5.x.x",
+    "plugins": [ ]
+  }
+}

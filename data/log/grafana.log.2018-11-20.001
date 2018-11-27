@@ -1,0 +1,299 @@
+t=2018-11-16T06:30:06+0800 lvl=info msg="Database table locked, sleeping then retrying" logger=sqlstore retry=0
+t=2018-11-16T16:20:06+0800 lvl=info msg="Database table locked, sleeping then retrying" logger=sqlstore retry=0
+t=2018-11-16T16:22:26+0800 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=[::1] time_ms=25 size=29 referer=
+t=2018-11-16T16:22:26+0800 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login status=302 remote_addr=[::1] time_ms=35 size=24 referer=
+t=2018-11-16T16:22:50+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=f569602 branch=master compiled=2018-11-15T14:57:36+0800
+t=2018-11-16T16:22:50+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-11-16T16:22:50+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-11-16T16:22:50+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-11-16T16:22:50+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-11-16T16:22:50+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-11-16T16:22:50+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-11-16T16:22:50+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-11-16T16:22:50+0800 lvl=info msg="App mode development" logger=settings
+t=2018-11-16T16:22:50+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-11-16T16:22:50+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-11-16T16:22:50+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-11-16T16:22:50+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-11-16T16:22:50+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-11-16T16:22:50+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-11-16T16:22:50+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-11-16T16:22:50+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-11-16T16:22:50+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-11-16T16:22:50+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-11-16T16:22:50+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-11-16T16:22:50+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-11-16T16:22:50+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-11-16T16:22:50+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-11-16T16:22:50+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-11-16T16:22:50+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-11-16T16:22:50+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-11-16T16:22:50+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-11-16T16:28:19+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=10c694a branch=master compiled=2018-11-16T08:25:03+0800
+t=2018-11-16T16:28:19+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-11-16T16:28:19+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-11-16T16:28:19+0800 lvl=info msg="Config overridden from command line" logger=settings arg="app_mode=development"
+t=2018-11-16T16:28:19+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-11-16T16:28:19+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-11-16T16:28:19+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-11-16T16:28:19+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-11-16T16:28:19+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-11-16T16:28:19+0800 lvl=info msg="App mode development" logger=settings
+t=2018-11-16T16:28:19+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-11-16T16:28:19+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-11-16T16:28:19+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-11-16T16:28:19+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-11-16T16:28:19+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-11-16T16:28:19+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-11-16T16:28:19+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-11-16T16:28:19+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-11-16T16:28:19+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-11-16T16:28:19+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-11-16T16:28:19+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-11-16T16:28:19+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-11-16T16:28:19+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-11-16T16:28:19+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-11-16T16:28:19+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-11-16T16:28:19+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-11-16T16:28:19+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-11-16T16:28:19+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-11-16T16:28:42+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=10c694a branch=master compiled=2018-11-16T08:25:03+0800
+t=2018-11-16T16:28:42+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-11-16T16:28:42+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-11-16T16:28:42+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-11-16T16:28:42+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-11-16T16:28:42+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-11-16T16:28:42+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-11-16T16:28:42+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-11-16T16:28:42+0800 lvl=info msg="App mode development" logger=settings
+t=2018-11-16T16:28:42+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-11-16T16:28:42+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-11-16T16:28:42+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-11-16T16:28:42+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-11-16T16:28:42+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-11-16T16:28:42+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-11-16T16:28:42+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-11-16T16:28:42+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-11-16T16:28:42+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-11-16T16:28:42+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-11-16T16:28:42+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-11-16T16:28:42+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-11-16T16:28:42+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-11-16T16:28:42+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-11-16T16:28:42+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-11-16T16:28:42+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-11-16T16:28:42+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-11-16T16:28:42+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-11-16T16:30:11+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/{{team.avatarUrl}} status=404 remote_addr=[::1] time_ms=36 size=24856 referer=http://localhost:8080/profile
+t=2018-11-16T16:30:13+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/logout status=302 remote_addr=[::1] time_ms=5 size=29 referer=http://localhost:8080/profile
+t=2018-11-19T08:38:15+0800 lvl=eror msg="Failed to detect generated javascript files in public/build" logger=settings
+t=2018-11-19T08:38:15+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=10c694a branch=master compiled=2018-11-16T08:25:03+0800
+t=2018-11-19T08:38:15+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-11-19T08:38:15+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-11-19T08:38:15+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-11-19T08:38:15+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-11-19T08:38:15+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-11-19T08:38:15+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-11-19T08:38:15+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-11-19T08:38:15+0800 lvl=info msg="App mode development" logger=settings
+t=2018-11-19T08:38:15+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-11-19T08:38:15+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-11-19T08:38:15+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-11-19T08:38:15+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-11-19T08:38:15+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-11-19T08:38:15+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-11-19T08:38:15+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-11-19T08:38:15+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-11-19T08:38:15+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-11-19T08:38:15+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-11-19T08:38:15+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-11-19T08:38:15+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-11-19T08:38:15+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-11-19T08:38:15+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-11-19T08:38:15+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-11-19T08:38:16+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-11-19T08:38:16+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-11-19T08:38:16+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-11-19T08:42:59+0800 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=[::1] time_ms=23 size=29 referer=
+t=2018-11-19T08:42:59+0800 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login status=302 remote_addr=[::1] time_ms=49 size=24 referer=
+t=2018-11-19T08:42:59+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/build/grafana.light.7cc0419425f30f4740a1.css status=404 remote_addr=[::1] time_ms=54 size=24851 referer=http://localhost:8080/
+t=2018-11-19T08:42:59+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/build/app.7cc0419425f30f4740a1.js status=404 remote_addr=[::1] time_ms=66 size=24851 referer=http://localhost:8080/
+t=2018-11-19T08:45:29+0800 lvl=eror msg="Failed to detect generated javascript files in public/build" logger=settings
+t=2018-11-19T08:45:29+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=48ae3a1 branch=master compiled=2018-11-16T17:29:15+0800
+t=2018-11-19T08:45:29+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-11-19T08:45:29+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-11-19T08:45:29+0800 lvl=info msg="Config overridden from command line" logger=settings arg="app_mode=development"
+t=2018-11-19T08:45:29+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-11-19T08:45:29+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-11-19T08:45:29+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-11-19T08:45:29+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-11-19T08:45:29+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-11-19T08:45:29+0800 lvl=info msg="App mode development" logger=settings
+t=2018-11-19T08:45:29+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-11-19T08:45:29+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-11-19T08:45:29+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-11-19T08:45:29+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-11-19T08:45:29+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-11-19T08:45:29+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-11-19T08:45:29+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-11-19T08:45:29+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-11-19T08:45:29+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-11-19T08:45:29+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-11-19T08:45:29+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-11-19T08:45:29+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-11-19T08:45:29+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-11-19T08:45:29+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-11-19T08:45:29+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-11-19T08:45:29+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-11-19T08:45:29+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-11-19T08:45:29+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-11-19T08:45:29+0800 lvl=eror msg="Stopped HTTPServer" logger=server reason="listen tcp 0.0.0.0:8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+t=2018-11-19T08:45:29+0800 lvl=info msg="Stopped Stream Manager"
+t=2018-11-19T08:45:29+0800 lvl=info msg="Stopped CleanUpService" logger=server reason="context canceled"
+t=2018-11-19T08:45:29+0800 lvl=info msg="Stopped InternalMetricsService" logger=server reason="context canceled"
+t=2018-11-19T08:45:29+0800 lvl=info msg="Stopped NotificationService" logger=server reason="context canceled"
+t=2018-11-19T08:45:29+0800 lvl=info msg="Stopped ProvisioningService" logger=server reason="context canceled"
+t=2018-11-19T08:45:29+0800 lvl=info msg="Stopped TracingService" logger=server reason=nil
+t=2018-11-19T08:45:29+0800 lvl=info msg="Stopped RenderingService" logger=server reason=nil
+t=2018-11-19T08:45:29+0800 lvl=info msg="Stopped AlertingService" logger=server reason="context canceled"
+t=2018-11-19T08:45:31+0800 lvl=info msg="Stopped PluginManager" logger=server reason="context canceled"
+t=2018-11-19T08:45:31+0800 lvl=eror msg="Server shutdown" logger=server reason="listen tcp 0.0.0.0:8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+t=2018-11-19T09:01:47+0800 lvl=eror msg="Failed to detect generated javascript files in public/build" logger=settings
+t=2018-11-19T09:01:47+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=48ae3a1 branch=master compiled=2018-11-16T17:29:15+0800
+t=2018-11-19T09:01:47+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-11-19T09:01:47+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-11-19T09:01:47+0800 lvl=info msg="Config overridden from command line" logger=settings arg="app_mode=development"
+t=2018-11-19T09:01:47+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-11-19T09:01:47+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-11-19T09:01:47+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-11-19T09:01:47+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-11-19T09:01:47+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-11-19T09:01:47+0800 lvl=info msg="App mode development" logger=settings
+t=2018-11-19T09:01:47+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-11-19T09:01:47+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-11-19T09:01:47+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-11-19T09:01:47+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-11-19T09:01:47+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-11-19T09:01:47+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-11-19T09:01:47+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-11-19T09:01:47+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-11-19T09:01:47+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-11-19T09:01:47+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-11-19T09:01:47+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-11-19T09:01:47+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-11-19T09:01:47+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-11-19T09:01:47+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-11-19T09:01:47+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-11-19T09:01:47+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-11-19T09:01:47+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-11-19T09:01:47+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-11-19T09:03:28+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/build/grafana.light.7cc0419425f30f4740a1.css status=404 remote_addr=[::1] time_ms=72 size=24856 referer=http://localhost:8080/
+t=2018-11-19T09:03:28+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/build/app.7cc0419425f30f4740a1.js status=404 remote_addr=[::1] time_ms=136 size=24856 referer=http://localhost:8080/
+t=2018-11-19T09:03:43+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/build/app.7cc0419425f30f4740a1.js status=404 remote_addr=[::1] time_ms=25 size=24856 referer=http://localhost:8080/
+t=2018-11-19T09:03:43+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/build/grafana.light.7cc0419425f30f4740a1.css status=404 remote_addr=[::1] time_ms=28 size=24856 referer=http://localhost:8080/
+t=2018-11-19T09:03:43+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/build/app.7cc0419425f30f4740a1.js status=404 remote_addr=[::1] time_ms=26 size=24856 referer=http://localhost:8080/
+t=2018-11-19T09:15:09+0800 lvl=info msg="Starting Grafana" logger=server version=5.0.0 commit=NA branch=master compiled=2018-11-19T09:15:08+0800
+t=2018-11-19T09:15:09+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-11-19T09:15:09+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-11-19T09:15:09+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-11-19T09:15:09+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-11-19T09:15:09+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-11-19T09:15:09+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-11-19T09:15:09+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-11-19T09:15:09+0800 lvl=info msg="App mode development" logger=settings
+t=2018-11-19T09:15:09+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-11-19T09:15:09+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-11-19T09:15:09+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-11-19T09:15:09+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-11-19T09:15:09+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-11-19T09:15:09+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-11-19T09:15:09+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-11-19T09:15:09+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-11-19T09:15:09+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-11-19T09:15:09+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-11-19T09:15:09+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-11-19T09:15:09+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-11-19T09:15:09+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-11-19T09:15:09+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-11-19T09:15:09+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-11-19T09:15:09+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-11-19T09:15:09+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-11-19T09:15:09+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-11-19T17:31:36+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=48ae3a1 branch=master compiled=2018-11-16T17:29:15+0800
+t=2018-11-19T17:31:36+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-11-19T17:31:36+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-11-19T17:31:36+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-11-19T17:31:36+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-11-19T17:31:36+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-11-19T17:31:36+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-11-19T17:31:36+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-11-19T17:31:36+0800 lvl=info msg="App mode development" logger=settings
+t=2018-11-19T17:31:36+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-11-19T17:31:36+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-11-19T17:31:36+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-11-19T17:31:36+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-11-19T17:31:36+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-11-19T17:31:36+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-11-19T17:31:36+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-11-19T17:31:36+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-11-19T17:31:36+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-11-19T17:31:36+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-11-19T17:31:36+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-11-19T17:31:36+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-11-19T17:31:36+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-11-19T17:31:36+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-11-19T17:31:36+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-11-19T17:31:36+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-11-19T17:31:36+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-11-19T17:31:36+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-11-19T17:32:00+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/query status=502 remote_addr=[::1] time_ms=1315 size=0 referer="http://localhost:8080/d/jgq_eofiz/new-dashboard-copy?orgId=1"
+t=2018-11-19T17:32:27+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/query status=502 remote_addr=[::1] time_ms=1317 size=0 referer="http://localhost:8080/d/jgq_eofiz/new-dashboard-copy?orgId=1"
+t=2018-11-19T17:33:54+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/query status=502 remote_addr=[::1] time_ms=1309 size=0 referer="http://localhost:8080/d/jgq_eofiz/new-dashboard-copy?panelId=2&fullscreen=true&edit=true&orgId=1&tab=legend"
+t=2018-11-19T17:34:12+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/query status=502 remote_addr=[::1] time_ms=1326 size=0 referer="http://localhost:8080/d/jgq_eofiz/new-dashboard-copy?panelId=2&fullscreen=true&edit=true&orgId=1&tab=metrics"
+t=2018-11-19T17:34:14+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/query status=502 remote_addr=[::1] time_ms=1320 size=0 referer="http://localhost:8080/d/jgq_eofiz/new-dashboard-copy?panelId=2&fullscreen=true&edit=true&orgId=1&tab=metrics"
+t=2018-11-19T17:34:16+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/query status=502 remote_addr=[::1] time_ms=1324 size=0 referer="http://localhost:8080/d/jgq_eofiz/new-dashboard-copy?panelId=2&fullscreen=true&edit=true&orgId=1&tab=metrics"
+t=2018-11-19T17:34:18+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/query status=502 remote_addr=[::1] time_ms=1313 size=0 referer="http://localhost:8080/d/jgq_eofiz/new-dashboard-copy?panelId=2&fullscreen=true&edit=true&orgId=1&tab=metrics"
+t=2018-11-19T17:34:19+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/query status=502 remote_addr=[::1] time_ms=1311 size=0 referer="http://localhost:8080/d/jgq_eofiz/new-dashboard-copy?panelId=2&fullscreen=true&edit=true&orgId=1&tab=metrics"
+t=2018-11-19T17:41:32+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/gnet/dashboards/undefined status=404 remote_addr=[::1] time_ms=1060 size=51 referer=http://localhost:8080/dashboard/import
+t=2018-11-19T17:41:34+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/gnet/dashboards/undefined status=404 remote_addr=[::1] time_ms=296 size=51 referer=http://localhost:8080/dashboard/import
+t=2018-11-19T17:41:37+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/gnet/dashboards/undefined status=404 remote_addr=[::1] time_ms=266 size=51 referer=http://localhost:8080/dashboard/import
+t=2018-11-19T17:45:01+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit= branch=master compiled=2018-11-19T17:09:20+0800
+t=2018-11-19T17:45:01+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-11-19T17:45:01+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-11-19T17:45:01+0800 lvl=info msg="Config overridden from command line" logger=settings arg="app_mode=development"
+t=2018-11-19T17:45:01+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-11-19T17:45:01+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-11-19T17:45:01+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-11-19T17:45:01+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-11-19T17:45:01+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-11-19T17:45:01+0800 lvl=info msg="App mode development" logger=settings
+t=2018-11-19T17:45:01+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-11-19T17:45:01+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-11-19T17:45:01+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-11-19T17:45:01+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-11-19T17:45:01+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-11-19T17:45:01+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-11-19T17:45:01+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-11-19T17:45:01+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-11-19T17:45:01+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-11-19T17:45:01+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-11-19T17:45:01+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-11-19T17:45:01+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-11-19T17:45:01+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-11-19T17:45:01+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-11-19T17:45:01+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-11-19T17:45:01+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-11-19T17:45:01+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-11-19T17:45:01+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-11-19T17:45:01+0800 lvl=eror msg="Stopped HTTPServer" logger=server reason="listen tcp 0.0.0.0:8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+t=2018-11-19T17:45:01+0800 lvl=info msg="Stopped Stream Manager"
+t=2018-11-19T17:45:01+0800 lvl=info msg="Stopped NotificationService" logger=server reason="context canceled"
+t=2018-11-19T17:45:01+0800 lvl=info msg="Stopped InternalMetricsService" logger=server reason="context canceled"
+t=2018-11-19T17:45:01+0800 lvl=info msg="Stopped RenderingService" logger=server reason=nil
+t=2018-11-19T17:45:01+0800 lvl=info msg="Stopped ProvisioningService" logger=server reason="context canceled"
+t=2018-11-19T17:45:01+0800 lvl=info msg="Stopped TracingService" logger=server reason=nil
+t=2018-11-19T17:45:01+0800 lvl=info msg="Stopped CleanUpService" logger=server reason="context canceled"
+t=2018-11-19T17:45:01+0800 lvl=info msg="Stopped AlertingService" logger=server reason="context canceled"
+t=2018-11-19T17:45:03+0800 lvl=info msg="Stopped PluginManager" logger=server reason="context canceled"
+t=2018-11-19T17:45:03+0800 lvl=eror msg="Server shutdown" logger=server reason="listen tcp 0.0.0.0:8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+t=2018-11-19T18:14:44+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/{{imageUrl}} status=404 remote_addr=[::1] time_ms=32 size=24946 referer="http://localhost:8080/d/jgq_eofiz/new-dashboard-copy?panelId=2&fullscreen&edit&orgId=1&tab=alert"

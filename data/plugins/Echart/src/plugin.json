@@ -1,0 +1,21 @@
+{
+  "type": "panel",
+  "name": "Echart",
+  "id": "grafana-Echart-Demo",
+
+  "info": {
+    "description": "Echart Demo and minimum templte for grafana",
+    "author": {
+      "name": "xxx Inc.",
+      "url": "http://xxx.cn"
+    },
+    "keywords": ["Echart", "Demo"],
+    "version": "1.0.0",
+    "updated": "2015-03-24"
+  },
+
+  "dependencies": {
+    "grafanaVersion": "3.x.x",
+    "plugins": [ ]
+  }
+}

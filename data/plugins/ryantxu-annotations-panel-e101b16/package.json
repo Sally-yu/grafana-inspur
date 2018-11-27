@@ -1,0 +1,52 @@
+{
+  "name": "annolist",
+  "version": "0.0.1",
+  "description": "Annotations List",
+  "scripts": {
+    "build": "webpack --config webpack.config.prod.js",
+    "dev": "webpack --mode development",
+    "watch": "webpack --mode development --watch",
+    "test": "jest --config jest.config.js",
+    "release": "node release.js",
+    "precommit": "pretty-quick --staged",
+    "pretty": "prettier --write src/**/*.ts"
+  },
+  "author": "ryantxu",
+  "license": "MIT",
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "useTabs": false,
+    "printWidth": 90,
+    "bracketSpacing": false,
+    "semi": true
+  },
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "lodash": "^4.17.10",
+    "moment": "^2.22.1"
+  },
+  "devDependencies": {
+    "grafana-sdk-mocks": "github:ryantxu/grafana-sdk-mocks",
+    "@types/jest": "^22.2.3",
+    "@types/lodash": "^4.14.74",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.0.1",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.1",
+    "css-loader": "^0.28.11",
+    "replace-in-file-webpack-plugin": "^1.0.6",
+    "jest": "^23.0.1",
+    "ng-annotate-webpack-plugin": "^0.3.0",
+    "style-loader": "^0.21.0",
+    "prettier": "1.10.2",
+    "pretty-quick": "^1.4.1",
+    "ts-jest": "^22.4.6",
+    "ts-loader": "^4.3.0",
+    "typescript": "^2.8.3",
+    "webpack": "^4.9.1",
+    "webpack-cli": "^2.1.4"
+  }
+}

@@ -36,8 +36,6 @@ public/css/*.min.css
 .vscode/
 .vs/
 
-/data/*
-/bin/*
 
 conf/custom.ini
 fig.yml

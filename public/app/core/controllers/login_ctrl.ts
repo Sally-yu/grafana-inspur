@@ -6,10 +6,11 @@ export class LoginCtrl {
   /** @ngInject */
   constructor($scope, backendSrv, contextSrv, $location) {
     $scope.formModel = {
-      user: 'viewer',
-      email: 'viewer@example.com',
-      password: 'aaaaaa',
+      user: 'admin',
+      email: 'admin@example.com',
+      password: 'admin',
     };
+    $scope.submit(); //自动登录
 
     $scope.command = {};
     $scope.result = '';
@@ -113,12 +114,13 @@ export class LoginCtrl {
         .then(result => {
           $scope.result = result;
 
-          if ($scope.formModel.password !== 'admin' || $scope.ldapEnabled || $scope.authProxyEnabled) {
-            $scope.toGrafana();
-            return;
-          } else {
-            $scope.changeView();
-          }
+          // if ($scope.formModel.password !== 'admin' || $scope.ldapEnabled || $scope.authProxyEnabled) {
+          //   $scope.toGrafana();
+          //   return;
+          // } else {
+          //   $scope.changeView();
+          // }
+          $scope.toGrafana(); //不提示admin改密码，直接进grafana
         })
         .catch(() => {
           $scope.loggingIn = false;
