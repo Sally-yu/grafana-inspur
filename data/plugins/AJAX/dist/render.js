@@ -14,7 +14,9 @@ System.register(['lodash', 'app/plugins/sdk', 'jquery', 'app/core/utils/kbn', 'a
             var url = ctrl.panel.url;
             console.log('url:' + url);
             // scope.url = sce.trustAsResourceUrl(url);
-            $('.ctrl-panel-iframe').attr('src', url);
+            var dom = elem.find('.ctrl-panel-iframe')[0];
+            dom.src = url;
+            console.log('dom:' + dom);
         }
     }
 

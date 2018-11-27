@@ -17,7 +17,9 @@ export default function link(scope, elem, attrs, ctrl,sce) {
         const url=ctrl.panel.url;
         console.log('url:'+url);
         // scope.url = sce.trustAsResourceUrl(url);
-        $('.ctrl-panel-iframe').attr('src',url)
+        let dom=elem.find('.ctrl-panel-iframe')[0];
+        dom.src=url;
+                console.log('dom:'+dom);
 
     }
 }

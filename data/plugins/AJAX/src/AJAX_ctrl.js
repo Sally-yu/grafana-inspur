@@ -24,7 +24,6 @@ export class AJAXCtrl extends MetricsPanelCtrl {
     _.defaults(this.panel, panelDefaults);
     this.events.on('data-received', this.onDataReceived.bind(this));
     this.events.on('init-edit-mode', this.onInitEditMode.bind(this));
-    this.events.on('panel-initialized', this.onPanelInitalized.bind(this));
   }
 
   onDataReceived(dataList) {
@@ -43,15 +42,6 @@ export class AJAXCtrl extends MetricsPanelCtrl {
     this.render();
   }
 
-  onPanelInitalized() {
-    this.updateTemplate();
-    $(window).on(
-      'resize',
-      _.debounce(fn => {
-        this.refresh();
-      }, 150)
-    );
-  }
 
   link(scope, elem, attrs, ctrl,sce) {
     console.log('Link');

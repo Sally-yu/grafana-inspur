@@ -86,7 +86,6 @@ System.register(['app/plugins/sdk', 'lodash', './render'], function (_export, _c
           _.defaults(_this.panel, panelDefaults);
           _this.events.on('data-received', _this.onDataReceived.bind(_this));
           _this.events.on('init-edit-mode', _this.onInitEditMode.bind(_this));
-          _this.events.on('panel-initialized', _this.onPanelInitalized.bind(_this));
           return _this;
         }
 
@@ -108,16 +107,6 @@ System.register(['app/plugins/sdk', 'lodash', './render'], function (_export, _c
             console.log('UpdateIframe');
 
             this.render();
-          }
-        }, {
-          key: 'onPanelInitalized',
-          value: function onPanelInitalized() {
-            var _this2 = this;
-
-            this.updateTemplate();
-            $(window).on('resize', _.debounce(function (fn) {
-              _this2.refresh();
-            }, 150));
           }
         }, {
           key: 'link',

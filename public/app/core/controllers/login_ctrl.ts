@@ -10,7 +10,6 @@ export class LoginCtrl {
       email: 'admin@example.com',
       password: 'admin',
     };
-    $scope.submit(); //自动登录
 
     $scope.command = {};
     $scope.result = '';
@@ -31,6 +30,7 @@ export class LoginCtrl {
     $scope.submitBtnText = 'Log in';
 
     $scope.init = () => {
+      console.log('init');
       $scope.$watch('loginMode', $scope.loginModeChanged);
 
       if (config.loginError) {
@@ -39,6 +39,8 @@ export class LoginCtrl {
     };
 
     $scope.submit = () => {
+      console.log('submit');
+
       if ($scope.loginMode) {
         $scope.login();
       } else {
@@ -47,6 +49,8 @@ export class LoginCtrl {
     };
 
     $scope.changeView = () => {
+      console.log('changeview');
+
       const loginView = document.querySelector('#login-view');
       const changePasswordView = document.querySelector('#change-password-view');
 
@@ -80,6 +84,8 @@ export class LoginCtrl {
     };
 
     $scope.skip = () => {
+      console.log('skip');
+
       $scope.toGrafana();
     };
 
@@ -88,6 +94,8 @@ export class LoginCtrl {
     };
 
     $scope.signUp = () => {
+      console.log('signup');
+
       if (!$scope.loginForm.$valid) {
         return;
       }
@@ -102,6 +110,8 @@ export class LoginCtrl {
     };
 
     $scope.login = () => {
+      console.log('login');
+
       delete $scope.loginError;
 
       if (!$scope.loginForm.$valid) {
@@ -128,6 +138,8 @@ export class LoginCtrl {
     };
 
     $scope.toGrafana = () => {
+      console.log('toGrafana');
+
       const params = $location.search();
 
       if (params.redirect && params.redirect[0] === '/') {
