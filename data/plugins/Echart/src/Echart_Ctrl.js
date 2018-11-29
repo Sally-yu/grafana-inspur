@@ -15,7 +15,15 @@ const panelDefaults = {
   dataColors: ['#83fa52', '#f6630e', '#f60e48'],
   thresholds: '0,10',
   thresholdTextColor: '#f5f5f5',
-  unit: 'ms'
+  unit: 'ms',
+  decimal:2,
+  ChartMode:'line',
+  showLabel:{
+    values:true
+  },
+  areaStyle:{
+    values:true
+  },
 };
 
 

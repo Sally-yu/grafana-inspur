@@ -12546,3 +12546,143 @@ t=2018-11-29T13:57:36+0800 lvl=info msg="Registering plugin" logger=plugins name
 t=2018-11-29T13:57:36+0800 lvl=info msg="Initializing TracingService" logger=server
 t=2018-11-29T13:57:36+0800 lvl=info msg="Initializing Stream Manager"
 t=2018-11-29T13:57:36+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-11-29T14:19:04+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=b12e97d branch=master compiled=2018-11-19T17:09:20+0800
+t=2018-11-29T14:19:04+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-11-29T14:19:04+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-11-29T14:19:04+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-11-29T14:19:04+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-11-29T14:19:04+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-11-29T14:19:04+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-11-29T14:19:04+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-11-29T14:19:04+0800 lvl=info msg="App mode development" logger=settings
+t=2018-11-29T14:19:04+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-11-29T14:19:04+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-11-29T14:19:04+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-11-29T14:19:04+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-11-29T14:19:04+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-11-29T14:19:04+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-11-29T14:19:04+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-11-29T14:19:04+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-11-29T14:19:04+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-11-29T14:19:04+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-11-29T14:19:04+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-11-29T14:19:04+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-11-29T14:19:04+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-11-29T14:19:04+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-11-29T14:19:04+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-11-29T14:19:04+0800 lvl=info msg="Registering plugin" logger=plugins name=Iframe
+t=2018-11-29T14:19:04+0800 lvl=info msg="Registering plugin" logger=plugins name=Echart
+t=2018-11-29T14:19:04+0800 lvl=info msg="Registering plugin" logger=plugins name=Plotly
+t=2018-11-29T14:19:04+0800 lvl=info msg="Registering plugin" logger=plugins name=Cal-HeatMap
+t=2018-11-29T14:19:04+0800 lvl=info msg="Registering plugin" logger=plugins name="Example App Datasource"
+t=2018-11-29T14:19:04+0800 lvl=info msg="Registering plugin" logger=plugins name="Example App Panel"
+t=2018-11-29T14:19:04+0800 lvl=info msg="Registering plugin" logger=plugins name=Example
+t=2018-11-29T14:19:04+0800 lvl=info msg="Registering plugin" logger=plugins name="Pie Chart"
+t=2018-11-29T14:19:04+0800 lvl=info msg="Registering plugin" logger=plugins name=Annunciator
+t=2018-11-29T14:19:04+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation Panel"
+t=2018-11-29T14:19:04+0800 lvl=info msg="Registering plugin" logger=plugins name=AJAX
+t=2018-11-29T14:19:04+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation List"
+t=2018-11-29T14:19:04+0800 lvl=info msg="Registering plugin" logger=plugins name="3D Globe Panel"
+t=2018-11-29T14:19:04+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-11-29T14:19:04+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-11-29T14:19:04+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-11-29T14:19:14+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/query status=502 remote_addr=[::1] time_ms=1555 size=0 referer="http://localhost:8080/d/jgq_eofiz/yi-biao-pan-yan-shi?refresh=5m&orgId=1&panelId=14&fullscreen&edit&tab=options"
+t=2018-11-29T14:19:24+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/query status=502 remote_addr=[::1] time_ms=1632 size=0 referer="http://localhost:8080/d/jgq_eofiz/yi-biao-pan-yan-shi?refresh=5m&orgId=1&panelId=14&fullscreen&edit&tab=options"
+t=2018-11-29T14:19:31+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/query status=502 remote_addr=[::1] time_ms=1473 size=0 referer="http://localhost:8080/d/jgq_eofiz/yi-biao-pan-yan-shi?refresh=5m&orgId=1"
+t=2018-11-29T14:19:31+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/query status=502 remote_addr=[::1] time_ms=1512 size=0 referer="http://localhost:8080/d/jgq_eofiz/yi-biao-pan-yan-shi?refresh=5m&orgId=1"
+t=2018-11-29T14:19:31+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/query status=502 remote_addr=[::1] time_ms=1643 size=0 referer="http://localhost:8080/d/jgq_eofiz/yi-biao-pan-yan-shi?refresh=5m&orgId=1"
+t=2018-11-29T14:19:43+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/query status=502 remote_addr=[::1] time_ms=2114 size=0 referer="http://localhost:8080/d/jgq_eofiz/yi-biao-pan-yan-shi?refresh=5m&orgId=1"
+t=2018-11-29T14:24:51+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=b12e97d branch=master compiled=2018-11-19T17:09:20+0800
+t=2018-11-29T14:24:51+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-11-29T14:24:51+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-11-29T14:24:51+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-11-29T14:24:51+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-11-29T14:24:51+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-11-29T14:24:51+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-11-29T14:24:51+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-11-29T14:24:51+0800 lvl=info msg="App mode development" logger=settings
+t=2018-11-29T14:24:51+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-11-29T14:24:51+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-11-29T14:24:51+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-11-29T14:24:51+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-11-29T14:24:51+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-11-29T14:24:51+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-11-29T14:24:51+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-11-29T14:24:51+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-11-29T14:24:51+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-11-29T14:24:51+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-11-29T14:24:51+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-11-29T14:24:51+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-11-29T14:24:51+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-11-29T14:24:51+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-11-29T14:24:51+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-11-29T14:24:51+0800 lvl=info msg="Registering plugin" logger=plugins name=Iframe
+t=2018-11-29T14:24:51+0800 lvl=info msg="Registering plugin" logger=plugins name=Echart
+t=2018-11-29T14:24:51+0800 lvl=info msg="Registering plugin" logger=plugins name=Plotly
+t=2018-11-29T14:24:51+0800 lvl=info msg="Registering plugin" logger=plugins name=Cal-HeatMap
+t=2018-11-29T14:24:51+0800 lvl=info msg="Registering plugin" logger=plugins name="Example App Datasource"
+t=2018-11-29T14:24:51+0800 lvl=info msg="Registering plugin" logger=plugins name="Example App Panel"
+t=2018-11-29T14:24:51+0800 lvl=info msg="Registering plugin" logger=plugins name=Example
+t=2018-11-29T14:24:51+0800 lvl=info msg="Registering plugin" logger=plugins name="Pie Chart"
+t=2018-11-29T14:24:51+0800 lvl=info msg="Registering plugin" logger=plugins name=Annunciator
+t=2018-11-29T14:24:51+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation Panel"
+t=2018-11-29T14:24:51+0800 lvl=info msg="Registering plugin" logger=plugins name=AJAX
+t=2018-11-29T14:24:51+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation List"
+t=2018-11-29T14:24:51+0800 lvl=info msg="Registering plugin" logger=plugins name="3D Globe Panel"
+t=2018-11-29T14:24:51+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-11-29T14:24:51+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-11-29T14:24:51+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-11-29T14:24:55+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/query status=502 remote_addr=[::1] time_ms=1311 size=0 referer="http://localhost:8080/d/jgq_eofiz/yi-biao-pan-yan-shi?refresh=5m&orgId=1&panelId=14&fullscreen&edit"
+t=2018-11-29T14:25:03+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/query status=502 remote_addr=[::1] time_ms=1333 size=0 referer="http://localhost:8080/d/jgq_eofiz/yi-biao-pan-yan-shi?refresh=5m&orgId=1"
+t=2018-11-29T14:25:03+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/query status=502 remote_addr=[::1] time_ms=1349 size=0 referer="http://localhost:8080/d/jgq_eofiz/yi-biao-pan-yan-shi?refresh=5m&orgId=1"
+t=2018-11-29T14:25:03+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/query status=502 remote_addr=[::1] time_ms=1338 size=0 referer="http://localhost:8080/d/jgq_eofiz/yi-biao-pan-yan-shi?refresh=5m&orgId=1"
+t=2018-11-29T14:25:07+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/query status=502 remote_addr=[::1] time_ms=1363 size=0 referer="http://localhost:8080/d/jgq_eofiz/yi-biao-pan-yan-shi?refresh=5m&orgId=1"
+t=2018-11-29T14:25:13+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/query status=502 remote_addr=[::1] time_ms=1316 size=0 referer="http://localhost:8080/d/jgq_eofiz/yi-biao-pan-yan-shi?refresh=5m&orgId=1&panelId=26&fullscreen&edit&tab=options"
+t=2018-11-29T14:25:15+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/query status=502 remote_addr=[::1] time_ms=1314 size=0 referer="http://localhost:8080/d/jgq_eofiz/yi-biao-pan-yan-shi?refresh=5m&orgId=1&panelId=26&fullscreen&edit&tab=options"
+t=2018-11-29T14:25:16+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/query status=502 remote_addr=[::1] time_ms=1354 size=0 referer="http://localhost:8080/d/jgq_eofiz/yi-biao-pan-yan-shi?refresh=5m&orgId=1&panelId=26&fullscreen&edit&tab=options"
+t=2018-11-29T14:25:18+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/query status=502 remote_addr=[::1] time_ms=1465 size=0 referer="http://localhost:8080/d/jgq_eofiz/yi-biao-pan-yan-shi?refresh=5m&orgId=1&panelId=26&fullscreen&edit&tab=options"
+t=2018-11-29T14:27:53+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=b12e97d branch=master compiled=2018-11-19T17:09:20+0800
+t=2018-11-29T14:27:53+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-11-29T14:27:53+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-11-29T14:27:53+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-11-29T14:27:53+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-11-29T14:27:53+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-11-29T14:27:53+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-11-29T14:27:53+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-11-29T14:27:53+0800 lvl=info msg="App mode development" logger=settings
+t=2018-11-29T14:27:53+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-11-29T14:27:53+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-11-29T14:27:53+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-11-29T14:27:53+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-11-29T14:27:53+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-11-29T14:27:53+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-11-29T14:27:53+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-11-29T14:27:53+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-11-29T14:27:53+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-11-29T14:27:53+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-11-29T14:27:53+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-11-29T14:27:53+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-11-29T14:27:53+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-11-29T14:27:53+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-11-29T14:27:53+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-11-29T14:27:53+0800 lvl=info msg="Registering plugin" logger=plugins name=Iframe
+t=2018-11-29T14:27:53+0800 lvl=info msg="Registering plugin" logger=plugins name=Echart
+t=2018-11-29T14:27:53+0800 lvl=info msg="Registering plugin" logger=plugins name=Plotly
+t=2018-11-29T14:27:53+0800 lvl=info msg="Registering plugin" logger=plugins name=Cal-HeatMap
+t=2018-11-29T14:27:53+0800 lvl=info msg="Registering plugin" logger=plugins name="Example App Datasource"
+t=2018-11-29T14:27:53+0800 lvl=info msg="Registering plugin" logger=plugins name="Example App Panel"
+t=2018-11-29T14:27:53+0800 lvl=info msg="Registering plugin" logger=plugins name=Example
+t=2018-11-29T14:27:53+0800 lvl=info msg="Registering plugin" logger=plugins name="Pie Chart"
+t=2018-11-29T14:27:53+0800 lvl=info msg="Registering plugin" logger=plugins name=Annunciator
+t=2018-11-29T14:27:53+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation Panel"
+t=2018-11-29T14:27:53+0800 lvl=info msg="Registering plugin" logger=plugins name=AJAX
+t=2018-11-29T14:27:53+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation List"
+t=2018-11-29T14:27:53+0800 lvl=info msg="Registering plugin" logger=plugins name="3D Globe Panel"
+t=2018-11-29T14:27:53+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-11-29T14:27:53+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-11-29T14:27:53+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-11-29T14:27:57+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/query status=502 remote_addr=[::1] time_ms=1313 size=0 referer="http://localhost:8080/d/jgq_eofiz/yi-biao-pan-yan-shi?refresh=5m&orgId=1"
+t=2018-11-29T14:27:57+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/query status=502 remote_addr=[::1] time_ms=1313 size=0 referer="http://localhost:8080/d/jgq_eofiz/yi-biao-pan-yan-shi?refresh=5m&orgId=1"
+t=2018-11-29T14:27:57+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/query status=502 remote_addr=127.0.0.1 time_ms=1314 size=0 referer="http://localhost:8080/d/jgq_eofiz/yi-biao-pan-yan-shi?refresh=5m&orgId=1"
+t=2018-11-29T14:27:57+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/query status=502 remote_addr=[::1] time_ms=1314 size=0 referer="http://localhost:8080/d/jgq_eofiz/yi-biao-pan-yan-shi?refresh=5m&orgId=1"
+t=2018-11-29T14:28:01+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/query status=502 remote_addr=[::1] time_ms=1318 size=0 referer="http://localhost:8080/d/jgq_eofiz/yi-biao-pan-yan-shi?refresh=5m&orgId=1"
