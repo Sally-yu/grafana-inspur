@@ -62,7 +62,7 @@
   white-space: nowrap;
   display: block;
   margin: 0;
-  color: darken($link-color, 5%);
+  // color: darken($link-color, 5%);
   font-size: $font-size-lg;
   // padding-left: 1rem;
   min-height: $navbarHeight;
@@ -83,9 +83,9 @@
   .gicon {
     position: relative;
     top: -1px;
-    font-size: 19px;
+    // font-size: 19px;
     line-height: 8px;
-    opacity: 0.75;
+    // opacity: 0.75;
     margin-right: 8px;
     // icon hidden on smaller screens
     display: none;
@@ -129,10 +129,13 @@
   padding: 6px 11px;
   line-height: 16px;
   height: 30px;
-  color: $text-muted;
-  border: 1px solid $navbar-button-border;
-  margin-right: 3px;
+  // color: $text-muted;
+  background-color: $gray-blue;
+  background-image: none;
+  // border: 1px solid $navbar-button-border;
+  // margin-right: 3px;
   white-space: nowrap;
+  border-radius: 0px;
 
   .gicon {
     font-size: 16px;
@@ -161,7 +164,9 @@
   }
 
   &--primary {
-    @include buttonBackground($btn-secondary-bg, $btn-secondary-bg-hl);
+    // @include buttonBackground($btn-secondary-bg, $btn-secondary-bg-hl);
+
+    @include buttonBackground($blue-dark, $blue);
   }
 }
 

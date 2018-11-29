@@ -53,7 +53,8 @@ $query-orange: $blue; //***
 // Status colors
 // -------------------------
 $online: #10a345;
-$warn: #f79520;
+// $warn: #f79520;
+$warn: $blue;
 $critical: #ed2e18;
 
 // Scaffolding

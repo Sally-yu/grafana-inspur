@@ -100,12 +100,13 @@ $input-border: 1px solid $input-border-color;
   font-weight: $font-weight-semi-bold;
   font-size: $font-size-sm;
 
-  background-color: $input-label-bg;
+  background-color: transparent;
   display: block;
 
-  border: $input-btn-border-width solid $input-label-border-color;
-  border-right: none;
-  border-radius: $label-border-radius;
+  // border: $input-btn-border-width solid $input-label-border-color;
+  border: none;
+  // border-right: none;
+  // border-radius: $label-border-radius;
 
   &--grow {
     flex-grow: 1;
@@ -135,7 +136,7 @@ $input-border: 1px solid $input-border-color;
   flex-grow: 1;
   margin: 0;
   margin-right: $gf-form-margin;
-  border: $input-btn-border-width solid transparent;
+  // border: $input-btn-border-width solid transparent;
   border-left: none;
   @include border-radius($label-border-radius-sm);
 }

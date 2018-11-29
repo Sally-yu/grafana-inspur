@@ -248,7 +248,8 @@
   transition: all 0.2s ease-in-out;
   .fa-star,
   .fa-star-o {
-    color: $orange;
+    // color: $orange;
+    color: $blue;
     line-height: 37px;
   }
 }

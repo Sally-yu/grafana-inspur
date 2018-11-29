@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'iconfont'; /* project id 939772 */
+  src: url('//at.alicdn.com/t/font_939772_zpcx911cjrs.eot');
+  src: url('//at.alicdn.com/t/font_939772_zpcx911cjrs.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_939772_zpcx911cjrs.woff') format('woff'),
+    url('//at.alicdn.com/t/font_939772_zpcx911cjrs.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_939772_zpcx911cjrs.svg#iconfont') format('svg');
+}
+
+.ins {
+  font-family: 'iconfont' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  display: inline-block;
+  vertical-align: middle;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+//收藏
+.ins-star:before {
+  content: '\e630';
+  color: $blue;
+}
+//已收藏
+.ins-star-o:before {
+  content: '\e616';
+}
+//分享
+.ins-share-square-o:before {
+  content: '\e61e';
+}
+//保存
+.ins-save:before {
+  content: '\e60f';
+}
+
+.ins-link:before {
+  content: '\e61e';
+  color: $blue;
+}
+//设置
+.ins-cog:before {
+  content: '\e7f6';
+}
+//全屏
+.ins-desktop:before {
+  content: '\e7b6';
+}
+//编辑界面返回
+.ins-reply:before {
+  content: '\e617';
+}

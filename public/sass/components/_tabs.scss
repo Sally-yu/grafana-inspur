@@ -15,10 +15,10 @@
   margin-right: $spacer/2;
   position: relative;
   display: block;
-  border: solid transparent;
+  // border: solid transparent;
   border-width: 0 1px 1px;
   border-radius: 3px 3px 0 0;
-  color: $text-color;
+  // color: $text-color;
 
   i {
     margin-right: 5px;
@@ -31,15 +31,18 @@
 
   &:hover,
   &:focus {
-    color: $link-hover-color;
+    // color: $link-hover-color;
   }
 
   &.active,
   &.active:hover,
   &.active:focus {
-    border-color: $orange $tab-border-color transparent;
-    background: $page-bg;
-    color: $link-color;
+    // border-color: $orange $tab-border-color transparent;
+    // background: $page-bg;
+    // background: $blue;
+    background-image: linear-gradient(to bottom, $blue-dark, $blue);
+
+    // color: $link-color;
     overflow: hidden;
 
     &::before {
@@ -50,7 +53,7 @@
       right: 0;
       height: 2px;
       top: 0;
-      background-image: linear-gradient(to right, #ffd500 0%, #ff4400 99%, #ff4400 100%);
+      // background-image: linear-gradient(to right, #ffd500 0%, #ff4400 99%, #ff4400 100%);
     }
   }
   &.active--panel {

@@ -36,8 +36,8 @@ export class Settings {
   constructor(options) {
     const defaults = {
       datasources: {},
-      windowTitlePrefix: 'Grafana - ',
-      panels: {},
+      // windowTitlePrefix: 'Grafana - ',
+      windowTitlePrefix: 'Inspur - ',
       newPanelTitle: 'Panel Title', //新建图表的默认标题
       playlist_timespan: '1m',
       unsaved_changes_warning: true, //未保存提示

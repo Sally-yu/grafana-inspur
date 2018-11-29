@@ -10,8 +10,12 @@
 }
 
 .tabbed-view-header {
-  box-shadow: $page-header-shadow;
-  border-bottom: 1px solid $page-header-border-color;
+  // box-shadow: $page-header-shadow;
+  box-shadow: 0px 2px 1px $blue;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 35px;
+  // border-bottom: 1px solid $blue-dark;
   @include clearfix();
 }
 
@@ -23,8 +27,9 @@
 
 .tabbed-view-panel-title {
   float: left;
-  padding-top: 9px;
+  padding-top: 7px;
   margin: 0 2rem 0 0;
+  color: $blue; //
 }
 
 .tabbed-view-close-btn {

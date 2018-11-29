@@ -56,8 +56,9 @@
     }
 
     input + label::after {
-      @include buttonBackground($input-bg, lighten($input-bg, 5%));
-      color: lighten($orange, 10%);
+      // @include buttonBackground($input-bg, lighten($input-bg, 5%));
+      // color: lighten($orange, 10%);
+      color: $blue;
       text-shadow: $text-shadow-strong;
     }
   }
@@ -73,7 +74,7 @@
 
   input + label::after {
     content: '\f046'; // check-square-o
-    color: $orange;
+    color: $blue;
     text-shadow: $text-shadow-strong;
 
     font-family: 'FontAwesome';

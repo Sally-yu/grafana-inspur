@@ -1,9 +1,9 @@
 'use strict';
 
-System.register(['./lib/echarts.min', 'lodash', './lib/dark'], function (_export, _context) {
+System.register(['./lib/echarts.min', 'lodash', './lib/dark', 'jquery'], function (_export, _context) {
     "use strict";
 
-    var echarts, _, dark;
+    var echarts, _, dark, $;
 
     function link(scope, elem, attrs, ctrl) {
         var container = elem.find('.echarts-panel');
@@ -14,7 +14,8 @@ System.register(['./lib/echarts.min', 'lodash', './lib/dark'], function (_export
 
         function render() {
             var codetText = ctrl.panel.code;
-            var chartMode = ctrl.panel.ChartMode;
+            var chartMode = ctrl.panel.ChartMode; //echarts图类型，线饼雷达等
+            var decimal = ctrl.panel.decimal; //保留小数位
 
             if (!ctrl.data) return;
 
@@ -41,12 +42,18 @@ System.register(['./lib/echarts.min', 'lodash', './lib/dark'], function (_export
             if (ctrl.data && ctrl.data.length > 0) {
                 ctrl.data.forEach(function (serie) {
                     var lastPoint = serie.datapoints[serie.datapoints.length - 1]; //最后时刻点[value,time]
-                    var lastValue = _.isArray(lastPoint) ? lastPoint[0] : null; //最后时刻value
+                    var lastValue;
+                    if (decimal >= 0 && decimal < 20) {
+                        lastValue = _.isArray(lastPoint) ? parseFloat(parseFloat(lastPoint[0]).toFixed(decimal)) : null; //最后时刻value
+                    } else {
+                        lastValue = _.isArray(lastPoint) ? lastPoint[0] : null; //最后时刻value
+                    }
+
                     var lastTime = _.isArray(lastPoint) ? lastPoint[1] : null; //最后时刻time
 
                     var target = serie.target; //查询的名称，查询页面可设置
 
-                    lastData.push({ "value": lastValue == null ? 100 : lastValue, "time": lastTime, "name": target }); //每个serie装一对值和时间
+                    lastData.push({ "value": lastValue == null ? 0 : lastValue, "time": lastTime, "name": target }); //每个serie装一对值和时间
                     legend.push(target);
                     allData.push(serie.datapoints); //每个查询一个数组
                 });
@@ -62,7 +69,11 @@ System.register(['./lib/echarts.min', 'lodash', './lib/dark'], function (_export
 
                 serie.forEach(function (kv) {
                     tempTime.push(new Date(kv[1]).toLocaleString());
-                    tempValue.push(kv[0]);
+                    if (decimal >= 0 && decimal < 20) {
+                        tempValue.push(parseFloat(parseFloat(kv[0]).toFixed(decimal)));
+                    } else {
+                        tempValue.push(kv[0]);
+                    }
                 });
                 valueList.push(tempValue);
                 timeList.push(tempTime);
@@ -99,7 +110,6 @@ System.register(['./lib/echarts.min', 'lodash', './lib/dark'], function (_export
                 lineSer.push(tempDic);
             }
 
-            console.log('linSer:' + JSON.stringify(lineSer));
             //饼图
             var optionPie = {
                 title: {
@@ -181,7 +191,40 @@ System.register(['./lib/echarts.min', 'lodash', './lib/dark'], function (_export
                 series: lineSer
             };
 
-            var optionRadar = {};
+            //雷达图
+            var optionRadar = {
+                title: {
+                    text: ''
+                },
+                tooltip: {
+                    trigger: 'axis'
+                },
+                legend: {
+                    x: 'right',
+                    data: ['某软件', '某主食手机', '某水果手机', '某国产手机']
+                },
+
+                //底环
+                radar: [{
+                    indicator: [{ text: '品牌', max: 100 }, { text: '内容', max: 100 }, { text: '可用性', max: 100 }, { text: '功能', max: 100 }, { text: '创新', max: 100 }],
+                    center: ['50%', '50%'],
+                    radius: 120
+
+                }],
+
+                //数据
+                series: [{
+                    type: 'radar',
+                    tooltip: {
+                        trigger: 'item'
+                    },
+                    itemStyle: { normal: { areaStyle: { type: 'default' } } },
+                    data: [{
+                        value: [60, 73, 85, 60, 39],
+                        name: '某软件'
+                    }]
+                }]
+            };
 
             //选图表类型，页面上可选 editor.tml中
             var option = {};
@@ -191,6 +234,10 @@ System.register(['./lib/echarts.min', 'lodash', './lib/dark'], function (_export
                     break;
                 case 'pie':
                     option = optionPie;
+                    break;
+                case 'radar':
+                    option = optionRadar;
+                    break;
                 default:
                     break;
             }
@@ -224,6 +271,8 @@ System.register(['./lib/echarts.min', 'lodash', './lib/dark'], function (_export
             _ = _lodash.default;
         }, function (_libDark) {
             dark = _libDark.default;
+        }, function (_jquery) {
+            $ = _jquery.default;
         }],
         execute: function () {}
     };
