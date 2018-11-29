@@ -1,71 +1,170 @@
-<div class="section gf-form-group" >
-		<h5 class="section-heading">Color Options</h5>
-		<div class="gf-form">
-			<label class="gf-form-label width-12">Background Color</label>
-				<spectrum-picker class="gf-form-input" ng-model="ctrl.panel.backgroundColor" ng-change="ctrl.render()" ></spectrum-picker>
-		</div>
-		<div class="gf-form">
-			<label class="gf-form-label width-12">Item Normal Color</label>
-				<spectrum-picker class="gf-form-input" ng-model="ctrl.panel.itemNormalColor" ng-change="ctrl.render()" ></spectrum-picker>
-		</div>
-		<div class="gf-form">
-			<label class="gf-form-label width-12">Item Border Color</label>
-				<spectrum-picker class="gf-form-input" ng-model="ctrl.panel.itemBorderColor" ng-change="ctrl.render()" ></spectrum-picker>
-		</div>
-		<div class="gf-form">
-			<label class="gf-form-label width-12">Item Emphasis Color</label>
-				<spectrum-picker class="gf-form-input" ng-model="ctrl.panel.itemEmphasisColor" ng-change="ctrl.render()" ></spectrum-picker>
-		</div>
-		<div class="gf-form">
-			<label class="gf-form-label width-12">Label Color</label>
-				<spectrum-picker class="gf-form-input" ng-model="ctrl.panel.labelColor" ng-change="ctrl.render()" ></spectrum-picker>
-		</div>
-		<div class="gf-form">
-			<label class="gf-form-label width-12">Label Emphasis Color</label>
-				<spectrum-picker class="gf-form-input" ng-model="ctrl.panel.labelEmphasisColor" ng-change="ctrl.render()" ></spectrum-picker>
-		</div>
+<div class="section gf-form-group">
+	<h5 class="section-heading">Color Options</h5>
+	<div class="gf-form">
+		<label class="gf-form-label width-12">Background Color</label>
+		<spectrum-picker class="gf-form-input" ng-model="ctrl.panel.backgroundColor" ng-change="ctrl.render()"></spectrum-picker>
+	</div>
+	<div class="gf-form">
+		<label class="gf-form-label width-12">Item Normal Color</label>
+		<spectrum-picker class="gf-form-input" ng-model="ctrl.panel.itemNormalColor" ng-change="ctrl.render()"></spectrum-picker>
+	</div>
+	<div class="gf-form">
+		<label class="gf-form-label width-12">Item Border Color</label>
+		<spectrum-picker class="gf-form-input" ng-model="ctrl.panel.itemBorderColor" ng-change="ctrl.render()"></spectrum-picker>
+	</div>
+	<div class="gf-form">
+		<label class="gf-form-label width-12">Item Emphasis Color</label>
+		<spectrum-picker class="gf-form-input" ng-model="ctrl.panel.itemEmphasisColor" ng-change="ctrl.render()"></spectrum-picker>
+	</div>
+	<div class="gf-form">
+		<label class="gf-form-label width-12">Label Color</label>
+		<spectrum-picker class="gf-form-input" ng-model="ctrl.panel.labelColor" ng-change="ctrl.render()"></spectrum-picker>
+	</div>
+	<div class="gf-form">
+		<label class="gf-form-label width-12">Label Emphasis Color</label>
+		<spectrum-picker class="gf-form-input" ng-model="ctrl.panel.labelEmphasisColor" ng-change="ctrl.render()"></spectrum-picker>
+	</div>
 </div>
 
 <div class="section gf-form-group">
-		<h5 class="section-heading">Threshold Options</h5>
-		<div class="gf-form">
-			<label class="gf-form-label width-10">Thresholds</label>
-			<input type="text" class="input-small gf-form-input width-10" ng-model="ctrl.panel.thresholds" ng-change="ctrl.changeThresholds()" placeholder="0,10" ng-model-onblur />
+	<h5 class="section-heading">Threshold Options</h5>
+	<div class="gf-form">
+		<label class="gf-form-label width-10">Thresholds</label>
+		<input type="text" class="input-small gf-form-input width-10" ng-model="ctrl.panel.thresholds" ng-change="ctrl.changeThresholds()"
+		 placeholder="0,10" ng-model-onblur />
+	</div>
+	<div class="gf-form">
+		<label class="gf-form-label width-10">Unit</label>
+		<input type="text" class="input-small gf-form-input width-10" ng-model="ctrl.panel.unit" ng-change="ctrl.changeThresholds()"
+		 placeholder="ms" ng-model-onblur />
+	</div>
+	<div class="gf-form">
+		<label class="gf-form-label width-10">Colors</label>
+		<spectrum-picker class="gf-form-input width-3" ng-repeat="color in ctrl.panel.dataColors track by $index" ng-model="ctrl.panel.dataColors[$index]"
+		 ng-change="ctrl.changeThresholds()"></spectrum-picker>
+	</div>
+	<div class="gf-form">
+		<label class="gf-form-label width-10">Legend Text Color</label>
+		<spectrum-picker class="gf-form-input width-3" ng-model="ctrl.panel.thresholdTextColor" ng-change="ctrl.changeThresholds()"></spectrum-picker>
+	</div>
+	<div class="gf-form">
+		<label class="gf-form-label width-10">Chart Mode</label>
+		<div class="gf-form-select-wrapper width-10">
+			<select class="gf-form-input" ng-model="ctrl.panel.ChartMode" ng-options="s for s in ['line', 'pie','radar','custom']"
+			 ng-change="ctrl.render()"></select>
 		</div>
-		<div class="gf-form">
-			<label class="gf-form-label width-10">Unit</label>
-			<input type="text" class="input-small gf-form-input width-10" ng-model="ctrl.panel.unit" ng-change="ctrl.changeThresholds()" placeholder="ms" ng-model-onblur />
-		</div>
-		<div class="gf-form">
-			<label class="gf-form-label width-10">Colors</label>
-				<spectrum-picker class="gf-form-input width-3" ng-repeat="color in ctrl.panel.dataColors track by $index" ng-model="ctrl.panel.dataColors[$index]" ng-change="ctrl.changeThresholds()" ></spectrum-picker>
-		</div>
-		<div class="gf-form">
-			<label class="gf-form-label width-10">Legend Text Color</label>
-				<spectrum-picker class="gf-form-input width-3" ng-model="ctrl.panel.thresholdTextColor" ng-change="ctrl.changeThresholds()" ></spectrum-picker>
-		</div>
-		<div class="gf-form">
-			<label class="gf-form-label width-10">Chart Mode</label>
-			<div class="gf-form-select-wrapper width-10">
-			  <select class="gf-form-input" ng-model="ctrl.panel.ChartMode" ng-options="s for s in ['line', 'pie','radar']"
-				ng-change="ctrl.render()"></select>
-			</div>
-		</div>
-		<gf-form-switch class="gf-form" label="Aera Style" label-class="width-11" checked="ctrl.panel.areaStyle.values" ng-model="ctrl.panel.areaStyle" on-change="ctrl.refresh()"></gf-form-switch>
-		<gf-form-switch class="gf-form" label="Show Label" label-class="width-11" checked="ctrl.panel.showLabel.values" ng-model="ctrl.panel.showLabel" on-change="ctrl.refresh()"></gf-form-switch>
-		<div class="gf-form">
-				<label class="gf-form-label width-10">Decimal</label>
-				<input type="number" class="input-small gf-form-input width-10" ng-model="ctrl.panel.decimal" ng-change="ctrl.refresh()" placeholder="0" ng-model-onblur />
-			</div>
+	</div>
+	<gf-form-switch class="gf-form" label="Aera Style" label-class="width-11" checked="ctrl.panel.areaStyle.values"
+	 ng-model="ctrl.panel.areaStyle" on-change="ctrl.refresh()"></gf-form-switch>
+	<gf-form-switch class="gf-form" label="Show Label" label-class="width-11" checked="ctrl.panel.showLabel.values"
+	 ng-model="ctrl.panel.showLabel" on-change="ctrl.refresh()"></gf-form-switch>
+	<div class="gf-form">
+		<label class="gf-form-label width-10">Decimal</label>
+		<input type="number" class="input-small gf-form-input width-10" ng-model="ctrl.panel.decimal" ng-change="ctrl.refresh()"
+		 placeholder="0" ng-model-onblur />
+	</div>
 </div>
 
 <div class="section gf-form-group">
 	<h5 class="section-heading">Echarts Code</h5>
 	<div class="gf-form">
-		<label class="gf-form-label width-10">Custom Code</label>
-		<input type="text" class="input-small gf-form-input width-20" ng-model="ctrl.panel.code" ng-change="ctrl.changeThresholds()" placeholder="Your custom code here" ng-model-onblur />
+		<!-- <label class="gf-form-label width-10">Custom Code</label> -->
+		<textarea class="gf-form-input width-25 ng-pristine ng-untouched ng-valid ng-empty" height="280px" ng-model="ctrl.panel.code" ng-change="" placeholder="Your custom code here" ng-model-onblur />
+		<!-- <div class="gf-form">
+			<code-editor content="ctrl.json" data-mode="json" data-max-lines="30" class="ng-isolate-scope ace_editor gf-code-dark ace_dark gf-code-editor"
+			 style="height: 575px;">
+				<div style="position: absolute;"></div>
+				<textarea class="ace_text-input gf-form-input" ng-model="ctrl.panel.code" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false"
+				 style="opacity: 0; left: 10px; top: 105px; height: 18px; width: 8.40156px;"></textarea>
+				<div class="ace_gutter" style="display: none;">
+					<div class="ace_layer ace_gutter-layer ace_folding-enabled" style="margin-top: 15px;"></div>
+					<div class="ace_gutter-active-line" style="top: 105px; height: 18px;"></div>
+				</div>
+				<div class="ace_scroller" style="left: 0px; right: 5px; bottom: 5px;">
+					<div class="ace_content" style="margin-top: 15px; width: 9237px; height: 606px; margin-left: 0px;">
+						<div class="ace_layer ace_print-margin-layer">
+							<div class="ace_print-margin" style="left: 682.125px; visibility: hidden;"></div>
+						</div>
+						<div class="ace_layer ace_marker-layer"></div>
+						<div class="ace_layer ace_text-layer" style="padding: 0px 10px;">
+							<div class="ace_line" style="height:18px"><span class="ace_paren ace_lparen">{</span></div>
+							<div class="ace_line" style="height:18px"> <span class="ace_variable">"annotations"</span>: <span class="ace_paren ace_lparen">{</span></div>
+							<div class="ace_line" style="height:18px"><span class="ace_indent-guide"> </span> <span class="ace_variable">"list"</span>:
+								<span class="ace_paren ace_lparen">[</span></div>
+							<div class="ace_line" style="height:18px"><span class="ace_indent-guide"> </span><span class="ace_indent-guide">
+								</span> <span class="ace_paren ace_lparen">{</span></div>
+							<div class="ace_line" style="height:18px"><span class="ace_indent-guide"> </span><span class="ace_indent-guide">
+								</span><span class="ace_indent-guide"> </span> <span class="ace_variable">"builtIn"</span>: <span class="ace_constant ace_numeric">1</span>,</div>
+							<div class="ace_line" style="height:18px"><span class="ace_indent-guide"> </span><span class="ace_indent-guide">
+								</span><span class="ace_indent-guide"> </span> <span class="ace_variable">"datasource"</span>: <span class="ace_string">"--
+									Grafana --"</span>,</div>
+							<div class="ace_line" style="height:18px"><span class="ace_indent-guide"> </span><span class="ace_indent-guide">
+								</span><span class="ace_indent-guide"> </span> <span class="ace_variable">"enable"</span>: <span class="ace_constant ace_language ace_boolean">true</span>,</div>
+							<div class="ace_line" style="height:18px"><span class="ace_indent-guide"> </span><span class="ace_indent-guide">
+								</span><span class="ace_indent-guide"> </span> <span class="ace_variable">"hide"</span>: <span class="ace_constant ace_language ace_boolean">true</span>,</div>
+							<div class="ace_line" style="height:18px"><span class="ace_indent-guide"> </span><span class="ace_indent-guide">
+								</span><span class="ace_indent-guide"> </span> <span class="ace_variable">"iconColor"</span>: <span class="ace_string">"rgba(0,
+									211, 255, 1)"</span>,</div>
+							<div class="ace_line" style="height:18px"><span class="ace_indent-guide"> </span><span class="ace_indent-guide">
+								</span><span class="ace_indent-guide"> </span> <span class="ace_variable">"name"</span>: <span class="ace_string">"Annotations
+									&amp; Alerts"</span>,</div>
+							<div class="ace_line" style="height:18px"><span class="ace_indent-guide"> </span><span class="ace_indent-guide">
+								</span><span class="ace_indent-guide"> </span> <span class="ace_variable">"type"</span>: <span class="ace_string">"dashboard"</span></div>
+							<div class="ace_line" style="height:18px"><span class="ace_indent-guide"> </span><span class="ace_indent-guide">
+								</span> <span class="ace_paren ace_rparen">}</span></div>
+							<div class="ace_line" style="height:18px"><span class="ace_indent-guide"> </span> <span class="ace_paren ace_rparen">]</span></div>
+							<div class="ace_line" style="height:18px"> <span class="ace_paren ace_rparen">}</span>,</div>
+							<div class="ace_line" style="height:18px"> <span class="ace_variable">"description"</span>: <span class="ace_string">"Demo"</span>,</div>
+							<div class="ace_line" style="height:18px"> <span class="ace_variable">"editable"</span>: <span class="ace_constant ace_language ace_boolean">true</span>,</div>
+							<div class="ace_line" style="height:18px"> <span class="ace_variable">"gnetId"</span>: null,</div>
+							<div class="ace_line" style="height:18px"> <span class="ace_variable">"graphTooltip"</span>: <span class="ace_constant ace_numeric">0</span>,</div>
+							<div class="ace_line" style="height:18px"> <span class="ace_variable">"id"</span>: <span class="ace_constant ace_numeric">2</span>,</div>
+							<div class="ace_line" style="height:18px"> <span class="ace_variable">"links"</span>: <span class="ace_paren ace_lparen">[</span><span
+								 class="ace_paren ace_rparen">]</span>,</div>
+							<div class="ace_line" style="height:18px"> <span class="ace_variable">"panels"</span>: <span class="ace_paren ace_lparen">[</span></div>
+							<div class="ace_line" style="height:18px"><span class="ace_indent-guide"> </span> <span class="ace_paren ace_lparen">{</span></div>
+							<div class="ace_line" style="height:18px"><span class="ace_indent-guide"> </span><span class="ace_indent-guide">
+								</span> <span class="ace_variable">"ChartMode"</span>: <span class="ace_string">"line"</span>,</div>
+							<div class="ace_line" style="height:18px"><span class="ace_indent-guide"> </span><span class="ace_indent-guide">
+								</span> <span class="ace_variable">"areaStyle"</span>: <span class="ace_paren ace_lparen">{</span></div>
+							<div class="ace_line" style="height:18px"><span class="ace_indent-guide"> </span><span class="ace_indent-guide">
+								</span><span class="ace_indent-guide"> </span> <span class="ace_variable">"values"</span>: <span class="ace_constant ace_language ace_boolean">true</span></div>
+							<div class="ace_line" style="height:18px"><span class="ace_indent-guide"> </span><span class="ace_indent-guide">
+								</span> <span class="ace_paren ace_rparen">}</span>,</div>
+							<div class="ace_line" style="height:18px"><span class="ace_indent-guide"> </span><span class="ace_indent-guide">
+								</span> <span class="ace_variable">"backgroundColor"</span>: <span class="ace_string">"#63696e"</span>,</div>
+							<div class="ace_line" style="height:18px"><span class="ace_indent-guide"> </span><span class="ace_indent-guide">
+								</span> <span class="ace_variable">"code"</span>: <span class="ace_string">"fdffffffffffffffffffffffffffffffffffffffffffffdffffffffffffffffffffffffffffffffffffffffffffdffffffffffffffffffffffffffffffffffffffffffffdffffffffffffffffffffffffffffffffffffffffffffdffffffffffffffffffffffffffffffffffffffffffffdffffffffffffffffffffffffffffffffffffffffffffdffffffffffffffffffffffffffffffffffffffffffffdffffffffffffffffffffffffffffffffffffffffffffdffffffffffffffffffffffffffffffffffffffffffffdffffffffffffffffffffffffffffffffffffffffffffdffffffffffffffffffffffffffffffffffffffffffffdffffffffffffffffffffffffffffffffffffffffffffdffffffffffffffffffffffffffffffffffffffffffffdffffffffffffffffffffffffffffffffffffffffffffdffffffffffffffffffffffffffffffffffffffffffffdffffffffffffffffffffffffffffffffffffffffffffdffffffffffffffffffffffffffffffffffffffffffffdffffffffffffffffffffffffffffffffffffffffffffdffffffffffffffffffffffffffffffffffffffffffffdffffffffffffffffffffffffffffffffffffffffffffdffffffffffffffffffffffffffffffffffffffffffffdffffffffffffffffffffffffffffffffffffffffffffdffffffffffffffffffffffffffffffffffffffffffffdfffffffffffffffffffffffffffffffffffffffffff"</span>,</div>
+							<div class="ace_line" style="height:18px"><span class="ace_indent-guide"> </span><span class="ace_indent-guide">
+								</span> <span class="ace_variable">"dataColors"</span>: <span class="ace_paren ace_lparen">[</span></div>
+							<div class="ace_line" style="height:18px"><span class="ace_indent-guide"> </span><span class="ace_indent-guide">
+								</span><span class="ace_indent-guide"> </span> <span class="ace_string">"#83fa52"</span>,</div>
+							<div class="ace_line" style="height:18px"><span class="ace_indent-guide"> </span><span class="ace_indent-guide">
+								</span><span class="ace_indent-guide"> </span> <span class="ace_string">"#f6630e"</span>,</div>
+							<div class="ace_line" style="height:18px"><span class="ace_indent-guide"> </span><span class="ace_indent-guide">
+								</span><span class="ace_indent-guide"> </span> <span class="ace_string">"#f60e48"</span></div>
+							<div class="ace_line" style="height:18px"><span class="ace_indent-guide"> </span><span class="ace_indent-guide">
+								</span> <span class="ace_paren ace_rparen">]</span>,</div>
+						</div>
+						<div class="ace_layer ace_marker-layer"></div>
+						<div class="ace_layer ace_cursor-layer ace_hidden-cursors">
+							<div class="ace_cursor" style="left: 10px; top: 90px; width: 8.40156px; height: 18px;"></div>
+						</div>
+					</div>
+				</div>
+				<div class="ace_scrollbar ace_scrollbar-v" style="width: 10px; bottom: 5px;">
+					<div class="ace_scrollbar-inner" style="width: 10px; height: 16050px;"></div>
+				</div>
+				<div class="ace_scrollbar ace_scrollbar-h" style="height: 10px; left: 0px; right: 5px;">
+					<div class="ace_scrollbar-inner" style="height: 10px; width: 9237px;"></div>
+				</div>
+				<div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;">
+					<div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;"></div>
+					<div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div>
+				</div>
+			</code-editor>
+		</div> -->
 	</div>
-	
-		
-</div>
 
+
+</div>

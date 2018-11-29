@@ -171,13 +171,14 @@ $input-border: 1px solid $input-border-color;
   background-clip: padding-box;
   border: $input-border;
   border-radius: $input-border-radius;
-  @include box-shadow($input-box-shadow);
+  // @include box-shadow($input-box-shadow);//###
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 
   // text areas should be scrollable
   @at-root textarea#{&} {
+    min-height: 240px; //###
     overflow: auto;
     white-space: pre-wrap;
   }

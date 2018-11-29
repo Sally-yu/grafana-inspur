@@ -226,6 +226,9 @@ System.register(['./lib/echarts.min', 'lodash', './lib/dark', 'jquery'], functio
                 }]
             };
 
+            //自定义代码
+            var optionCus = codetText ? JSON.parse(codetText) : null;
+
             //选图表类型，页面上可选 editor.tml中
             var option = {};
             switch (chartMode) {
@@ -237,6 +240,11 @@ System.register(['./lib/echarts.min', 'lodash', './lib/dark', 'jquery'], functio
                     break;
                 case 'radar':
                     option = optionRadar;
+                    break;
+
+                case 'custom':
+                    //自定义的内容，按照编写的json格式
+                    option = optionCus;
                     break;
                 default:
                     break;
