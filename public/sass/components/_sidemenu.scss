@@ -36,15 +36,18 @@
       position: relative;
       z-index: $zindex-sidemenu;
     }
-    .sidemenu__top,
-    .sidemenu__bottom {
+    // .sidemenu__top,
+    // .sidemenu__bottom {
+    //   display: block;
+    //   background: $side-menu-bg;
+    //   position: initial;
+    //   height: auto;
+    //   box-shadow: $side-menu-shadow;
+    //   position: relative;
+    //   z-index: $zindex-sidemenu;
+    // }
+    .sidemenu__top {
       display: block;
-      // background: $side-menu-bg;
-      // position: initial;
-      // height: auto;
-      // box-shadow: $side-menu-shadow;
-      // position: relative;
-      // z-index: $zindex-sidemenu;
     }
   }
 }

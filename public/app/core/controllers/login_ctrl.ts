@@ -6,9 +6,9 @@ export class LoginCtrl {
   /** @ngInject */
   constructor($scope, backendSrv, contextSrv, $location) {
     $scope.formModel = {
-      user: 'admin',
-      email: 'admin@example.com',
-      password: 'admin',
+      user: 'viewer',
+      email: 'viewer@example.com',
+      password: 'aaaaaa',
     };
 
     $scope.command = {};

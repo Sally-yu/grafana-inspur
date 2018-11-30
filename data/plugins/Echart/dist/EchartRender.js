@@ -16,6 +16,9 @@ System.register(['./lib/echarts.min', 'lodash', './lib/dark', 'jquery'], functio
             var codetText = ctrl.panel.code;
             var chartMode = ctrl.panel.ChartMode; //echarts图类型，线饼雷达等
             var decimal = ctrl.panel.decimal; //保留小数位
+            var postion = ctrl.panel.position; //饼图legend位置
+            var orient = ctrl.panel.orient; //饼图legend方向
+
 
             if (!ctrl.data) return;
 
@@ -53,7 +56,7 @@ System.register(['./lib/echarts.min', 'lodash', './lib/dark', 'jquery'], functio
 
                     var target = serie.target; //查询的名称，查询页面可设置
 
-                    lastData.push({ "value": lastValue == null ? 0 : lastValue, "time": lastTime, "name": target }); //每个serie装一对值和时间
+                    lastData.push({ "value": lastValue == null ? 100 : lastValue, "time": lastTime, "name": target }); //每个serie装一对值和时间
                     legend.push(target);
                     allData.push(serie.datapoints); //每个查询一个数组
                 });
@@ -123,10 +126,8 @@ System.register(['./lib/echarts.min', 'lodash', './lib/dark', 'jquery'], functio
                 },
                 legend: {
                     type: 'scroll',
-                    orient: 'vertical',
-                    right: 10,
-                    top: 20,
-                    bottom: 20,
+                    orient: orient,
+                    left: postion,
                     data: legend,
 
                     selected: legend
@@ -135,7 +136,7 @@ System.register(['./lib/echarts.min', 'lodash', './lib/dark', 'jquery'], functio
                     name: '占用',
                     type: 'pie',
                     radius: '55%',
-                    center: ['40%', '50%'],
+                    center: ['50%', '50%'],
                     data: pieSer,
                     itemStyle: {
                         emphasis: {
@@ -201,7 +202,10 @@ System.register(['./lib/echarts.min', 'lodash', './lib/dark', 'jquery'], functio
                 },
                 legend: {
                     x: 'right',
-                    data: ['某软件', '某主食手机', '某水果手机', '某国产手机']
+                    data: ['某软件', '某主食手机', '某水果手机', '某国产手机'],
+                    orient: orient,
+                    left: postion
+
                 },
 
                 //底环
@@ -226,8 +230,93 @@ System.register(['./lib/echarts.min', 'lodash', './lib/dark', 'jquery'], functio
                 }]
             };
 
-            //自定义代码
-            var optionCus = codetText ? JSON.parse(codetText) : null;
+            var optionMap = {};
+
+            //横向柱状图
+            var optionBar = {
+                tooltip: {
+                    trigger: 'axis',
+                    axisPointer: { // 坐标轴指示器，坐标轴触发有效
+                        type: 'shadow' // 默认为直线，可选为：'line' | 'shadow'
+                    }
+                },
+                legend: {
+                    data: ['直接访问', '邮件营销', '联盟广告', '视频广告', '搜索引擎'],
+                    orient: orient,
+                    left: postion
+                },
+                grid: {
+                    left: '3%',
+                    right: '4%',
+                    bottom: '3%',
+                    containLabel: true
+                },
+                xAxis: {
+                    type: 'value'
+                },
+                yAxis: {
+                    type: 'category',
+                    data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
+                },
+                series: [{
+                    name: '直接访问',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: true,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [320, 302, 301, 334, 390, 330, 320]
+                }, {
+                    name: '邮件营销',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: true,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [120, 132, 101, 134, 90, 230, 210]
+                }, {
+                    name: '联盟广告',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: true,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [220, 182, 191, 234, 290, 330, 310]
+                }, {
+                    name: '视频广告',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: true,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [150, 212, 201, 154, 190, 330, 410]
+                }, {
+                    name: '搜索引擎',
+                    type: 'bar',
+                    stack: '',
+                    label: {
+                        normal: {
+                            show: true,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [820, 832, 901, 934, 1290, 1330, 1320]
+                }]
+
+                //自定义代码
+            };var optionCus = codetText ? JSON.parse(codetText) : null;
 
             //选图表类型，页面上可选 editor.tml中
             var option = {};
@@ -240,6 +329,12 @@ System.register(['./lib/echarts.min', 'lodash', './lib/dark', 'jquery'], functio
                     break;
                 case 'radar':
                     option = optionRadar;
+                    break;
+                case 'map':
+                    option = optionMap;
+                    break;
+                case 'bar':
+                    option = optionBar;
                     break;
 
                 case 'custom':

@@ -24,6 +24,8 @@ const panelDefaults = {
   areaStyle:{
     values:true
   },
+  position:'center',
+  orient:'horizontal',
 };
 
 

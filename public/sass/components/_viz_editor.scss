@@ -50,7 +50,7 @@
 
   &--selected {
     // border: 1px solid $orange;
-    @include left-brand-border-gradient();
+    // @include left-brand-border-gradient();
 
     .viz-picker__item-name {
       color: $text-color;

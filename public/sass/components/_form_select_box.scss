@@ -69,7 +69,7 @@ $select-input-bg-disabled: $input-bg-disabled;
   &.gf-form-select-box__option--is-focused {
     color: $dropdownLinkColorHover;
     background-color: $dropdownLinkBackgroundHover;
-    @include left-brand-border-gradient();
+    // @include left-brand-border-gradient();
   }
 
   &.gf-form-select-box__option--is-selected {

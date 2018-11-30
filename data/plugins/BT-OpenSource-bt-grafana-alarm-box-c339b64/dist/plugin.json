@@ -1,0 +1,33 @@
+{
+  "type": "panel",
+  "name": "Alarm Box",
+  "id": "btplc-alarm-box-panel",
+
+  "info": {
+    "version": "1.0.7",
+    "description": "Box panel counting values in a series",
+    "author": {
+      "name": "BT Plc",
+      "url": "https://bt.com"
+    },
+    "keywords": ["alarm", "box", "panel"],
+    "links": [
+      {"name": "MIT Licence", "url": "https://github.com/BT-OpenSource/bt-grafana-alarm-box/blob/master/LICENSE"},
+      {"name": "Project Site", "url": "https://github.com/BT-OpenSource/bt-grafana-alarm-box"}
+    ],
+    "screenshots": [
+      {"name": "Alarm Box", "path": "img/alarm_box.png"},
+      {"name": "Alarm Box Options", "path": "img/alarm_box_options.png"},
+      {"name": "Alarm Box Values", "path": "img/alarm_box_values.png"}
+    ],
+    "logos": {
+      "small": "img/logo.jpg",
+      "large": "img/logo.jpg"
+    }
+  },
+
+  "dependencies": {
+    "grafanaVersion": "4.5.0",
+    "plugins": [ ]
+  }
+}
