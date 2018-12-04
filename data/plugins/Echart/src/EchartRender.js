@@ -19,8 +19,6 @@ export default function link(scope, elem, attrs, ctrl, ) {
         const orient = ctrl.panel.orient;//饼图legend方向\
         const axis = ctrl.panel.axis;//x-y方向
 
-
-
         if (!ctrl.data) return;
 
         if (!ctrl.map) {
@@ -255,7 +253,7 @@ export default function link(scope, elem, attrs, ctrl, ) {
 
         }
 
-        //横向柱状图
+        //柱状图
         var optionBar = {
             tooltip: {
                 trigger: 'axis',
@@ -355,6 +353,7 @@ export default function link(scope, elem, attrs, ctrl, ) {
             json = eval('(' + codetText + ')');
             console.log(json);//Object {keyName: 34, keyCode: "5554"}
         }
+
         //自定义代码
         var optionCus = codetText ? json : null;
 

@@ -20,7 +20,6 @@ System.register(['./lib/echarts.min', 'lodash', './lib/dark', 'jquery'], functio
             var orient = ctrl.panel.orient; //饼图legend方向\
             var axis = ctrl.panel.axis; //x-y方向
 
-
             if (!ctrl.data) return;
 
             if (!ctrl.map) {}
@@ -234,7 +233,7 @@ System.register(['./lib/echarts.min', 'lodash', './lib/dark', 'jquery'], functio
 
             var optionMap = {};
 
-            //横向柱状图
+            //柱状图
             var optionBar = {
                 tooltip: {
                     trigger: 'axis',
@@ -328,6 +327,7 @@ System.register(['./lib/echarts.min', 'lodash', './lib/dark', 'jquery'], functio
                 json = eval('(' + codetText + ')');
                 console.log(json); //Object {keyName: 34, keyCode: "5554"}
             }
+
             //自定义代码
             var optionCus = codetText ? json : null;
 
