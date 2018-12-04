@@ -86,7 +86,8 @@ System.register(['app/plugins/sdk', './lib/echarts.min', './EchartRender', 'loda
           values: true
         },
         position: 'center',
-        orient: 'horizontal'
+        orient: 'horizontal',
+        axis: 'y for value'
       };
 
       _export('EchartCtrl', EchartCtrl = function (_MetricsPanelCtrl) {

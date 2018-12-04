@@ -17,7 +17,8 @@ System.register(['./lib/echarts.min', 'lodash', './lib/dark', 'jquery'], functio
             var chartMode = ctrl.panel.ChartMode; //echarts图类型，线饼雷达等
             var decimal = ctrl.panel.decimal; //保留小数位
             var postion = ctrl.panel.position; //饼图legend位置
-            var orient = ctrl.panel.orient; //饼图legend方向
+            var orient = ctrl.panel.orient; //饼图legend方向\
+            var axis = ctrl.panel.axis; //x-y方向
 
 
             if (!ctrl.data) return;
@@ -96,13 +97,14 @@ System.register(['./lib/echarts.min', 'lodash', './lib/dark', 'jquery'], functio
             });
 
             var lineSer = []; //折线用的series
+            var areaStyle = ctrl.panel.areaStyle.values ? {} : null;
             for (var i = 0; i < legend.length; i++) {
                 var tempDic = {
                     name: legend[i],
                     type: 'line',
                     stack: '',
                     data: valueList[i],
-                    areaStyle: ctrl.panel.areaStyle.values ? {} : null, //颜色填充
+                    areaStyle: areaStyle, //颜色填充
                     label: { //数值标签
                         normal: {
                             show: ctrl.panel.showLabel.values,
@@ -251,21 +253,21 @@ System.register(['./lib/echarts.min', 'lodash', './lib/dark', 'jquery'], functio
                     bottom: '3%',
                     containLabel: true
                 },
-                xAxis: {
-                    type: 'value'
-                },
                 yAxis: {
+                    type: 'value' //
+                },
+                xAxis: {
                     type: 'category',
                     data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
                 },
                 series: [{
                     name: '直接访问',
                     type: 'bar',
-                    stack: '总量',
+                    stack: '总量', //叠加求和
                     label: {
                         normal: {
                             show: true,
-                            position: 'insideRight'
+                            position: 'insideRight' //label在色块中的 位置
                         }
                     },
                     data: [320, 302, 301, 334, 390, 330, 320]
@@ -314,15 +316,32 @@ System.register(['./lib/echarts.min', 'lodash', './lib/dark', 'jquery'], functio
                     },
                     data: [820, 832, 901, 934, 1290, 1330, 1320]
                 }]
+            };
 
-                //自定义代码
-            };var optionCus = codetText ? JSON.parse(codetText) : null;
+            var json = {};
+            if (codetText != null && codetText != '') {
+                console.log(codetText); //{   keyName : 34, 'keyCode' : '5554'}
+                console.log(/(?:\s*['"]*)?([a-zA-Z0-9]+)(?:['"]*\s*)?:/g.test(codetText)); //true
+                console.log(codetText.match(/(?:\s*['"]*)?([a-zA-Z0-9]+)(?:['"]*\s*)?:/g)); //["   keyName :", " 'keyCode' :"]
+                codetText = codetText.replace(/(?:\s*['"]*)?([a-zA-Z0-9]+)(?:['"]*\s*)?:/g, "'$1':");
+                console.log(codetText); //{'keyName': 34,'keyCode': '5554'}
+                json = eval('(' + codetText + ')');
+                console.log(json); //Object {keyName: 34, keyCode: "5554"}
+            }
+            //自定义代码
+            var optionCus = codetText ? json : null;
 
             //选图表类型，页面上可选 editor.tml中
             var option = {};
             switch (chartMode) {
                 case 'line':
                     option = optionLine;
+                    if (axis == 'x for value') {
+                        //设置xy方向
+                        var temp = option.xAxis;
+                        option.xAxis = option.yAxis;
+                        option.yAxis = temp;
+                    }
                     break;
                 case 'pie':
                     option = optionPie;
@@ -335,6 +354,11 @@ System.register(['./lib/echarts.min', 'lodash', './lib/dark', 'jquery'], functio
                     break;
                 case 'bar':
                     option = optionBar;
+                    if (axis == 'x for value') {
+                        var temp = option.xAxis;
+                        option.xAxis = option.yAxis;
+                        option.yAxis = temp;
+                    }
                     break;
 
                 case 'custom':

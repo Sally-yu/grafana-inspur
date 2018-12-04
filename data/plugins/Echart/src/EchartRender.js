@@ -12,11 +12,12 @@ export default function link(scope, elem, attrs, ctrl, ) {
 
 
     function render() {
-        const codetText = ctrl.panel.code;
+        var codetText = ctrl.panel.code;
         const chartMode = ctrl.panel.ChartMode;//echarts图类型，线饼雷达等
         const decimal = ctrl.panel.decimal;//保留小数位
-        const postion=ctrl.panel.position;//饼图legend位置
-        const orient=ctrl.panel.orient//饼图legend方向
+        const postion = ctrl.panel.position;//饼图legend位置
+        const orient = ctrl.panel.orient;//饼图legend方向\
+        const axis = ctrl.panel.axis;//x-y方向
 
 
 
@@ -98,13 +99,14 @@ export default function link(scope, elem, attrs, ctrl, ) {
         });
 
         var lineSer = [];//折线用的series
+        var areaStyle = ctrl.panel.areaStyle.values ? {} : null;
         for (var i = 0; i < legend.length; i++) {
             var tempDic = {
                 name: legend[i],
                 type: 'line',
                 stack: '',
                 data: valueList[i],
-                areaStyle: ctrl.panel.areaStyle.values ? {} : null,//颜色填充
+                areaStyle: areaStyle,//颜色填充
                 label: {                     //数值标签
                     normal: {
                         show: ctrl.panel.showLabel.values,
@@ -131,7 +133,7 @@ export default function link(scope, elem, attrs, ctrl, ) {
             legend: {
                 type: 'scroll',
                 orient: orient,
-                left:postion,
+                left: postion,
                 data: legend,
 
                 selected: legend
@@ -210,7 +212,7 @@ export default function link(scope, elem, attrs, ctrl, ) {
                 x: 'right',
                 data: ['某软件', '某主食手机', '某水果手机', '某国产手机'],
                 orient: orient,
-                left:postion,
+                left: postion,
 
             },
 
@@ -228,19 +230,6 @@ export default function link(scope, elem, attrs, ctrl, ) {
                     radius: 120
 
                 },
-                // {
-                //     indicator: [
-                //         {text: '外观', max: 100},
-                //         {text: '拍照', max: 100},
-                //         {text: '系统', max: 100},
-                //         {text: '性能', max: 100},
-                //         {text: '屏幕', max: 100},
-                //         {text: '发热', max: 100},
-                //         {text: '待机', max: 100},
-                //     ],
-                //     radius: 160,
-                //     center: ['75%','50%'],
-                // },
             ],
 
 
@@ -259,45 +248,25 @@ export default function link(scope, elem, attrs, ctrl, ) {
                         }
                     ]
                 },
-                // {
-                //     type: 'radar',
-
-                //     radarIndex: 1,
-                //     data: [
-                //         {
-                //             value: [50, 80, 90, 95, 65,100,70],
-                //             name: '某主食手机'
-                //         },
-                //         {
-                //             value: [95, 80, 95, 90, 93,80,60],
-                //             name: '某水果手机'
-                //         },
-                //         {
-                //             value: [85, 95, 90, 90, 80,90,85],
-                //             name: '某国产手机'
-                //         }
-                //     ]
-                // },
-
             ]
         };
 
-        var optionMap={
+        var optionMap = {
 
         }
 
         //横向柱状图
-        var optionBar={
-            tooltip : {
+        var optionBar = {
+            tooltip: {
                 trigger: 'axis',
-                axisPointer : {            // 坐标轴指示器，坐标轴触发有效
-                    type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+                axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+                    type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
                 }
             },
             legend: {
-                data: ['直接访问', '邮件营销','联盟广告','视频广告','搜索引擎'],
+                data: ['直接访问', '邮件营销', '联盟广告', '视频广告', '搜索引擎'],
                 orient: orient,
-                left:postion,
+                left: postion,
             },
             grid: {
                 left: '3%',
@@ -305,22 +274,22 @@ export default function link(scope, elem, attrs, ctrl, ) {
                 bottom: '3%',
                 containLabel: true
             },
-            xAxis:  {
-                type: 'value'
-            },
             yAxis: {
-                type: 'category',
-                data: ['周一','周二','周三','周四','周五','周六','周日']
+                type: 'value'  //
+            },
+            xAxis: {
+                type: 'category',   
+                data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
             },
             series: [
                 {
                     name: '直接访问',
                     type: 'bar',
-                    stack: '总量',
+                    stack: '总量', //叠加求和
                     label: {
                         normal: {
                             show: true,
-                            position: 'insideRight'
+                            position: 'insideRight' //label在色块中的 位置
                         }
                     },
                     data: [320, 302, 301, 334, 390, 330, 320]
@@ -376,15 +345,29 @@ export default function link(scope, elem, attrs, ctrl, ) {
             ]
         }
 
+        var json = {};
+        if (codetText != null && codetText != '') {
+            console.log(codetText);//{   keyName : 34, 'keyCode' : '5554'}
+            console.log(/(?:\s*['"]*)?([a-zA-Z0-9]+)(?:['"]*\s*)?:/g.test(codetText))//true
+            console.log(codetText.match(/(?:\s*['"]*)?([a-zA-Z0-9]+)(?:['"]*\s*)?:/g));//["   keyName :", " 'keyCode' :"]
+            codetText = codetText.replace(/(?:\s*['"]*)?([a-zA-Z0-9]+)(?:['"]*\s*)?:/g, "'$1':");
+            console.log(codetText);//{'keyName': 34,'keyCode': '5554'}
+            json = eval('(' + codetText + ')');
+            console.log(json);//Object {keyName: 34, keyCode: "5554"}
+        }
         //自定义代码
-        var optionCus = codetText ? JSON.parse(codetText) : null;
-
+        var optionCus = codetText ? json : null;
 
         //选图表类型，页面上可选 editor.tml中
         let option = {};
         switch (chartMode) {
             case 'line':
                 option = optionLine;
+                if (axis == 'x for value') {//设置xy方向
+                    var temp = option.xAxis;
+                    option.xAxis = option.yAxis;
+                    option.yAxis = temp;
+                }
                 break;
             case 'pie':
                 option = optionPie;
@@ -393,12 +376,17 @@ export default function link(scope, elem, attrs, ctrl, ) {
                 option = optionRadar;
                 break;
             case 'map':
-                option=optionMap;
+                option = optionMap;
                 break;
             case 'bar':
-                option=optionBar;
+                option = optionBar;
+                if (axis == 'x for value') {
+                    var temp = option.xAxis;
+                    option.xAxis = option.yAxis;
+                    option.yAxis = temp;
+                }
                 break;
-            
+
             case 'custom'://自定义的内容，按照编写的json格式
                 option = optionCus;
                 break;

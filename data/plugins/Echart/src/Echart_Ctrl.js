@@ -26,6 +26,7 @@ const panelDefaults = {
   },
   position:'center',
   orient:'horizontal',
+  axis:'y for value',
 };
 
 
