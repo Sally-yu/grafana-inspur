@@ -29,7 +29,14 @@
 <div class="section gf-form-group">
 	<h5 class="section-heading">Echarts Options</h5>
 	<div class="gf-form">
-		<label class="gf-form-label width-10">Chart Mode</label>
+		<label class="gf-form-label width-10">Table Model</label>
+		<div class="gf-form-select-wrapper width-10">
+			<select class="gf-form-input" ng-model="ctrl.panel.TableMode" ng-options="s for s in ['time', 'table']" ng-change="ctrl.render()"></select>
+		</div>
+	</div>
+
+	<div class="gf-form">
+		<label class="gf-form-label width-10">Chart Model</label>
 		<div class="gf-form-select-wrapper width-10">
 			<select class="gf-form-input" ng-model="ctrl.panel.ChartMode" ng-options="s for s in ['line', 'pie','radar','bar','custom']"
 			 ng-change="ctrl.render()"></select>
@@ -63,21 +70,36 @@
 		<input type="number" class="input-small gf-form-input width-10" ng-model="ctrl.panel.decimal" ng-change="ctrl.refresh()"
 		 placeholder="0" ng-model-onblur />
 	</div>
+	<div class="gf-form">
+		<label class="gf-form-label width-10">Unit</label>
+		<div class="gf-form-dropdown-typeahead width-10" ng-model="ctrl.panel.unit" dropdown-typeahead2="ctrl.unitFormats"
+		 dropdown-typeahead-on-select="ctrl.setUnitFormat($subItem)"></div>
+	</div>
+</div>
+<div class="section gf-form-group">
+	<h5 class="section-heading"><br></h5>
 
 	<gf-form-switch class="gf-form" label="Aera Style" label-class="width-10" checked="ctrl.panel.areaStyle.values"
 	 ng-model="ctrl.panel.areaStyle" on-change="ctrl.refresh()"></gf-form-switch>
 	<gf-form-switch class="gf-form" label="Show Label" label-class="width-10" checked="ctrl.panel.showLabel.values"
 	 ng-model="ctrl.panel.showLabel" on-change="ctrl.refresh()"></gf-form-switch>
+	<gf-form-switch class="gf-form" label="Bar Stack" label-class="width-10" checked="ctrl.panel.barStack.values" ng-model="ctrl.panel.barStack"
+	 on-change="ctrl.refresh()"></gf-form-switch>
+	<gf-form-switch class="gf-form" label="Bar Label" label-class="width-10" checked="ctrl.panel.barLabel.values" ng-model="ctrl.panel.barLabel"
+	 on-change="ctrl.refresh()"></gf-form-switch>
+	<gf-form-switch class="gf-form" label="As Ring" label-class="width-10" checked="ctrl.panel.asRing.values" ng-model="ctrl.panel.asRing"
+	 on-change="ctrl.refresh()"></gf-form-switch>
 
 </div>
 
 <div class="section gf-form-group">
-	<h5 class="section-heading">Echarts Code</h5>
+	<h5 class="section-heading">Custom Code</h5>
 	<div class="gf-form">
 		<!-- <label class="gf-form-label width-10">Custom Code</label> -->
-		<textarea class="gf-form-input width-25 ng-pristine ng-untouched ng-valid ng-empty" height="280px" ng-model="ctrl.panel.code" ng-change="" placeholder="Your custom code here" ng-model-onblur />
+		<textarea class="gf-form-input width-25 ng-pristine ng-untouched ng-valid ng-empty" height="280px" ng-model="ctrl.panel.code"
+		 ng-change="" placeholder="Your custom code here" ng-model-onblur />
 
-	</div>
+		</div>
 
 
 </div>

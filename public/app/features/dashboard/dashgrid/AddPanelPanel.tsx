@@ -221,11 +221,6 @@ export class AddPanelPanel extends React.Component<AddPanelPanelProps, AddPanelP
       '': this.state.tab in ['Add', 'Pie'],
     });
 
-    const PieClass = classNames({
-      'active active--panel': this.state.tab === 'Pie',
-      '': this.state.tab in ['Echart', 'Pie'],
-    });
-
     let panelTab;
 
     panelTab = this.state.panelPlugins.map(this.renderPanelItem);
@@ -244,28 +239,16 @@ export class AddPanelPanel extends React.Component<AddPanelPanelProps, AddPanelP
       <div className="panel-container add-panel-container">
         <div className="add-panel">
           <div className="add-panel__header">
-            {/* <i className="gicon gicon-add-panel" /> */}
-            <span className="add-panel__title">新增面板</span>
+            <i className="gicon gicon-add-panel" />
             <ul className="gf-tabs">
               <li className="gf-tabs-item">
                 <div className={'gf-tabs-link pointer ' + addClass} onClick={this.openAdd.bind(this)}>
-                  系统预置
+                  system
                 </div>
               </li>
               <li className="gf-tabs-item">
-                {/* <div className={'gf-tabs-link pointer ' + copyClass} onClick={this.openCopy.bind(this)}>
-                  Paste
-                </div> */}
                 <div className={'gf-tabs-link pointer ' + ecahrtClass} onClick={this.openEchart.bind(this)}>
                   Echart
-                </div>
-              </li>
-              <li className="gf-tabs-item">
-                {/* <div className={'gf-tabs-link pointer ' + copyClass} onClick={this.openCopy.bind(this)}>
-                  Paste
-                </div> */}
-                <div className={'gf-tabs-link pointer ' + PieClass} onClick={this.openPie.bind(this)}>
-                  饼图
                 </div>
               </li>
             </ul>

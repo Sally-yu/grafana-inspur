@@ -130,7 +130,7 @@
   line-height: 16px;
   height: 30px;
   // color: $text-muted;
-  background-color: $gray-blue;
+  background-color: #090a0c;
   background-image: none;
   // border: 1px solid $navbar-button-border;
   // margin-right: 3px;
@@ -166,7 +166,7 @@
   &--primary {
     // @include buttonBackground($btn-secondary-bg, $btn-secondary-bg-hl);
 
-    @include buttonBackground($blue-dark, $blue);
+    @include buttonBackground(rgb(119, 104, 243), rgb(37, 171, 246));
   }
 }
 

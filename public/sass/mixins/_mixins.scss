@@ -346,7 +346,7 @@
   //   rgba(255, 68, 0, 1) 99%,
   //   rgba(255, 68, 0, 1) 100%
   // );
-  border-image: linear-gradient($blue, $blue-dark);
+  border-image: linear-gradient(rgb(37, 171, 246), rgb(119, 104, 243));
   border-image-slice: 1;
   border-style: solid;
   border-top: 0;

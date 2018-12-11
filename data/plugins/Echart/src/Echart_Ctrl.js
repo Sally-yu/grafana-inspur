@@ -18,15 +18,26 @@ const panelDefaults = {
   unit: 'ms',
   decimal:2,
   ChartMode:'line',
+  TableMode:'time',
   showLabel:{
     values:true
   },
   areaStyle:{
     values:true
   },
+  barStack:{
+    values:false
+  },
+  barLabel:{
+    values:false
+  },
+  asRing:{
+    values:false
+  },
   position:'center',
   orient:'horizontal',
   axis:'y for value',
+
 };
 
 
@@ -59,8 +70,6 @@ export class EchartCtrl extends MetricsPanelCtrl {
     this.addEditorTab('Options', 'public/plugins/grafana-Echart-Demo/editor.html', 2);  //使用plugins.json中的ID找html
 
   }
-
-
   //html中直接绑定的事件
   changeThresholds() {
 

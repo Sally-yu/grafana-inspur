@@ -15,6 +15,7 @@ System.register(['./lib/echarts.min', 'lodash', './lib/dark', 'jquery'], functio
         function render() {
             var codetText = ctrl.panel.code;
             var chartMode = ctrl.panel.ChartMode; //echarts图类型，线饼雷达等
+            var tableMode = ctrl.panel.TableMode; //数据表格式，时序或table
             var decimal = ctrl.panel.decimal; //保留小数位
             var postion = ctrl.panel.position; //饼图legend位置
             var orient = ctrl.panel.orient; //饼图legend方向\
@@ -22,7 +23,33 @@ System.register(['./lib/echarts.min', 'lodash', './lib/dark', 'jquery'], functio
 
             if (!ctrl.data) return;
 
-            if (!ctrl.map) {}
+            var lastData = []; //最后时刻数据
+            var allData = []; //全部value time [[[v,t],[v,t],[v,t]...],[[v,t],[v,t],[v,t]...]]
+            var legend = []; //每个查询名称
+
+            //时序数据库取出的表 设置结果为table型
+            if (tableMode == 'table') {
+                ctrl.data.forEach(function (serie) {
+                    var lastPoint;
+                    if (serie[serie.length - 2]) {
+                        lastPoint = serie.rows[serie.rows.length - 2]; //数据较多时最后一点经常取不到数据
+                    } else {
+                        lastPoint = serie.rows[serie.rows.length - 1];
+                    }
+                    var lastValue;
+                    if (decimal >= 0 && decimal < 20) {
+                        lastValue = _.isArray(lastPoint) ? parseFloat(parseFloat(lastPoint[1]).toFixed(decimal)) : null; //最后时刻value
+                    } else {
+                        lastValue = _.isArray(lastPoint) ? lastPoint[1] : null; //最后时刻value
+                    }
+                    var lastTime = lastPoint[0]; //最后时刻time
+
+                    lastData.push({ "value": lastValue == null ? 100 : lastValue, "time": lastTime, "name": serie.columns[1].text }); //每个serie装一对值和时间
+
+                    legend.push(serie.columns[1].text);
+                    allData.push(serie.rows);
+                });
+            }
 
             // console.log('dark:'+JSON.stringify(dark));//json格式，当变量写入到js文件中读取，
 
@@ -36,13 +63,8 @@ System.register(['./lib/echarts.min', 'lodash', './lib/dark', 'jquery'], functio
             // console.log('chartMode:'+chartMode);
             // console.log('**************'+JSON.stringify(ctrl.data));//传入ctrl的datalist 查询到的所有数据
 
-
-            var lastData = []; //最后时刻数据
-            var allData = []; //全部value time [[[v,t],[v,t],[v,t]...],[[v,t],[v,t],[v,t]...]]
-            var legend = []; //每个查询名称
-
             //处理查询数据库得到的数据
-            if (ctrl.data && ctrl.data.length > 0) {
+            if (tableMode == 'time' && ctrl.data.length > 0) {
                 ctrl.data.forEach(function (serie) {
                     var lastPoint = serie.datapoints[serie.datapoints.length - 1]; //最后时刻点[value,time]
                     var lastValue;
@@ -73,9 +95,17 @@ System.register(['./lib/echarts.min', 'lodash', './lib/dark', 'jquery'], functio
                 serie.forEach(function (kv) {
                     tempTime.push(new Date(kv[1]).toLocaleString());
                     if (decimal >= 0 && decimal < 20) {
-                        tempValue.push(parseFloat(parseFloat(kv[0]).toFixed(decimal)));
+                        if (tableMode == 'time') {
+                            tempValue.push(parseFloat(parseFloat(kv[0]).toFixed(decimal)));
+                        } else if (tableMode == 'table') {
+                            tempValue.push(parseFloat(parseFloat(kv[1]).toFixed(decimal)));
+                        }
                     } else {
-                        tempValue.push(kv[0]);
+                        if (tableMode == 'time') {
+                            tempValue.push(kv[0]);
+                        } else if (tableMode == 'table') {
+                            tempValue.push(kv[1]);
+                        }
                     }
                 });
                 valueList.push(tempValue);
@@ -96,9 +126,11 @@ System.register(['./lib/echarts.min', 'lodash', './lib/dark', 'jquery'], functio
             });
 
             var lineSer = []; //折线用的series
+            var barSer = []; //柱形图用的series
             var areaStyle = ctrl.panel.areaStyle.values ? {} : null;
             for (var i = 0; i < legend.length; i++) {
-                var tempDic = {
+                //折线图
+                lineSer.push({
                     name: legend[i],
                     type: 'line',
                     stack: '',
@@ -110,8 +142,22 @@ System.register(['./lib/echarts.min', 'lodash', './lib/dark', 'jquery'], functio
                             position: 'top'
                         }
                     }
-                };
-                lineSer.push(tempDic);
+                });
+
+                //柱形图
+                barSer.push({
+                    name: legend[i],
+                    type: 'bar',
+                    stack: ctrl.panel.barStack.values ? '总量' : '', //堆叠求和
+                    data: valueList[i],
+                    areaStyle: areaStyle, //颜色填充
+                    label: {
+                        normal: {
+                            show: ctrl.panel.barLabel.values, //显示数值
+                            position: 'insideRight' //label在色块中的 位置
+                        }
+                    }
+                });
             }
 
             //饼图
@@ -136,7 +182,7 @@ System.register(['./lib/echarts.min', 'lodash', './lib/dark', 'jquery'], functio
                 series: [{
                     name: '占用',
                     type: 'pie',
-                    radius: '55%',
+                    radius: ctrl.panel.asRing.values ? ['50%', '70%'] : '50%', //饼图或环形图
                     center: ['50%', '50%'],
                     data: pieSer,
                     itemStyle: {
@@ -144,6 +190,20 @@ System.register(['./lib/echarts.min', 'lodash', './lib/dark', 'jquery'], functio
                             shadowBlur: 10,
                             shadowOffsetX: 0,
                             shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        }
+                    },
+                    avoidLabelOverlap: false,
+                    label: {
+                        normal: {
+                            show: !ctrl.panel.asRing.values,
+                            position: ctrl.panel.asRing.values ? 'center' : ''
+                        },
+                        emphasis: {
+                            show: true,
+                            textStyle: {
+                                fontSize: '30',
+                                fontWeight: 'bold'
+                            }
                         }
                     }
                 }]
@@ -167,8 +227,9 @@ System.register(['./lib/echarts.min', 'lodash', './lib/dark', 'jquery'], functio
                     }
                 },
                 legend: {
-                    // data:['邮件营销','联盟广告','视频广告','直接访问','搜索引擎']
-                    data: legend
+                    data: legend,
+                    orient: orient,
+                    left: postion
                 },
                 grid: {
                     left: '3%',
@@ -184,7 +245,6 @@ System.register(['./lib/echarts.min', 'lodash', './lib/dark', 'jquery'], functio
                 xAxis: {
                     type: 'category',
                     boundaryGap: false,
-                    // data: ['周一','周二','周三','周四','周五','周六','周日']
                     data: timeList[0]
                 },
                 yAxis: {
@@ -242,7 +302,7 @@ System.register(['./lib/echarts.min', 'lodash', './lib/dark', 'jquery'], functio
                     }
                 },
                 legend: {
-                    data: ['直接访问', '邮件营销', '联盟广告', '视频广告', '搜索引擎'],
+                    data: legend,
                     orient: orient,
                     left: postion
                 },
@@ -257,64 +317,9 @@ System.register(['./lib/echarts.min', 'lodash', './lib/dark', 'jquery'], functio
                 },
                 xAxis: {
                     type: 'category',
-                    data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
+                    data: timeList[0]
                 },
-                series: [{
-                    name: '直接访问',
-                    type: 'bar',
-                    stack: '总量', //叠加求和
-                    label: {
-                        normal: {
-                            show: true,
-                            position: 'insideRight' //label在色块中的 位置
-                        }
-                    },
-                    data: [320, 302, 301, 334, 390, 330, 320]
-                }, {
-                    name: '邮件营销',
-                    type: 'bar',
-                    stack: '总量',
-                    label: {
-                        normal: {
-                            show: true,
-                            position: 'insideRight'
-                        }
-                    },
-                    data: [120, 132, 101, 134, 90, 230, 210]
-                }, {
-                    name: '联盟广告',
-                    type: 'bar',
-                    stack: '总量',
-                    label: {
-                        normal: {
-                            show: true,
-                            position: 'insideRight'
-                        }
-                    },
-                    data: [220, 182, 191, 234, 290, 330, 310]
-                }, {
-                    name: '视频广告',
-                    type: 'bar',
-                    stack: '总量',
-                    label: {
-                        normal: {
-                            show: true,
-                            position: 'insideRight'
-                        }
-                    },
-                    data: [150, 212, 201, 154, 190, 330, 410]
-                }, {
-                    name: '搜索引擎',
-                    type: 'bar',
-                    stack: '',
-                    label: {
-                        normal: {
-                            show: true,
-                            position: 'insideRight'
-                        }
-                    },
-                    data: [820, 832, 901, 934, 1290, 1330, 1320]
-                }]
+                series: barSer
             };
 
             var json = {};

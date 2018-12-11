@@ -1,9 +1,9 @@
 'use strict';
 
-System.register(['app/plugins/sdk', './lib/echarts.min', './EchartRender', 'lodash', 'app/core/time_series2'], function (_export, _context) {
+System.register(['app/plugins/sdk', './lib/echarts.min', './EchartRender', 'lodash', 'app/core/utils/kbn', 'app/core/time_series2'], function (_export, _context) {
   "use strict";
 
-  var MetricsPanelCtrl, echarts, EchartREnder, _, TimeSeries, _createClass, panelDefaults, EchartCtrl;
+  var MetricsPanelCtrl, echarts, EchartREnder, _, kbn, TimeSeries, _createClass, panelDefaults, EchartCtrl;
 
   function _classCallCheck(instance, Constructor) {
     if (!(instance instanceof Constructor)) {
@@ -35,6 +35,21 @@ System.register(['app/plugins/sdk', './lib/echarts.min', './EchartRender', 'loda
     if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
   }
 
+  function _defineProperty(obj, key, value) {
+    if (key in obj) {
+      Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      });
+    } else {
+      obj[key] = value;
+    }
+
+    return obj;
+  }
+
   return {
     setters: [function (_appPluginsSdk) {
       MetricsPanelCtrl = _appPluginsSdk.MetricsPanelCtrl;
@@ -44,6 +59,8 @@ System.register(['app/plugins/sdk', './lib/echarts.min', './EchartRender', 'loda
       EchartREnder = _EchartRender.default;
     }, function (_lodash) {
       _ = _lodash.default;
+    }, function (_appCoreUtilsKbn) {
+      kbn = _appCoreUtilsKbn.default;
     }, function (_appCoreTime_series) {
       TimeSeries = _appCoreTime_series.default;
     }],
@@ -66,7 +83,7 @@ System.register(['app/plugins/sdk', './lib/echarts.min', './EchartRender', 'loda
         };
       }();
 
-      panelDefaults = {
+      panelDefaults = _defineProperty({
         backgroundColor: '#63696e',
         itemNormalColor: '#2d3339',
         itemBorderColor: '#404a59',
@@ -79,16 +96,26 @@ System.register(['app/plugins/sdk', './lib/echarts.min', './EchartRender', 'loda
         unit: 'ms',
         decimal: 2,
         ChartMode: 'line',
+        TableMode: 'time',
         showLabel: {
           values: true
         },
         areaStyle: {
           values: true
         },
+        barStack: {
+          values: false
+        },
+        barLabel: {
+          values: false
+        },
+        asRing: {
+          values: false
+        },
         position: 'center',
         orient: 'horizontal',
         axis: 'y for value'
-      };
+      }, 'unit', 'short');
 
       _export('EchartCtrl', EchartCtrl = function (_MetricsPanelCtrl) {
         _inherits(EchartCtrl, _MetricsPanelCtrl);
@@ -99,6 +126,7 @@ System.register(['app/plugins/sdk', './lib/echarts.min', './EchartRender', 'loda
           var _this = _possibleConstructorReturn(this, (EchartCtrl.__proto__ || Object.getPrototypeOf(EchartCtrl)).call(this, $scope, $injector));
 
           _.defaults(_this.panel, panelDefaults);
+          _this.setUnitFormat({ value: _this.panel.unit || 'short' });
 
           _this.events.on('data-received', _this.onDataReceived.bind(_this));
           _this.events.on('init-edit-mode', _this.onInitEditMode.bind(_this));
@@ -124,6 +152,33 @@ System.register(['app/plugins/sdk', './lib/echarts.min', './EchartRender', 'loda
           key: 'onInitEditMode',
           value: function onInitEditMode() {
             this.addEditorTab('Options', 'public/plugins/grafana-Echart-Demo/editor.html', 2); //使用plugins.json中的ID找html
+            this.unitFormats = kbn.getUnitFormats();
+          }
+        }, {
+          key: 'setUnitFormat',
+          value: function setUnitFormat(subItem) {
+            var _this2 = this;
+
+            this.panel.unit = subItem.value;
+            this.panel.itemName = [subItem.value, subItem.value];
+            this.panel.subDomainTitleFormat = {
+              empty: '{date}',
+              filled: { format: function format(options) {
+                  return _this2.formatValue(options.count, options) + ' ' + options.connector + ' ' + options.date;
+                } }
+            };
+            this.panel.legendTitleFormat = {
+              lower: { format: function format(options) {
+                  return 'less than ' + _this2.formatValue(options.min, options);
+                } },
+              upper: { format: function format(options) {
+                  return 'more than ' + _this2.formatValue(options.max, options);
+                } },
+              inner: { format: function format(options) {
+                  return 'between ' + _this2.formatValue(options.down, options) + ' and ' + _this2.formatValue(options.up, options);
+                } }
+            };
+            this.render();
           }
         }, {
           key: 'changeThresholds',
