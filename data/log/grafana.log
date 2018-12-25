@@ -5185,3 +5185,1251 @@ t=2018-12-13T11:06:52+0800 lvl=info msg="HTTP Server Listen" logger=http.server 
 t=2018-12-13T11:06:56+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
 t=2018-12-13T11:10:31+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
 t=2018-12-13T11:10:34+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-13T13:57:49+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=081d384 branch=master compiled=2018-12-04T13:55:18+0800
+t=2018-12-13T13:57:49+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-12-13T13:57:49+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-12-13T13:57:49+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-12-13T13:57:49+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-12-13T13:57:49+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-12-13T13:57:49+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-12-13T13:57:49+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-12-13T13:57:49+0800 lvl=info msg="App mode development" logger=settings
+t=2018-12-13T13:57:49+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-12-13T13:57:49+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-12-13T13:57:49+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-12-13T13:57:49+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-12-13T13:57:49+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-12-13T13:57:49+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-12-13T13:57:49+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-12-13T13:57:49+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-12-13T13:57:49+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-12-13T13:57:49+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-12-13T13:57:49+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-12-13T13:57:49+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-12-13T13:57:49+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-12-13T13:57:49+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-12-13T13:57:49+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-12-13T13:57:49+0800 lvl=info msg="Registering plugin" logger=plugins name=Iframe
+t=2018-12-13T13:57:49+0800 lvl=info msg="Registering plugin" logger=plugins name="Alarm Box"
+t=2018-12-13T13:57:49+0800 lvl=info msg="Registering plugin" logger=plugins name="Trend Box"
+t=2018-12-13T13:57:49+0800 lvl=info msg="Registering plugin" logger=plugins name=GeoLoop
+t=2018-12-13T13:57:49+0800 lvl=info msg="Registering plugin" logger=plugins name=Echart
+t=2018-12-13T13:57:49+0800 lvl=info msg="Registering plugin" logger=plugins name=Plotly
+t=2018-12-13T13:57:49+0800 lvl=info msg="Registering plugin" logger=plugins name=Cal-HeatMap
+t=2018-12-13T13:57:49+0800 lvl=info msg="Registering plugin" logger=plugins name="Pie Chart"
+t=2018-12-13T13:57:49+0800 lvl=info msg="Registering plugin" logger=plugins name="Worldmap Panel"
+t=2018-12-13T13:57:49+0800 lvl=info msg="Registering plugin" logger=plugins name=Annunciator
+t=2018-12-13T13:57:49+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation Panel"
+t=2018-12-13T13:57:49+0800 lvl=info msg="Registering plugin" logger=plugins name=AJAX
+t=2018-12-13T13:57:49+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation List"
+t=2018-12-13T13:57:49+0800 lvl=info msg="Registering plugin" logger=plugins name="3D Globe Panel"
+t=2018-12-13T13:57:49+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-12-13T13:57:49+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-12-13T13:57:49+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-12-13T14:00:03+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=081d384 branch=master compiled=2018-12-04T13:55:18+0800
+t=2018-12-13T14:00:03+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-12-13T14:00:03+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-12-13T14:00:03+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-12-13T14:00:03+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-12-13T14:00:03+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-12-13T14:00:03+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-12-13T14:00:03+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-12-13T14:00:03+0800 lvl=info msg="App mode development" logger=settings
+t=2018-12-13T14:00:03+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-12-13T14:00:03+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-12-13T14:00:03+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-12-13T14:00:03+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-12-13T14:00:03+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-12-13T14:00:03+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-12-13T14:00:03+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-12-13T14:00:03+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-12-13T14:00:03+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-12-13T14:00:03+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-12-13T14:00:03+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-12-13T14:00:03+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-12-13T14:00:03+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-12-13T14:00:03+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-12-13T14:00:03+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-12-13T14:00:03+0800 lvl=info msg="Registering plugin" logger=plugins name=Iframe
+t=2018-12-13T14:00:03+0800 lvl=info msg="Registering plugin" logger=plugins name="Alarm Box"
+t=2018-12-13T14:00:03+0800 lvl=info msg="Registering plugin" logger=plugins name="Trend Box"
+t=2018-12-13T14:00:03+0800 lvl=info msg="Registering plugin" logger=plugins name=GeoLoop
+t=2018-12-13T14:00:03+0800 lvl=info msg="Registering plugin" logger=plugins name=Echart
+t=2018-12-13T14:00:03+0800 lvl=info msg="Registering plugin" logger=plugins name=Plotly
+t=2018-12-13T14:00:03+0800 lvl=info msg="Registering plugin" logger=plugins name=Cal-HeatMap
+t=2018-12-13T14:00:03+0800 lvl=info msg="Registering plugin" logger=plugins name="Pie Chart"
+t=2018-12-13T14:00:03+0800 lvl=info msg="Registering plugin" logger=plugins name="Worldmap Panel"
+t=2018-12-13T14:00:03+0800 lvl=info msg="Registering plugin" logger=plugins name=Annunciator
+t=2018-12-13T14:00:03+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation Panel"
+t=2018-12-13T14:00:03+0800 lvl=info msg="Registering plugin" logger=plugins name=AJAX
+t=2018-12-13T14:00:03+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation List"
+t=2018-12-13T14:00:03+0800 lvl=info msg="Registering plugin" logger=plugins name="3D Globe Panel"
+t=2018-12-13T14:00:03+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-12-13T14:00:03+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-12-13T14:00:03+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-12-13T14:00:20+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-13T14:21:56+0800 lvl=info msg="Database table locked, sleeping then retrying" logger=sqlstore retry=0
+t=2018-12-13T14:21:56+0800 lvl=info msg="Database table locked, sleeping then retrying" logger=sqlstore retry=0
+t=2018-12-13T14:23:54+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-13T14:23:56+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/api/tsdb/query status=400 remote_addr=[::1] time_ms=2021 size=331 referer=http://localhost:8080/datasources/edit/7
+t=2018-12-13T14:28:50+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-13T14:48:11+0800 lvl=info msg="Database table locked, sleeping then retrying" logger=sqlstore retry=0
+t=2018-12-13T15:00:03+0800 lvl=info msg="Database table locked, sleeping then retrying" logger=sqlstore retry=0
+t=2018-12-17T09:56:38+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=081d384 branch=master compiled=2018-12-04T13:55:18+0800
+t=2018-12-17T09:56:38+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-12-17T09:56:38+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-12-17T09:56:38+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-12-17T09:56:38+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-12-17T09:56:38+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-12-17T09:56:38+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-12-17T09:56:38+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-12-17T09:56:38+0800 lvl=info msg="App mode development" logger=settings
+t=2018-12-17T09:56:38+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-12-17T09:56:38+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-12-17T09:56:38+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-12-17T09:56:38+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-12-17T09:56:38+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-12-17T09:56:38+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-12-17T09:56:38+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-12-17T09:56:38+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-12-17T09:56:38+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-12-17T09:56:38+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-12-17T09:56:38+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-12-17T09:56:38+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-12-17T09:56:38+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-12-17T09:56:38+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-12-17T09:56:38+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-12-17T09:56:39+0800 lvl=info msg="Registering plugin" logger=plugins name=Iframe
+t=2018-12-17T09:56:39+0800 lvl=info msg="Registering plugin" logger=plugins name="Alarm Box"
+t=2018-12-17T09:56:39+0800 lvl=info msg="Registering plugin" logger=plugins name="Trend Box"
+t=2018-12-17T09:56:39+0800 lvl=info msg="Registering plugin" logger=plugins name=GeoLoop
+t=2018-12-17T09:56:39+0800 lvl=info msg="Registering plugin" logger=plugins name=Echart
+t=2018-12-17T09:56:39+0800 lvl=info msg="Registering plugin" logger=plugins name=Plotly
+t=2018-12-17T09:56:39+0800 lvl=info msg="Registering plugin" logger=plugins name=Cal-HeatMap
+t=2018-12-17T09:56:39+0800 lvl=info msg="Registering plugin" logger=plugins name="Pie Chart"
+t=2018-12-17T09:56:39+0800 lvl=info msg="Registering plugin" logger=plugins name="Worldmap Panel"
+t=2018-12-17T09:56:39+0800 lvl=info msg="Registering plugin" logger=plugins name=Annunciator
+t=2018-12-17T09:56:39+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation Panel"
+t=2018-12-17T09:56:39+0800 lvl=info msg="Registering plugin" logger=plugins name=AJAX
+t=2018-12-17T09:56:39+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation List"
+t=2018-12-17T09:56:39+0800 lvl=info msg="Registering plugin" logger=plugins name="3D Globe Panel"
+t=2018-12-17T09:56:39+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-12-17T09:56:40+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-12-17T09:56:40+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-12-17T09:56:40+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-17T09:57:09+0800 lvl=info msg="Request Completed" logger=context userId=0 orgId=1 uname= method=GET path=/logout status=302 remote_addr=127.0.0.1 time_ms=9 size=29 referer=
+t=2018-12-17T09:57:09+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-17T09:57:13+0800 lvl=eror msg="Invalid username or password" logger=context userId=0 orgId=1 uname= error="Invalid Username or Password"
+t=2018-12-17T09:57:13+0800 lvl=info msg="Request Completed" logger=context userId=0 orgId=1 uname= method=POST path=/login status=401 remote_addr=[::1] time_ms=102 size=81 referer=http://localhost:8080/login
+t=2018-12-17T09:57:13+0800 lvl=eror msg="Invalid username or password" logger=context userId=0 orgId=1 uname= error="Invalid Username or Password"
+t=2018-12-17T09:57:13+0800 lvl=info msg="Request Completed" logger=context userId=0 orgId=1 uname= method=POST path=/login status=401 remote_addr=[::1] time_ms=97 size=81 referer=http://localhost:8080/login
+t=2018-12-17T09:57:13+0800 lvl=eror msg="Invalid username or password" logger=context userId=0 orgId=1 uname= error="Invalid Username or Password"
+t=2018-12-17T09:57:13+0800 lvl=info msg="Request Completed" logger=context userId=0 orgId=1 uname= method=POST path=/login status=401 remote_addr=[::1] time_ms=109 size=81 referer=http://localhost:8080/login
+t=2018-12-17T09:57:15+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-17T10:02:20+0800 lvl=info msg="Database table locked, sleeping then retrying" logger=sqlstore retry=0
+t=2018-12-17T10:02:20+0800 lvl=info msg="Database table locked, sleeping then retrying" logger=sqlstore retry=1
+t=2018-12-20T10:58:20+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=081d384 branch=master compiled=2018-12-04T13:55:18+0800
+t=2018-12-20T10:58:20+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-12-20T10:58:20+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-12-20T10:58:20+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-12-20T10:58:20+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-12-20T10:58:20+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-12-20T10:58:20+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-12-20T10:58:20+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-12-20T10:58:20+0800 lvl=info msg="App mode development" logger=settings
+t=2018-12-20T10:58:20+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-12-20T10:58:21+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-12-20T10:58:21+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-12-20T10:58:21+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-12-20T10:58:22+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-12-20T10:58:22+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-12-20T10:58:22+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-12-20T10:58:22+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-12-20T10:58:22+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-12-20T10:58:23+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-12-20T10:58:23+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-12-20T10:58:23+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-12-20T10:58:23+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-12-20T10:58:24+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-12-20T10:58:24+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-12-20T10:58:29+0800 lvl=info msg="Registering plugin" logger=plugins name=Iframe
+t=2018-12-20T10:58:29+0800 lvl=info msg="Registering plugin" logger=plugins name="Alarm Box"
+t=2018-12-20T10:58:29+0800 lvl=info msg="Registering plugin" logger=plugins name="Trend Box"
+t=2018-12-20T10:58:29+0800 lvl=info msg="Registering plugin" logger=plugins name=GeoLoop
+t=2018-12-20T10:58:30+0800 lvl=info msg="Registering plugin" logger=plugins name=Echart
+t=2018-12-20T10:58:30+0800 lvl=info msg="Registering plugin" logger=plugins name=Plotly
+t=2018-12-20T10:58:30+0800 lvl=info msg="Registering plugin" logger=plugins name=Cal-HeatMap
+t=2018-12-20T10:58:30+0800 lvl=info msg="Registering plugin" logger=plugins name="Pie Chart"
+t=2018-12-20T10:58:30+0800 lvl=info msg="Registering plugin" logger=plugins name="Worldmap Panel"
+t=2018-12-20T10:58:30+0800 lvl=info msg="Registering plugin" logger=plugins name=Annunciator
+t=2018-12-20T10:58:30+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation Panel"
+t=2018-12-20T10:58:31+0800 lvl=info msg="Registering plugin" logger=plugins name=AJAX
+t=2018-12-20T10:58:31+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation List"
+t=2018-12-20T10:58:32+0800 lvl=info msg="Registering plugin" logger=plugins name="3D Globe Panel"
+t=2018-12-20T10:58:32+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-12-20T10:58:33+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-12-20T10:58:33+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-12-20T10:58:49+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-20T11:00:13+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=081d384 branch=master compiled=2018-12-04T13:55:18+0800
+t=2018-12-20T11:00:13+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-12-20T11:00:13+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-12-20T11:00:13+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-12-20T11:00:13+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-12-20T11:00:13+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-12-20T11:00:13+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-12-20T11:00:13+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-12-20T11:00:13+0800 lvl=info msg="App mode development" logger=settings
+t=2018-12-20T11:00:13+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-12-20T11:00:13+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-12-20T11:00:13+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-12-20T11:00:13+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-12-20T11:00:13+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-12-20T11:00:13+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-12-20T11:00:13+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-12-20T11:00:13+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-12-20T11:00:13+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-12-20T11:00:13+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-12-20T11:00:13+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-12-20T11:00:13+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-12-20T11:00:13+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-12-20T11:00:13+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-12-20T11:00:13+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-12-20T11:00:13+0800 lvl=info msg="Registering plugin" logger=plugins name=Iframe
+t=2018-12-20T11:00:13+0800 lvl=info msg="Registering plugin" logger=plugins name="Alarm Box"
+t=2018-12-20T11:00:13+0800 lvl=info msg="Registering plugin" logger=plugins name="Trend Box"
+t=2018-12-20T11:00:13+0800 lvl=info msg="Registering plugin" logger=plugins name=GeoLoop
+t=2018-12-20T11:00:13+0800 lvl=info msg="Registering plugin" logger=plugins name=Echart
+t=2018-12-20T11:00:13+0800 lvl=info msg="Registering plugin" logger=plugins name=Plotly
+t=2018-12-20T11:00:13+0800 lvl=info msg="Registering plugin" logger=plugins name=Cal-HeatMap
+t=2018-12-20T11:00:13+0800 lvl=info msg="Registering plugin" logger=plugins name="Pie Chart"
+t=2018-12-20T11:00:13+0800 lvl=info msg="Registering plugin" logger=plugins name="Worldmap Panel"
+t=2018-12-20T11:00:13+0800 lvl=info msg="Registering plugin" logger=plugins name=Annunciator
+t=2018-12-20T11:00:13+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation Panel"
+t=2018-12-20T11:00:13+0800 lvl=info msg="Registering plugin" logger=plugins name=AJAX
+t=2018-12-20T11:00:13+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation List"
+t=2018-12-20T11:00:13+0800 lvl=info msg="Registering plugin" logger=plugins name="3D Globe Panel"
+t=2018-12-20T11:00:13+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-12-20T11:00:13+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-12-20T11:00:13+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-12-24T09:12:46+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=081d384 branch=master compiled=2018-12-04T13:55:18+0800
+t=2018-12-24T09:12:46+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-12-24T09:12:46+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-12-24T09:12:46+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-12-24T09:12:46+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-12-24T09:12:46+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-12-24T09:12:46+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-12-24T09:12:46+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-12-24T09:12:46+0800 lvl=info msg="App mode development" logger=settings
+t=2018-12-24T09:12:46+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-12-24T09:12:46+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-12-24T09:12:46+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-12-24T09:12:46+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-12-24T09:12:46+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-12-24T09:12:46+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-12-24T09:12:46+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-12-24T09:12:46+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-12-24T09:12:46+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-12-24T09:12:46+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-12-24T09:12:46+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-12-24T09:12:46+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-12-24T09:12:46+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-12-24T09:12:46+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-12-24T09:12:46+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-12-24T09:12:46+0800 lvl=info msg="Registering plugin" logger=plugins name=Iframe
+t=2018-12-24T09:12:46+0800 lvl=info msg="Registering plugin" logger=plugins name="Alarm Box"
+t=2018-12-24T09:12:46+0800 lvl=info msg="Registering plugin" logger=plugins name="Trend Box"
+t=2018-12-24T09:12:46+0800 lvl=info msg="Registering plugin" logger=plugins name=GeoLoop
+t=2018-12-24T09:12:46+0800 lvl=info msg="Registering plugin" logger=plugins name=Echart
+t=2018-12-24T09:12:46+0800 lvl=info msg="Registering plugin" logger=plugins name=Plotly
+t=2018-12-24T09:12:46+0800 lvl=info msg="Registering plugin" logger=plugins name=Cal-HeatMap
+t=2018-12-24T09:12:46+0800 lvl=info msg="Registering plugin" logger=plugins name="Pie Chart"
+t=2018-12-24T09:12:46+0800 lvl=info msg="Registering plugin" logger=plugins name="Worldmap Panel"
+t=2018-12-24T09:12:46+0800 lvl=info msg="Registering plugin" logger=plugins name=Annunciator
+t=2018-12-24T09:12:46+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation Panel"
+t=2018-12-24T09:12:46+0800 lvl=info msg="Registering plugin" logger=plugins name=AJAX
+t=2018-12-24T09:12:46+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation List"
+t=2018-12-24T09:12:46+0800 lvl=info msg="Registering plugin" logger=plugins name="3D Globe Panel"
+t=2018-12-24T09:12:46+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-12-24T09:12:47+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-12-24T09:12:47+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-12-24T09:12:59+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-24T09:13:34+0800 lvl=info msg="Request Completed" logger=context userId=0 orgId=1 uname= method=GET path=/logout status=302 remote_addr=127.0.0.1 time_ms=5 size=29 referer=
+t=2018-12-24T09:13:34+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-24T09:13:40+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-25T13:32:12+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=081d384 branch=master compiled=2018-12-04T13:55:18+0800
+t=2018-12-25T13:32:12+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-12-25T13:32:12+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-12-25T13:32:12+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-12-25T13:32:12+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-12-25T13:32:12+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-12-25T13:32:12+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-12-25T13:32:12+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-12-25T13:32:12+0800 lvl=info msg="App mode development" logger=settings
+t=2018-12-25T13:32:12+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-12-25T13:32:12+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-12-25T13:32:12+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-12-25T13:32:12+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-12-25T13:32:12+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-12-25T13:32:12+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-12-25T13:32:12+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-12-25T13:32:12+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-12-25T13:32:12+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-12-25T13:32:12+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-12-25T13:32:12+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-12-25T13:32:12+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-12-25T13:32:12+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-12-25T13:32:12+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-12-25T13:32:12+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-12-25T13:32:12+0800 lvl=info msg="Registering plugin" logger=plugins name=Iframe
+t=2018-12-25T13:32:12+0800 lvl=info msg="Registering plugin" logger=plugins name="Alarm Box"
+t=2018-12-25T13:32:12+0800 lvl=info msg="Registering plugin" logger=plugins name="Trend Box"
+t=2018-12-25T13:32:12+0800 lvl=info msg="Registering plugin" logger=plugins name=GeoLoop
+t=2018-12-25T13:32:12+0800 lvl=info msg="Registering plugin" logger=plugins name=Echart
+t=2018-12-25T13:32:12+0800 lvl=info msg="Registering plugin" logger=plugins name=Plotly
+t=2018-12-25T13:32:12+0800 lvl=info msg="Registering plugin" logger=plugins name=Cal-HeatMap
+t=2018-12-25T13:32:12+0800 lvl=info msg="Registering plugin" logger=plugins name="Pie Chart"
+t=2018-12-25T13:32:12+0800 lvl=info msg="Registering plugin" logger=plugins name="Worldmap Panel"
+t=2018-12-25T13:32:12+0800 lvl=info msg="Registering plugin" logger=plugins name=Annunciator
+t=2018-12-25T13:32:12+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation Panel"
+t=2018-12-25T13:32:12+0800 lvl=info msg="Registering plugin" logger=plugins name=AJAX
+t=2018-12-25T13:32:12+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation List"
+t=2018-12-25T13:32:12+0800 lvl=info msg="Registering plugin" logger=plugins name="3D Globe Panel"
+t=2018-12-25T13:32:12+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-12-25T13:32:12+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-12-25T13:32:13+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-12-25T13:32:45+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-25T13:34:40+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=081d384 branch=master compiled=2018-12-04T13:55:18+0800
+t=2018-12-25T13:34:40+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-12-25T13:34:40+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-12-25T13:34:40+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-12-25T13:34:40+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-12-25T13:34:40+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-12-25T13:34:40+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-12-25T13:34:40+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-12-25T13:34:40+0800 lvl=info msg="App mode development" logger=settings
+t=2018-12-25T13:34:40+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-12-25T13:34:40+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-12-25T13:34:40+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-12-25T13:34:40+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-12-25T13:34:40+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-12-25T13:34:40+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-12-25T13:34:40+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-12-25T13:34:40+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-12-25T13:34:40+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-12-25T13:34:40+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-12-25T13:34:40+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-12-25T13:34:40+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-12-25T13:34:40+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-12-25T13:34:40+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-12-25T13:34:40+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-12-25T13:34:40+0800 lvl=info msg="Registering plugin" logger=plugins name=Iframe
+t=2018-12-25T13:34:40+0800 lvl=info msg="Registering plugin" logger=plugins name="Alarm Box"
+t=2018-12-25T13:34:40+0800 lvl=info msg="Registering plugin" logger=plugins name="Trend Box"
+t=2018-12-25T13:34:40+0800 lvl=info msg="Registering plugin" logger=plugins name=GeoLoop
+t=2018-12-25T13:34:40+0800 lvl=info msg="Registering plugin" logger=plugins name=Echart
+t=2018-12-25T13:34:40+0800 lvl=info msg="Registering plugin" logger=plugins name=Plotly
+t=2018-12-25T13:34:40+0800 lvl=info msg="Registering plugin" logger=plugins name=Cal-HeatMap
+t=2018-12-25T13:34:40+0800 lvl=info msg="Registering plugin" logger=plugins name="Pie Chart"
+t=2018-12-25T13:34:40+0800 lvl=info msg="Registering plugin" logger=plugins name="Worldmap Panel"
+t=2018-12-25T13:34:40+0800 lvl=info msg="Registering plugin" logger=plugins name=Annunciator
+t=2018-12-25T13:34:40+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation Panel"
+t=2018-12-25T13:34:40+0800 lvl=info msg="Registering plugin" logger=plugins name=AJAX
+t=2018-12-25T13:34:40+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation List"
+t=2018-12-25T13:34:40+0800 lvl=info msg="Registering plugin" logger=plugins name="3D Globe Panel"
+t=2018-12-25T13:34:40+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-12-25T13:34:40+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-12-25T13:34:40+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-12-25T13:34:43+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-25T13:36:50+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=081d384 branch=master compiled=2018-12-04T13:55:18+0800
+t=2018-12-25T13:36:50+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-12-25T13:36:50+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-12-25T13:36:50+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-12-25T13:36:50+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-12-25T13:36:50+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-12-25T13:36:50+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-12-25T13:36:50+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-12-25T13:36:50+0800 lvl=info msg="App mode development" logger=settings
+t=2018-12-25T13:36:50+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-12-25T13:36:50+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-12-25T13:36:50+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-12-25T13:36:50+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-12-25T13:36:50+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-12-25T13:36:50+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-12-25T13:36:50+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-12-25T13:36:50+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-12-25T13:36:50+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-12-25T13:36:50+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-12-25T13:36:50+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-12-25T13:36:50+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-12-25T13:36:50+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-12-25T13:36:50+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-12-25T13:36:50+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-12-25T13:36:50+0800 lvl=info msg="Registering plugin" logger=plugins name=Iframe
+t=2018-12-25T13:36:50+0800 lvl=info msg="Registering plugin" logger=plugins name="Alarm Box"
+t=2018-12-25T13:36:50+0800 lvl=info msg="Registering plugin" logger=plugins name="Trend Box"
+t=2018-12-25T13:36:50+0800 lvl=info msg="Registering plugin" logger=plugins name=GeoLoop
+t=2018-12-25T13:36:50+0800 lvl=info msg="Registering plugin" logger=plugins name=Echart
+t=2018-12-25T13:36:50+0800 lvl=info msg="Registering plugin" logger=plugins name=Plotly
+t=2018-12-25T13:36:50+0800 lvl=info msg="Registering plugin" logger=plugins name=Cal-HeatMap
+t=2018-12-25T13:36:50+0800 lvl=info msg="Registering plugin" logger=plugins name="Pie Chart"
+t=2018-12-25T13:36:50+0800 lvl=info msg="Registering plugin" logger=plugins name="Worldmap Panel"
+t=2018-12-25T13:36:50+0800 lvl=info msg="Registering plugin" logger=plugins name=Annunciator
+t=2018-12-25T13:36:50+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation Panel"
+t=2018-12-25T13:36:50+0800 lvl=info msg="Registering plugin" logger=plugins name=AJAX
+t=2018-12-25T13:36:50+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation List"
+t=2018-12-25T13:36:50+0800 lvl=info msg="Registering plugin" logger=plugins name="3D Globe Panel"
+t=2018-12-25T13:36:50+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-12-25T13:36:50+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-12-25T13:36:50+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-12-25T13:36:59+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-25T13:38:00+0800 lvl=info msg="Database table locked, sleeping then retrying" logger=sqlstore retry=0
+t=2018-12-25T13:42:17+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=081d384 branch=master compiled=2018-12-04T13:55:18+0800
+t=2018-12-25T13:42:17+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-12-25T13:42:17+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-12-25T13:42:17+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-12-25T13:42:17+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-12-25T13:42:17+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-12-25T13:42:17+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-12-25T13:42:17+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-12-25T13:42:17+0800 lvl=info msg="App mode development" logger=settings
+t=2018-12-25T13:42:17+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-12-25T13:42:17+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-12-25T13:42:17+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-12-25T13:42:17+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-12-25T13:42:17+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-12-25T13:42:17+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-12-25T13:42:17+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-12-25T13:42:17+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-12-25T13:42:17+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-12-25T13:42:17+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-12-25T13:42:17+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-12-25T13:42:17+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-12-25T13:42:17+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-12-25T13:42:17+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-12-25T13:42:17+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-12-25T13:42:17+0800 lvl=info msg="Registering plugin" logger=plugins name=Iframe
+t=2018-12-25T13:42:17+0800 lvl=info msg="Registering plugin" logger=plugins name="Alarm Box"
+t=2018-12-25T13:42:17+0800 lvl=info msg="Registering plugin" logger=plugins name="Trend Box"
+t=2018-12-25T13:42:17+0800 lvl=info msg="Registering plugin" logger=plugins name=GeoLoop
+t=2018-12-25T13:42:17+0800 lvl=info msg="Registering plugin" logger=plugins name=Echart
+t=2018-12-25T13:42:17+0800 lvl=info msg="Registering plugin" logger=plugins name=Plotly
+t=2018-12-25T13:42:17+0800 lvl=info msg="Registering plugin" logger=plugins name=Cal-HeatMap
+t=2018-12-25T13:42:17+0800 lvl=info msg="Registering plugin" logger=plugins name="Pie Chart"
+t=2018-12-25T13:42:17+0800 lvl=info msg="Registering plugin" logger=plugins name="Worldmap Panel"
+t=2018-12-25T13:42:17+0800 lvl=info msg="Registering plugin" logger=plugins name=Annunciator
+t=2018-12-25T13:42:17+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation Panel"
+t=2018-12-25T13:42:17+0800 lvl=info msg="Registering plugin" logger=plugins name=AJAX
+t=2018-12-25T13:42:17+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation List"
+t=2018-12-25T13:42:17+0800 lvl=info msg="Registering plugin" logger=plugins name="3D Globe Panel"
+t=2018-12-25T13:42:17+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-12-25T13:42:17+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-12-25T13:42:17+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-12-25T13:42:19+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-25T13:42:53+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-25T13:43:54+0800 lvl=info msg="Database table locked, sleeping then retrying" logger=sqlstore retry=0
+t=2018-12-25T13:44:53+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=081d384 branch=master compiled=2018-12-04T13:55:18+0800
+t=2018-12-25T13:44:53+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-12-25T13:44:53+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-12-25T13:44:53+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-12-25T13:44:53+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-12-25T13:44:53+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-12-25T13:44:53+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-12-25T13:44:53+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-12-25T13:44:53+0800 lvl=info msg="App mode development" logger=settings
+t=2018-12-25T13:44:53+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-12-25T13:44:53+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-12-25T13:44:53+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-12-25T13:44:53+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-12-25T13:44:53+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-12-25T13:44:53+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-12-25T13:44:53+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-12-25T13:44:53+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-12-25T13:44:53+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-12-25T13:44:53+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-12-25T13:44:53+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-12-25T13:44:53+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-12-25T13:44:53+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-12-25T13:44:53+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-12-25T13:44:53+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-12-25T13:44:53+0800 lvl=info msg="Registering plugin" logger=plugins name=Iframe
+t=2018-12-25T13:44:53+0800 lvl=info msg="Registering plugin" logger=plugins name="Alarm Box"
+t=2018-12-25T13:44:53+0800 lvl=info msg="Registering plugin" logger=plugins name="Trend Box"
+t=2018-12-25T13:44:53+0800 lvl=info msg="Registering plugin" logger=plugins name=GeoLoop
+t=2018-12-25T13:44:53+0800 lvl=info msg="Registering plugin" logger=plugins name=Echart
+t=2018-12-25T13:44:53+0800 lvl=info msg="Registering plugin" logger=plugins name=Plotly
+t=2018-12-25T13:44:53+0800 lvl=info msg="Registering plugin" logger=plugins name=Cal-HeatMap
+t=2018-12-25T13:44:53+0800 lvl=info msg="Registering plugin" logger=plugins name="Pie Chart"
+t=2018-12-25T13:44:53+0800 lvl=info msg="Registering plugin" logger=plugins name="Worldmap Panel"
+t=2018-12-25T13:44:53+0800 lvl=info msg="Registering plugin" logger=plugins name=Annunciator
+t=2018-12-25T13:44:53+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation Panel"
+t=2018-12-25T13:44:53+0800 lvl=info msg="Registering plugin" logger=plugins name=AJAX
+t=2018-12-25T13:44:53+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation List"
+t=2018-12-25T13:44:53+0800 lvl=info msg="Registering plugin" logger=plugins name="3D Globe Panel"
+t=2018-12-25T13:44:53+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-12-25T13:44:53+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-12-25T13:44:53+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-12-25T13:44:57+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-25T13:47:21+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=081d384 branch=master compiled=2018-12-04T13:55:18+0800
+t=2018-12-25T13:47:21+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-12-25T13:47:21+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-12-25T13:47:21+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-12-25T13:47:21+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-12-25T13:47:21+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-12-25T13:47:21+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-12-25T13:47:21+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-12-25T13:47:21+0800 lvl=info msg="App mode development" logger=settings
+t=2018-12-25T13:47:21+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-12-25T13:47:21+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-12-25T13:47:21+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-12-25T13:47:21+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-12-25T13:47:21+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-12-25T13:47:21+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-12-25T13:47:21+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-12-25T13:47:21+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-12-25T13:47:21+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-12-25T13:47:21+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-12-25T13:47:21+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-12-25T13:47:21+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-12-25T13:47:21+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-12-25T13:47:21+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-12-25T13:47:21+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-12-25T13:47:21+0800 lvl=info msg="Registering plugin" logger=plugins name=Iframe
+t=2018-12-25T13:47:21+0800 lvl=info msg="Registering plugin" logger=plugins name="Alarm Box"
+t=2018-12-25T13:47:21+0800 lvl=info msg="Registering plugin" logger=plugins name="Trend Box"
+t=2018-12-25T13:47:21+0800 lvl=info msg="Registering plugin" logger=plugins name=GeoLoop
+t=2018-12-25T13:47:21+0800 lvl=info msg="Registering plugin" logger=plugins name=Echart
+t=2018-12-25T13:47:21+0800 lvl=info msg="Registering plugin" logger=plugins name=Plotly
+t=2018-12-25T13:47:21+0800 lvl=info msg="Registering plugin" logger=plugins name=Cal-HeatMap
+t=2018-12-25T13:47:21+0800 lvl=info msg="Registering plugin" logger=plugins name="Pie Chart"
+t=2018-12-25T13:47:21+0800 lvl=info msg="Registering plugin" logger=plugins name="Worldmap Panel"
+t=2018-12-25T13:47:21+0800 lvl=info msg="Registering plugin" logger=plugins name=Annunciator
+t=2018-12-25T13:47:21+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation Panel"
+t=2018-12-25T13:47:21+0800 lvl=info msg="Registering plugin" logger=plugins name=AJAX
+t=2018-12-25T13:47:21+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation List"
+t=2018-12-25T13:47:21+0800 lvl=info msg="Registering plugin" logger=plugins name="3D Globe Panel"
+t=2018-12-25T13:47:21+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-12-25T13:47:21+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-12-25T13:47:21+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-12-25T13:47:23+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-25T13:51:50+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=081d384 branch=master compiled=2018-12-04T13:55:18+0800
+t=2018-12-25T13:51:50+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-12-25T13:51:50+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-12-25T13:51:50+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-12-25T13:51:50+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-12-25T13:51:50+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-12-25T13:51:50+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-12-25T13:51:50+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-12-25T13:51:50+0800 lvl=info msg="App mode development" logger=settings
+t=2018-12-25T13:51:50+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-12-25T13:51:50+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-12-25T13:51:50+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-12-25T13:51:50+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-12-25T13:51:50+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-12-25T13:51:50+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-12-25T13:51:50+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-12-25T13:51:50+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-12-25T13:51:50+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-12-25T13:51:50+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-12-25T13:51:50+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-12-25T13:51:50+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-12-25T13:51:50+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-12-25T13:51:50+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-12-25T13:51:50+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-12-25T13:51:50+0800 lvl=info msg="Registering plugin" logger=plugins name=Iframe
+t=2018-12-25T13:51:50+0800 lvl=info msg="Registering plugin" logger=plugins name="Alarm Box"
+t=2018-12-25T13:51:50+0800 lvl=info msg="Registering plugin" logger=plugins name="Trend Box"
+t=2018-12-25T13:51:50+0800 lvl=info msg="Registering plugin" logger=plugins name=GeoLoop
+t=2018-12-25T13:51:50+0800 lvl=info msg="Registering plugin" logger=plugins name=Echart
+t=2018-12-25T13:51:50+0800 lvl=info msg="Registering plugin" logger=plugins name=Plotly
+t=2018-12-25T13:51:50+0800 lvl=info msg="Registering plugin" logger=plugins name=Cal-HeatMap
+t=2018-12-25T13:51:50+0800 lvl=info msg="Registering plugin" logger=plugins name="Pie Chart"
+t=2018-12-25T13:51:50+0800 lvl=info msg="Registering plugin" logger=plugins name="Worldmap Panel"
+t=2018-12-25T13:51:50+0800 lvl=info msg="Registering plugin" logger=plugins name=Annunciator
+t=2018-12-25T13:51:50+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation Panel"
+t=2018-12-25T13:51:50+0800 lvl=info msg="Registering plugin" logger=plugins name=AJAX
+t=2018-12-25T13:51:50+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation List"
+t=2018-12-25T13:51:50+0800 lvl=info msg="Registering plugin" logger=plugins name="3D Globe Panel"
+t=2018-12-25T13:51:50+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-12-25T13:51:50+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-12-25T13:51:50+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-12-25T13:51:52+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-25T13:59:53+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=081d384 branch=master compiled=2018-12-04T13:55:18+0800
+t=2018-12-25T13:59:53+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-12-25T13:59:53+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-12-25T13:59:53+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-12-25T13:59:53+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-12-25T13:59:53+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-12-25T13:59:53+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-12-25T13:59:53+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-12-25T13:59:53+0800 lvl=info msg="App mode development" logger=settings
+t=2018-12-25T13:59:53+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-12-25T13:59:53+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-12-25T13:59:53+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-12-25T13:59:53+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-12-25T13:59:53+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-12-25T13:59:53+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-12-25T13:59:53+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-12-25T13:59:53+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-12-25T13:59:53+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-12-25T13:59:53+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-12-25T13:59:53+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-12-25T13:59:53+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-12-25T13:59:53+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-12-25T13:59:53+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-12-25T13:59:53+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-12-25T13:59:53+0800 lvl=info msg="Registering plugin" logger=plugins name=Iframe
+t=2018-12-25T13:59:53+0800 lvl=info msg="Registering plugin" logger=plugins name="Alarm Box"
+t=2018-12-25T13:59:53+0800 lvl=info msg="Registering plugin" logger=plugins name="Trend Box"
+t=2018-12-25T13:59:53+0800 lvl=info msg="Registering plugin" logger=plugins name=GeoLoop
+t=2018-12-25T13:59:53+0800 lvl=info msg="Registering plugin" logger=plugins name=Echart
+t=2018-12-25T13:59:53+0800 lvl=info msg="Registering plugin" logger=plugins name=Plotly
+t=2018-12-25T13:59:53+0800 lvl=info msg="Registering plugin" logger=plugins name=Cal-HeatMap
+t=2018-12-25T13:59:53+0800 lvl=info msg="Registering plugin" logger=plugins name="Pie Chart"
+t=2018-12-25T13:59:53+0800 lvl=info msg="Registering plugin" logger=plugins name="Worldmap Panel"
+t=2018-12-25T13:59:53+0800 lvl=info msg="Registering plugin" logger=plugins name=Annunciator
+t=2018-12-25T13:59:53+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation Panel"
+t=2018-12-25T13:59:53+0800 lvl=info msg="Registering plugin" logger=plugins name=AJAX
+t=2018-12-25T13:59:53+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation List"
+t=2018-12-25T13:59:53+0800 lvl=info msg="Registering plugin" logger=plugins name="3D Globe Panel"
+t=2018-12-25T13:59:53+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-12-25T13:59:53+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-12-25T13:59:53+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-12-25T13:59:57+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-25T14:16:09+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=081d384 branch=master compiled=2018-12-04T13:55:18+0800
+t=2018-12-25T14:16:09+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-12-25T14:16:09+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-12-25T14:16:09+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-12-25T14:16:09+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-12-25T14:16:09+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-12-25T14:16:09+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-12-25T14:16:09+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-12-25T14:16:09+0800 lvl=info msg="App mode development" logger=settings
+t=2018-12-25T14:16:09+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-12-25T14:16:09+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-12-25T14:16:09+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-12-25T14:16:09+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-12-25T14:16:09+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-12-25T14:16:09+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-12-25T14:16:09+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-12-25T14:16:09+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-12-25T14:16:09+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-12-25T14:16:09+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-12-25T14:16:09+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-12-25T14:16:09+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-12-25T14:16:09+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-12-25T14:16:09+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-12-25T14:16:09+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-12-25T14:16:09+0800 lvl=info msg="Registering plugin" logger=plugins name=Iframe
+t=2018-12-25T14:16:09+0800 lvl=info msg="Registering plugin" logger=plugins name="Alarm Box"
+t=2018-12-25T14:16:09+0800 lvl=info msg="Registering plugin" logger=plugins name="Trend Box"
+t=2018-12-25T14:16:09+0800 lvl=info msg="Registering plugin" logger=plugins name=GeoLoop
+t=2018-12-25T14:16:09+0800 lvl=info msg="Registering plugin" logger=plugins name=Echart
+t=2018-12-25T14:16:09+0800 lvl=info msg="Registering plugin" logger=plugins name=Plotly
+t=2018-12-25T14:16:09+0800 lvl=info msg="Registering plugin" logger=plugins name=Cal-HeatMap
+t=2018-12-25T14:16:09+0800 lvl=info msg="Registering plugin" logger=plugins name="Pie Chart"
+t=2018-12-25T14:16:09+0800 lvl=info msg="Registering plugin" logger=plugins name="Worldmap Panel"
+t=2018-12-25T14:16:09+0800 lvl=info msg="Registering plugin" logger=plugins name=Annunciator
+t=2018-12-25T14:16:09+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation Panel"
+t=2018-12-25T14:16:09+0800 lvl=info msg="Registering plugin" logger=plugins name=AJAX
+t=2018-12-25T14:16:09+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation List"
+t=2018-12-25T14:16:09+0800 lvl=info msg="Registering plugin" logger=plugins name="3D Globe Panel"
+t=2018-12-25T14:16:09+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-12-25T14:16:09+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-12-25T14:16:09+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-12-25T14:16:10+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-25T14:27:14+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=081d384 branch=master compiled=2018-12-04T13:55:18+0800
+t=2018-12-25T14:27:14+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-12-25T14:27:14+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-12-25T14:27:14+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-12-25T14:27:14+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-12-25T14:27:14+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-12-25T14:27:14+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-12-25T14:27:14+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-12-25T14:27:14+0800 lvl=info msg="App mode development" logger=settings
+t=2018-12-25T14:27:14+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-12-25T14:27:14+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-12-25T14:27:14+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-12-25T14:27:14+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-12-25T14:27:14+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-12-25T14:27:14+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-12-25T14:27:14+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-12-25T14:27:14+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-12-25T14:27:14+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-12-25T14:27:14+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-12-25T14:27:14+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-12-25T14:27:14+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-12-25T14:27:14+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-12-25T14:27:14+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-12-25T14:27:14+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-12-25T14:27:14+0800 lvl=info msg="Registering plugin" logger=plugins name=Iframe
+t=2018-12-25T14:27:14+0800 lvl=info msg="Registering plugin" logger=plugins name="Alarm Box"
+t=2018-12-25T14:27:14+0800 lvl=info msg="Registering plugin" logger=plugins name="Trend Box"
+t=2018-12-25T14:27:14+0800 lvl=info msg="Registering plugin" logger=plugins name=GeoLoop
+t=2018-12-25T14:27:14+0800 lvl=info msg="Registering plugin" logger=plugins name=Echart
+t=2018-12-25T14:27:14+0800 lvl=info msg="Registering plugin" logger=plugins name=Plotly
+t=2018-12-25T14:27:14+0800 lvl=info msg="Registering plugin" logger=plugins name=Cal-HeatMap
+t=2018-12-25T14:27:14+0800 lvl=info msg="Registering plugin" logger=plugins name="Pie Chart"
+t=2018-12-25T14:27:14+0800 lvl=info msg="Registering plugin" logger=plugins name="Worldmap Panel"
+t=2018-12-25T14:27:14+0800 lvl=info msg="Registering plugin" logger=plugins name=Annunciator
+t=2018-12-25T14:27:14+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation Panel"
+t=2018-12-25T14:27:14+0800 lvl=info msg="Registering plugin" logger=plugins name=AJAX
+t=2018-12-25T14:27:14+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation List"
+t=2018-12-25T14:27:14+0800 lvl=info msg="Registering plugin" logger=plugins name="3D Globe Panel"
+t=2018-12-25T14:27:14+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-12-25T14:27:15+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-12-25T14:27:15+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-12-25T14:27:20+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-25T14:27:25+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-25T14:30:41+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=081d384 branch=master compiled=2018-12-04T13:55:18+0800
+t=2018-12-25T14:30:41+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-12-25T14:30:41+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-12-25T14:30:41+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-12-25T14:30:41+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-12-25T14:30:41+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-12-25T14:30:41+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-12-25T14:30:41+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-12-25T14:30:41+0800 lvl=info msg="App mode development" logger=settings
+t=2018-12-25T14:30:41+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-12-25T14:30:41+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-12-25T14:30:41+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-12-25T14:30:41+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-12-25T14:30:41+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-12-25T14:30:41+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-12-25T14:30:41+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-12-25T14:30:41+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-12-25T14:30:41+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-12-25T14:30:41+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-12-25T14:30:41+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-12-25T14:30:41+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-12-25T14:30:41+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-12-25T14:30:41+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-12-25T14:30:41+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-12-25T14:30:41+0800 lvl=info msg="Registering plugin" logger=plugins name=Iframe
+t=2018-12-25T14:30:41+0800 lvl=info msg="Registering plugin" logger=plugins name="Alarm Box"
+t=2018-12-25T14:30:41+0800 lvl=info msg="Registering plugin" logger=plugins name="Trend Box"
+t=2018-12-25T14:30:41+0800 lvl=info msg="Registering plugin" logger=plugins name=GeoLoop
+t=2018-12-25T14:30:41+0800 lvl=info msg="Registering plugin" logger=plugins name=Echart
+t=2018-12-25T14:30:41+0800 lvl=info msg="Registering plugin" logger=plugins name=Plotly
+t=2018-12-25T14:30:41+0800 lvl=info msg="Registering plugin" logger=plugins name=Cal-HeatMap
+t=2018-12-25T14:30:41+0800 lvl=info msg="Registering plugin" logger=plugins name="Pie Chart"
+t=2018-12-25T14:30:41+0800 lvl=info msg="Registering plugin" logger=plugins name="Worldmap Panel"
+t=2018-12-25T14:30:41+0800 lvl=info msg="Registering plugin" logger=plugins name=Annunciator
+t=2018-12-25T14:30:41+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation Panel"
+t=2018-12-25T14:30:41+0800 lvl=info msg="Registering plugin" logger=plugins name=AJAX
+t=2018-12-25T14:30:41+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation List"
+t=2018-12-25T14:30:41+0800 lvl=info msg="Registering plugin" logger=plugins name="3D Globe Panel"
+t=2018-12-25T14:30:41+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-12-25T14:30:41+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-12-25T14:30:41+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-12-25T14:30:44+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-25T14:32:12+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=081d384 branch=master compiled=2018-12-04T13:55:18+0800
+t=2018-12-25T14:32:12+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-12-25T14:32:12+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-12-25T14:32:12+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-12-25T14:32:12+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-12-25T14:32:12+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-12-25T14:32:12+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-12-25T14:32:12+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-12-25T14:32:12+0800 lvl=info msg="App mode development" logger=settings
+t=2018-12-25T14:32:12+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-12-25T14:32:12+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-12-25T14:32:12+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-12-25T14:32:12+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-12-25T14:32:12+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-12-25T14:32:12+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-12-25T14:32:12+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-12-25T14:32:12+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-12-25T14:32:12+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-12-25T14:32:12+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-12-25T14:32:12+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-12-25T14:32:12+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-12-25T14:32:12+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-12-25T14:32:12+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-12-25T14:32:12+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-12-25T14:32:12+0800 lvl=info msg="Registering plugin" logger=plugins name=Iframe
+t=2018-12-25T14:32:12+0800 lvl=info msg="Registering plugin" logger=plugins name="Alarm Box"
+t=2018-12-25T14:32:12+0800 lvl=info msg="Registering plugin" logger=plugins name="Trend Box"
+t=2018-12-25T14:32:12+0800 lvl=info msg="Registering plugin" logger=plugins name=GeoLoop
+t=2018-12-25T14:32:12+0800 lvl=info msg="Registering plugin" logger=plugins name=Echart
+t=2018-12-25T14:32:12+0800 lvl=info msg="Registering plugin" logger=plugins name=Plotly
+t=2018-12-25T14:32:12+0800 lvl=info msg="Registering plugin" logger=plugins name=Cal-HeatMap
+t=2018-12-25T14:32:12+0800 lvl=info msg="Registering plugin" logger=plugins name="Pie Chart"
+t=2018-12-25T14:32:12+0800 lvl=info msg="Registering plugin" logger=plugins name="Worldmap Panel"
+t=2018-12-25T14:32:12+0800 lvl=info msg="Registering plugin" logger=plugins name=Annunciator
+t=2018-12-25T14:32:12+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation Panel"
+t=2018-12-25T14:32:12+0800 lvl=info msg="Registering plugin" logger=plugins name=AJAX
+t=2018-12-25T14:32:12+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation List"
+t=2018-12-25T14:32:12+0800 lvl=info msg="Registering plugin" logger=plugins name="3D Globe Panel"
+t=2018-12-25T14:32:12+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-12-25T14:32:12+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-12-25T14:32:12+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-12-25T14:33:15+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-25T14:36:16+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=081d384 branch=master compiled=2018-12-04T13:55:18+0800
+t=2018-12-25T14:36:16+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-12-25T14:36:16+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-12-25T14:36:16+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-12-25T14:36:16+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-12-25T14:36:16+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-12-25T14:36:16+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-12-25T14:36:16+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-12-25T14:36:16+0800 lvl=info msg="App mode development" logger=settings
+t=2018-12-25T14:36:16+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-12-25T14:36:16+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-12-25T14:36:16+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-12-25T14:36:16+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-12-25T14:36:16+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-12-25T14:36:16+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-12-25T14:36:16+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-12-25T14:36:16+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-12-25T14:36:16+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-12-25T14:36:16+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-12-25T14:36:16+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-12-25T14:36:16+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-12-25T14:36:16+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-12-25T14:36:16+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-12-25T14:36:16+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-12-25T14:36:16+0800 lvl=info msg="Registering plugin" logger=plugins name=Iframe
+t=2018-12-25T14:36:16+0800 lvl=info msg="Registering plugin" logger=plugins name="Alarm Box"
+t=2018-12-25T14:36:16+0800 lvl=info msg="Registering plugin" logger=plugins name="Trend Box"
+t=2018-12-25T14:36:16+0800 lvl=info msg="Registering plugin" logger=plugins name=GeoLoop
+t=2018-12-25T14:36:16+0800 lvl=info msg="Registering plugin" logger=plugins name=Echart
+t=2018-12-25T14:36:16+0800 lvl=info msg="Registering plugin" logger=plugins name=Plotly
+t=2018-12-25T14:36:16+0800 lvl=info msg="Registering plugin" logger=plugins name=Cal-HeatMap
+t=2018-12-25T14:36:16+0800 lvl=info msg="Registering plugin" logger=plugins name="Pie Chart"
+t=2018-12-25T14:36:16+0800 lvl=info msg="Registering plugin" logger=plugins name="Worldmap Panel"
+t=2018-12-25T14:36:16+0800 lvl=info msg="Registering plugin" logger=plugins name=Annunciator
+t=2018-12-25T14:36:16+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation Panel"
+t=2018-12-25T14:36:16+0800 lvl=info msg="Registering plugin" logger=plugins name=AJAX
+t=2018-12-25T14:36:16+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation List"
+t=2018-12-25T14:36:16+0800 lvl=info msg="Registering plugin" logger=plugins name="3D Globe Panel"
+t=2018-12-25T14:36:16+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-12-25T14:36:16+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-12-25T14:36:16+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-12-25T14:37:09+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=081d384 branch=master compiled=2018-12-04T13:55:18+0800
+t=2018-12-25T14:37:09+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-12-25T14:37:09+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-12-25T14:37:09+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-12-25T14:37:09+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-12-25T14:37:09+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-12-25T14:37:09+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-12-25T14:37:09+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-12-25T14:37:09+0800 lvl=info msg="App mode development" logger=settings
+t=2018-12-25T14:37:09+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-12-25T14:37:09+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-12-25T14:37:09+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-12-25T14:37:09+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-12-25T14:37:09+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-12-25T14:37:09+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-12-25T14:37:09+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-12-25T14:37:09+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-12-25T14:37:09+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-12-25T14:37:09+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-12-25T14:37:09+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-12-25T14:37:09+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-12-25T14:37:09+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-12-25T14:37:09+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-12-25T14:37:09+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-12-25T14:37:10+0800 lvl=info msg="Registering plugin" logger=plugins name=Iframe
+t=2018-12-25T14:37:10+0800 lvl=info msg="Registering plugin" logger=plugins name="Alarm Box"
+t=2018-12-25T14:37:10+0800 lvl=info msg="Registering plugin" logger=plugins name="Trend Box"
+t=2018-12-25T14:37:10+0800 lvl=info msg="Registering plugin" logger=plugins name=GeoLoop
+t=2018-12-25T14:37:10+0800 lvl=info msg="Registering plugin" logger=plugins name=Echart
+t=2018-12-25T14:37:10+0800 lvl=info msg="Registering plugin" logger=plugins name=Plotly
+t=2018-12-25T14:37:10+0800 lvl=info msg="Registering plugin" logger=plugins name=Cal-HeatMap
+t=2018-12-25T14:37:10+0800 lvl=info msg="Registering plugin" logger=plugins name="Pie Chart"
+t=2018-12-25T14:37:10+0800 lvl=info msg="Registering plugin" logger=plugins name="Worldmap Panel"
+t=2018-12-25T14:37:10+0800 lvl=info msg="Registering plugin" logger=plugins name=Annunciator
+t=2018-12-25T14:37:10+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation Panel"
+t=2018-12-25T14:37:10+0800 lvl=info msg="Registering plugin" logger=plugins name=AJAX
+t=2018-12-25T14:37:10+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation List"
+t=2018-12-25T14:37:10+0800 lvl=info msg="Registering plugin" logger=plugins name="3D Globe Panel"
+t=2018-12-25T14:37:10+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-12-25T14:37:10+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-12-25T14:37:10+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-12-25T14:37:10+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-25T14:37:33+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-25T14:37:41+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-25T14:39:00+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=081d384 branch=master compiled=2018-12-04T13:55:18+0800
+t=2018-12-25T14:39:00+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-12-25T14:39:00+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-12-25T14:39:00+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-12-25T14:39:00+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-12-25T14:39:00+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-12-25T14:39:00+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-12-25T14:39:00+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-12-25T14:39:00+0800 lvl=info msg="App mode development" logger=settings
+t=2018-12-25T14:39:00+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-12-25T14:39:00+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-12-25T14:39:00+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-12-25T14:39:00+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-12-25T14:39:00+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-12-25T14:39:00+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-12-25T14:39:00+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-12-25T14:39:00+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-12-25T14:39:00+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-12-25T14:39:00+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-12-25T14:39:00+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-12-25T14:39:00+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-12-25T14:39:00+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-12-25T14:39:00+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-12-25T14:39:00+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-12-25T14:39:00+0800 lvl=info msg="Registering plugin" logger=plugins name=Iframe
+t=2018-12-25T14:39:00+0800 lvl=info msg="Registering plugin" logger=plugins name="Alarm Box"
+t=2018-12-25T14:39:00+0800 lvl=info msg="Registering plugin" logger=plugins name="Trend Box"
+t=2018-12-25T14:39:00+0800 lvl=info msg="Registering plugin" logger=plugins name=GeoLoop
+t=2018-12-25T14:39:00+0800 lvl=info msg="Registering plugin" logger=plugins name=Echart
+t=2018-12-25T14:39:00+0800 lvl=info msg="Registering plugin" logger=plugins name=Plotly
+t=2018-12-25T14:39:00+0800 lvl=info msg="Registering plugin" logger=plugins name=Cal-HeatMap
+t=2018-12-25T14:39:00+0800 lvl=info msg="Registering plugin" logger=plugins name="Pie Chart"
+t=2018-12-25T14:39:00+0800 lvl=info msg="Registering plugin" logger=plugins name="Worldmap Panel"
+t=2018-12-25T14:39:00+0800 lvl=info msg="Registering plugin" logger=plugins name=Annunciator
+t=2018-12-25T14:39:00+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation Panel"
+t=2018-12-25T14:39:00+0800 lvl=info msg="Registering plugin" logger=plugins name=AJAX
+t=2018-12-25T14:39:00+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation List"
+t=2018-12-25T14:39:00+0800 lvl=info msg="Registering plugin" logger=plugins name="3D Globe Panel"
+t=2018-12-25T14:39:00+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-12-25T14:39:00+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-12-25T14:39:00+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-12-25T14:39:05+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-25T14:39:07+0800 lvl=info msg="Database table locked, sleeping then retrying" logger=sqlstore retry=0
+t=2018-12-25T14:42:47+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=081d384 branch=master compiled=2018-12-04T13:55:18+0800
+t=2018-12-25T14:42:47+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-12-25T14:42:47+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-12-25T14:42:47+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-12-25T14:42:47+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-12-25T14:42:47+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-12-25T14:42:47+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-12-25T14:42:47+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-12-25T14:42:47+0800 lvl=info msg="App mode development" logger=settings
+t=2018-12-25T14:42:47+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-12-25T14:42:47+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-12-25T14:42:47+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-12-25T14:42:47+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-12-25T14:42:47+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-12-25T14:42:47+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-12-25T14:42:47+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-12-25T14:42:47+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-12-25T14:42:47+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-12-25T14:42:47+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-12-25T14:42:47+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-12-25T14:42:47+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-12-25T14:42:47+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-12-25T14:42:47+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-12-25T14:42:47+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-12-25T14:42:47+0800 lvl=info msg="Registering plugin" logger=plugins name=Iframe
+t=2018-12-25T14:42:47+0800 lvl=info msg="Registering plugin" logger=plugins name="Alarm Box"
+t=2018-12-25T14:42:47+0800 lvl=info msg="Registering plugin" logger=plugins name="Trend Box"
+t=2018-12-25T14:42:47+0800 lvl=info msg="Registering plugin" logger=plugins name=GeoLoop
+t=2018-12-25T14:42:47+0800 lvl=info msg="Registering plugin" logger=plugins name=Echart
+t=2018-12-25T14:42:47+0800 lvl=info msg="Registering plugin" logger=plugins name=Plotly
+t=2018-12-25T14:42:47+0800 lvl=info msg="Registering plugin" logger=plugins name=Cal-HeatMap
+t=2018-12-25T14:42:47+0800 lvl=info msg="Registering plugin" logger=plugins name="Pie Chart"
+t=2018-12-25T14:42:47+0800 lvl=info msg="Registering plugin" logger=plugins name="Worldmap Panel"
+t=2018-12-25T14:42:47+0800 lvl=info msg="Registering plugin" logger=plugins name=Annunciator
+t=2018-12-25T14:42:47+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation Panel"
+t=2018-12-25T14:42:47+0800 lvl=info msg="Registering plugin" logger=plugins name=AJAX
+t=2018-12-25T14:42:47+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation List"
+t=2018-12-25T14:42:47+0800 lvl=info msg="Registering plugin" logger=plugins name="3D Globe Panel"
+t=2018-12-25T14:42:47+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-12-25T14:42:47+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-12-25T14:42:47+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-12-25T14:42:48+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-25T14:46:52+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=081d384 branch=master compiled=2018-12-04T13:55:18+0800
+t=2018-12-25T14:46:52+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-12-25T14:46:52+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-12-25T14:46:52+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-12-25T14:46:52+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-12-25T14:46:52+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-12-25T14:46:52+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-12-25T14:46:52+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-12-25T14:46:52+0800 lvl=info msg="App mode development" logger=settings
+t=2018-12-25T14:46:52+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-12-25T14:46:52+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-12-25T14:46:52+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-12-25T14:46:52+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-12-25T14:46:52+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-12-25T14:46:52+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-12-25T14:46:52+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-12-25T14:46:52+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-12-25T14:46:52+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-12-25T14:46:52+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-12-25T14:46:52+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-12-25T14:46:52+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-12-25T14:46:52+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-12-25T14:46:52+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-12-25T14:46:52+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-12-25T14:46:52+0800 lvl=info msg="Registering plugin" logger=plugins name=Iframe
+t=2018-12-25T14:46:52+0800 lvl=info msg="Registering plugin" logger=plugins name="Alarm Box"
+t=2018-12-25T14:46:52+0800 lvl=info msg="Registering plugin" logger=plugins name="Trend Box"
+t=2018-12-25T14:46:52+0800 lvl=info msg="Registering plugin" logger=plugins name=GeoLoop
+t=2018-12-25T14:46:52+0800 lvl=info msg="Registering plugin" logger=plugins name=Echart
+t=2018-12-25T14:46:52+0800 lvl=info msg="Registering plugin" logger=plugins name=Plotly
+t=2018-12-25T14:46:52+0800 lvl=info msg="Registering plugin" logger=plugins name=Cal-HeatMap
+t=2018-12-25T14:46:52+0800 lvl=info msg="Registering plugin" logger=plugins name="Pie Chart"
+t=2018-12-25T14:46:52+0800 lvl=info msg="Registering plugin" logger=plugins name="Worldmap Panel"
+t=2018-12-25T14:46:52+0800 lvl=info msg="Registering plugin" logger=plugins name=Annunciator
+t=2018-12-25T14:46:52+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation Panel"
+t=2018-12-25T14:46:52+0800 lvl=info msg="Registering plugin" logger=plugins name=AJAX
+t=2018-12-25T14:46:52+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation List"
+t=2018-12-25T14:46:52+0800 lvl=info msg="Registering plugin" logger=plugins name="3D Globe Panel"
+t=2018-12-25T14:46:52+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-12-25T14:46:52+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-12-25T14:46:52+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-12-25T14:46:56+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-25T14:47:49+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-25T14:48:07+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-25T14:49:23+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=081d384 branch=master compiled=2018-12-04T13:55:18+0800
+t=2018-12-25T14:49:23+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-12-25T14:49:23+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-12-25T14:49:23+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-12-25T14:49:23+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-12-25T14:49:23+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-12-25T14:49:23+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-12-25T14:49:23+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-12-25T14:49:23+0800 lvl=info msg="App mode development" logger=settings
+t=2018-12-25T14:49:23+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-12-25T14:49:23+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-12-25T14:49:23+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-12-25T14:49:23+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-12-25T14:49:23+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-12-25T14:49:23+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-12-25T14:49:23+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-12-25T14:49:23+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-12-25T14:49:23+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-12-25T14:49:23+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-12-25T14:49:23+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-12-25T14:49:23+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-12-25T14:49:23+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-12-25T14:49:23+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-12-25T14:49:23+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-12-25T14:49:23+0800 lvl=info msg="Registering plugin" logger=plugins name=Iframe
+t=2018-12-25T14:49:23+0800 lvl=info msg="Registering plugin" logger=plugins name="Alarm Box"
+t=2018-12-25T14:49:23+0800 lvl=info msg="Registering plugin" logger=plugins name="Trend Box"
+t=2018-12-25T14:49:23+0800 lvl=info msg="Registering plugin" logger=plugins name=GeoLoop
+t=2018-12-25T14:49:23+0800 lvl=info msg="Registering plugin" logger=plugins name=Echart
+t=2018-12-25T14:49:23+0800 lvl=info msg="Registering plugin" logger=plugins name=Plotly
+t=2018-12-25T14:49:23+0800 lvl=info msg="Registering plugin" logger=plugins name=Cal-HeatMap
+t=2018-12-25T14:49:24+0800 lvl=info msg="Registering plugin" logger=plugins name="Pie Chart"
+t=2018-12-25T14:49:24+0800 lvl=info msg="Registering plugin" logger=plugins name="Worldmap Panel"
+t=2018-12-25T14:49:24+0800 lvl=info msg="Registering plugin" logger=plugins name=Annunciator
+t=2018-12-25T14:49:24+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation Panel"
+t=2018-12-25T14:49:24+0800 lvl=info msg="Registering plugin" logger=plugins name=AJAX
+t=2018-12-25T14:49:24+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation List"
+t=2018-12-25T14:49:24+0800 lvl=info msg="Registering plugin" logger=plugins name="3D Globe Panel"
+t=2018-12-25T14:49:24+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-12-25T14:49:24+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-12-25T14:49:24+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-12-25T14:49:27+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-25T14:51:22+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=081d384 branch=master compiled=2018-12-04T13:55:18+0800
+t=2018-12-25T14:51:22+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-12-25T14:51:22+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-12-25T14:51:22+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-12-25T14:51:22+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-12-25T14:51:22+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-12-25T14:51:22+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-12-25T14:51:22+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-12-25T14:51:22+0800 lvl=info msg="App mode development" logger=settings
+t=2018-12-25T14:51:22+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-12-25T14:51:22+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-12-25T14:51:22+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-12-25T14:51:22+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-12-25T14:51:22+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-12-25T14:51:22+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-12-25T14:51:22+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-12-25T14:51:22+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-12-25T14:51:22+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-12-25T14:51:22+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-12-25T14:51:22+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-12-25T14:51:22+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-12-25T14:51:22+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-12-25T14:51:22+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-12-25T14:51:22+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-12-25T14:51:22+0800 lvl=info msg="Registering plugin" logger=plugins name=Iframe
+t=2018-12-25T14:51:22+0800 lvl=info msg="Registering plugin" logger=plugins name="Alarm Box"
+t=2018-12-25T14:51:22+0800 lvl=info msg="Registering plugin" logger=plugins name="Trend Box"
+t=2018-12-25T14:51:22+0800 lvl=info msg="Registering plugin" logger=plugins name=GeoLoop
+t=2018-12-25T14:51:22+0800 lvl=info msg="Registering plugin" logger=plugins name=Echart
+t=2018-12-25T14:51:22+0800 lvl=info msg="Registering plugin" logger=plugins name=Plotly
+t=2018-12-25T14:51:22+0800 lvl=info msg="Registering plugin" logger=plugins name=Cal-HeatMap
+t=2018-12-25T14:51:22+0800 lvl=info msg="Registering plugin" logger=plugins name="Pie Chart"
+t=2018-12-25T14:51:22+0800 lvl=info msg="Registering plugin" logger=plugins name="Worldmap Panel"
+t=2018-12-25T14:51:22+0800 lvl=info msg="Registering plugin" logger=plugins name=Annunciator
+t=2018-12-25T14:51:22+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation Panel"
+t=2018-12-25T14:51:22+0800 lvl=info msg="Registering plugin" logger=plugins name=AJAX
+t=2018-12-25T14:51:22+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation List"
+t=2018-12-25T14:51:22+0800 lvl=info msg="Registering plugin" logger=plugins name="3D Globe Panel"
+t=2018-12-25T14:51:22+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-12-25T14:51:22+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-12-25T14:51:22+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-12-25T14:51:28+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-25T14:53:19+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-25T14:53:19+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path="/const url = ctrl.panel.url;     console.log('url:' + url);" status=404 remote_addr=[::1] time_ms=45 size=32778 referer="http://localhost:8080/d/jgq_eofiz/yi-biao-pan-yan-shi?refresh=1m&orgId=1&panelId=36&fullscreen&edit"
+t=2018-12-25T14:54:19+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-25T14:54:19+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path="/const url = ctrl.panel.url;     console.log('url:' + url);" status=404 remote_addr=[::1] time_ms=34 size=32778 referer="http://localhost:8080/d/jgq_eofiz/yi-biao-pan-yan-shi?refresh=1m&orgId=1&panelId=36&fullscreen&edit"
+t=2018-12-25T14:59:30+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=081d384 branch=master compiled=2018-12-04T13:55:18+0800
+t=2018-12-25T14:59:30+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-12-25T14:59:30+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-12-25T14:59:30+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-12-25T14:59:30+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-12-25T14:59:30+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-12-25T14:59:30+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-12-25T14:59:30+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-12-25T14:59:30+0800 lvl=info msg="App mode development" logger=settings
+t=2018-12-25T14:59:30+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-12-25T14:59:30+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-12-25T14:59:30+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-12-25T14:59:30+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-12-25T14:59:30+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-12-25T14:59:30+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-12-25T14:59:30+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-12-25T14:59:30+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-12-25T14:59:30+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-12-25T14:59:30+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-12-25T14:59:30+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-12-25T14:59:30+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-12-25T14:59:30+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-12-25T14:59:30+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-12-25T14:59:30+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-12-25T14:59:30+0800 lvl=info msg="Registering plugin" logger=plugins name=Iframe
+t=2018-12-25T14:59:30+0800 lvl=info msg="Registering plugin" logger=plugins name="Alarm Box"
+t=2018-12-25T14:59:30+0800 lvl=info msg="Registering plugin" logger=plugins name="Trend Box"
+t=2018-12-25T14:59:30+0800 lvl=info msg="Registering plugin" logger=plugins name=GeoLoop
+t=2018-12-25T14:59:30+0800 lvl=info msg="Registering plugin" logger=plugins name=Echart
+t=2018-12-25T14:59:30+0800 lvl=info msg="Registering plugin" logger=plugins name=Plotly
+t=2018-12-25T14:59:30+0800 lvl=info msg="Registering plugin" logger=plugins name=Cal-HeatMap
+t=2018-12-25T14:59:30+0800 lvl=info msg="Registering plugin" logger=plugins name="Pie Chart"
+t=2018-12-25T14:59:30+0800 lvl=info msg="Registering plugin" logger=plugins name="Worldmap Panel"
+t=2018-12-25T14:59:30+0800 lvl=info msg="Registering plugin" logger=plugins name=Annunciator
+t=2018-12-25T14:59:30+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation Panel"
+t=2018-12-25T14:59:30+0800 lvl=info msg="Registering plugin" logger=plugins name=AJAX
+t=2018-12-25T14:59:30+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation List"
+t=2018-12-25T14:59:30+0800 lvl=info msg="Registering plugin" logger=plugins name="3D Globe Panel"
+t=2018-12-25T14:59:30+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-12-25T14:59:31+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-12-25T14:59:31+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-12-25T14:59:38+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-25T15:05:46+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=081d384 branch=master compiled=2018-12-04T13:55:18+0800
+t=2018-12-25T15:05:46+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-12-25T15:05:46+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-12-25T15:05:46+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-12-25T15:05:46+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-12-25T15:05:46+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-12-25T15:05:46+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-12-25T15:05:46+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-12-25T15:05:46+0800 lvl=info msg="App mode development" logger=settings
+t=2018-12-25T15:05:46+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-12-25T15:05:46+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-12-25T15:05:46+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-12-25T15:05:46+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-12-25T15:05:46+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-12-25T15:05:46+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-12-25T15:05:46+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-12-25T15:05:46+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-12-25T15:05:46+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-12-25T15:05:46+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-12-25T15:05:46+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-12-25T15:05:46+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-12-25T15:05:46+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-12-25T15:05:46+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-12-25T15:05:46+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-12-25T15:05:46+0800 lvl=info msg="Registering plugin" logger=plugins name=Iframe
+t=2018-12-25T15:05:46+0800 lvl=info msg="Registering plugin" logger=plugins name="Alarm Box"
+t=2018-12-25T15:05:46+0800 lvl=info msg="Registering plugin" logger=plugins name="Trend Box"
+t=2018-12-25T15:05:46+0800 lvl=info msg="Registering plugin" logger=plugins name=GeoLoop
+t=2018-12-25T15:05:46+0800 lvl=info msg="Registering plugin" logger=plugins name=Echart
+t=2018-12-25T15:05:46+0800 lvl=info msg="Registering plugin" logger=plugins name=Plotly
+t=2018-12-25T15:05:46+0800 lvl=info msg="Registering plugin" logger=plugins name=Cal-HeatMap
+t=2018-12-25T15:05:46+0800 lvl=info msg="Registering plugin" logger=plugins name="Pie Chart"
+t=2018-12-25T15:05:46+0800 lvl=info msg="Registering plugin" logger=plugins name="Worldmap Panel"
+t=2018-12-25T15:05:46+0800 lvl=info msg="Registering plugin" logger=plugins name=Annunciator
+t=2018-12-25T15:05:46+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation Panel"
+t=2018-12-25T15:05:46+0800 lvl=info msg="Registering plugin" logger=plugins name=AJAX
+t=2018-12-25T15:05:46+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation List"
+t=2018-12-25T15:05:46+0800 lvl=info msg="Registering plugin" logger=plugins name="3D Globe Panel"
+t=2018-12-25T15:05:46+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-12-25T15:05:46+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-12-25T15:05:46+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-12-25T15:06:16+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=081d384 branch=master compiled=2018-12-04T13:55:18+0800
+t=2018-12-25T15:06:16+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-12-25T15:06:16+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-12-25T15:06:16+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-12-25T15:06:16+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-12-25T15:06:16+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-12-25T15:06:16+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-12-25T15:06:16+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-12-25T15:06:16+0800 lvl=info msg="App mode development" logger=settings
+t=2018-12-25T15:06:16+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-12-25T15:06:16+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-12-25T15:06:16+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-12-25T15:06:16+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-12-25T15:06:16+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-12-25T15:06:16+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-12-25T15:06:16+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-12-25T15:06:16+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-12-25T15:06:16+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-12-25T15:06:16+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-12-25T15:06:16+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-12-25T15:06:16+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-12-25T15:06:16+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-12-25T15:06:16+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-12-25T15:06:16+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-12-25T15:06:16+0800 lvl=info msg="Registering plugin" logger=plugins name=Iframe
+t=2018-12-25T15:06:16+0800 lvl=info msg="Registering plugin" logger=plugins name="Alarm Box"
+t=2018-12-25T15:06:16+0800 lvl=info msg="Registering plugin" logger=plugins name="Trend Box"
+t=2018-12-25T15:06:16+0800 lvl=info msg="Registering plugin" logger=plugins name=GeoLoop
+t=2018-12-25T15:06:16+0800 lvl=info msg="Registering plugin" logger=plugins name=Echart
+t=2018-12-25T15:06:16+0800 lvl=info msg="Registering plugin" logger=plugins name=Plotly
+t=2018-12-25T15:06:16+0800 lvl=info msg="Registering plugin" logger=plugins name=Cal-HeatMap
+t=2018-12-25T15:06:16+0800 lvl=info msg="Registering plugin" logger=plugins name="Pie Chart"
+t=2018-12-25T15:06:16+0800 lvl=info msg="Registering plugin" logger=plugins name="Worldmap Panel"
+t=2018-12-25T15:06:16+0800 lvl=info msg="Registering plugin" logger=plugins name=Annunciator
+t=2018-12-25T15:06:16+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation Panel"
+t=2018-12-25T15:06:16+0800 lvl=info msg="Registering plugin" logger=plugins name=AJAX
+t=2018-12-25T15:06:16+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation List"
+t=2018-12-25T15:06:16+0800 lvl=info msg="Registering plugin" logger=plugins name="3D Globe Panel"
+t=2018-12-25T15:06:16+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-12-25T15:06:16+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-12-25T15:06:16+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-12-25T15:06:17+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"
+t=2018-12-25T15:09:25+0800 lvl=info msg="Starting Grafana" logger=server version=5.4.0-pre1 commit=081d384 branch=master compiled=2018-12-04T13:55:18+0800
+t=2018-12-25T15:09:25+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana/conf/defaults.ini
+t=2018-12-25T15:09:25+0800 lvl=info msg="Config loaded from" logger=settings file=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\custom.ini
+t=2018-12-25T15:09:25+0800 lvl=info msg="Path Home" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana
+t=2018-12-25T15:09:25+0800 lvl=info msg="Path Data" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data
+t=2018-12-25T15:09:25+0800 lvl=info msg="Path Logs" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\log
+t=2018-12-25T15:09:25+0800 lvl=info msg="Path Plugins" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\data\\plugins
+t=2018-12-25T15:09:25+0800 lvl=info msg="Path Provisioning" logger=settings path=C:\\gopath\\src\\github.com\\grafana\\grafana\\conf\\provisioning
+t=2018-12-25T15:09:25+0800 lvl=info msg="App mode development" logger=settings
+t=2018-12-25T15:09:25+0800 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-12-25T15:09:25+0800 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-12-25T15:09:25+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-12-25T15:09:25+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-12-25T15:09:25+0800 lvl=info msg="Initializing SearchService" logger=server
+t=2018-12-25T15:09:25+0800 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-12-25T15:09:25+0800 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-12-25T15:09:25+0800 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-12-25T15:09:25+0800 lvl=info msg="Initializing HooksService" logger=server
+t=2018-12-25T15:09:25+0800 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-12-25T15:09:25+0800 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-12-25T15:09:25+0800 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-12-25T15:09:25+0800 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-12-25T15:09:25+0800 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-12-25T15:09:25+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-12-25T15:09:25+0800 lvl=info msg="Registering plugin" logger=plugins name=Iframe
+t=2018-12-25T15:09:25+0800 lvl=info msg="Registering plugin" logger=plugins name="Alarm Box"
+t=2018-12-25T15:09:25+0800 lvl=info msg="Registering plugin" logger=plugins name="Trend Box"
+t=2018-12-25T15:09:25+0800 lvl=info msg="Registering plugin" logger=plugins name=GeoLoop
+t=2018-12-25T15:09:25+0800 lvl=info msg="Registering plugin" logger=plugins name=Echart
+t=2018-12-25T15:09:25+0800 lvl=info msg="Registering plugin" logger=plugins name=Plotly
+t=2018-12-25T15:09:25+0800 lvl=info msg="Registering plugin" logger=plugins name=Cal-HeatMap
+t=2018-12-25T15:09:25+0800 lvl=info msg="Registering plugin" logger=plugins name="Pie Chart"
+t=2018-12-25T15:09:25+0800 lvl=info msg="Registering plugin" logger=plugins name="Worldmap Panel"
+t=2018-12-25T15:09:25+0800 lvl=info msg="Registering plugin" logger=plugins name=Annunciator
+t=2018-12-25T15:09:25+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation Panel"
+t=2018-12-25T15:09:25+0800 lvl=info msg="Registering plugin" logger=plugins name=AJAX
+t=2018-12-25T15:09:25+0800 lvl=info msg="Registering plugin" logger=plugins name="Annotation List"
+t=2018-12-25T15:09:25+0800 lvl=info msg="Registering plugin" logger=plugins name="3D Globe Panel"
+t=2018-12-25T15:09:25+0800 lvl=info msg="Initializing TracingService" logger=server
+t=2018-12-25T15:09:25+0800 lvl=info msg="Initializing Stream Manager"
+t=2018-12-25T15:09:25+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:8080 protocol=http subUrl= socket=
+t=2018-12-25T15:09:31+0800 lvl=eror msg="Could not find plugin definition for data source: grafana-simple-json-datasource"

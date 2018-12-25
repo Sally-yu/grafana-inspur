@@ -38,10 +38,8 @@ export class AJAXCtrl extends MetricsPanelCtrl {
 
   updateIframe(){
     console.log('UpdateIframe');  
-
     this.render();
   }
-
 
   link(scope, elem, attrs, ctrl,sce) {
     console.log('Link');

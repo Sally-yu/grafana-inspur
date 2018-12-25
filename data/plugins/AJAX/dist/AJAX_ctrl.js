@@ -105,7 +105,6 @@ System.register(['app/plugins/sdk', 'lodash', './render'], function (_export, _c
           key: 'updateIframe',
           value: function updateIframe() {
             console.log('UpdateIframe');
-
             this.render();
           }
         }, {

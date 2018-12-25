@@ -10,12 +10,18 @@ System.register(['lodash', 'app/plugins/sdk', 'jquery', 'app/core/utils/kbn', 'a
             render();
             ctrl.renderingCompleted();
         });
+
         function render() {
             var url = ctrl.panel.url;
             console.log('url:' + url);
+            console.log('UpdateIframe');
             // scope.url = sce.trustAsResourceUrl(url);
             var dom = elem.find('.ctrl-panel-iframe')[0];
-            dom.src = url;
+            //重要： 普通url请在末尾加/，例如 https://www.baidu.com/ 
+            if (dom.src != url) {
+                //禁止自动刷新，仅替换链接时可刷新
+                dom.src = url;
+            }
             console.log('dom:' + dom);
         }
     }
